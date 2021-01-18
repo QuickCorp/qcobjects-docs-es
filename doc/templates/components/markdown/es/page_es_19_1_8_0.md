@@ -1,8 +1,3 @@
-#### [ArrayList or Array].matrix2d
+#### InheritClass
 
-Crea una matriz 2D.
-
-```javsascript
-let matrix2d = ArrayList.matrix2d(2,1);
-// [ [ 1, 1 ], [ 1, 1 ] ]
-```
+Una sola definición de clase común QCObjects es utilizada.

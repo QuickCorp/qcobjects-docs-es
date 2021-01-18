@@ -1,20 +1,7 @@
-### Backend routing
+### SDK Views
 
-Dentro de su archivo config.json puede establecer las rutas de back-end para sus microservicios.
-Para cada ruta de microservicio, se requiere una ruta y una cadena de paquete de microservicio.
+A continuación hay un conjunto de vistas predefinidas para uso común.
 
-```json
-{
-  "backend":{
-    "routes":[
-      {
-        "path":"/createaccount",
-        "microservice":"org.qcobjects.backend.signup"
-      }
-    ]
-  }
-}
-```
+#### org.qcobjects.views.GridView
 
-Cuando configuras las rutas de back-end, el servidor  QCObjects HTTP2 Built-In  sabra como manejar las llaadas de cada ruta definida. Para cada otra ruta que este indefinida mediante los ajustes del Back-end, el servidor se manejara para llamar al comportamiento por defecto que está usando un archivo estático como respuesta si existe.
- Con eso en mente puedes usar QCObjects tanto para administar y servir archivos estaticos o servicios servidos dinamicamente cuando lo necesites.
+Una definion generica GridView para usar con cuadriculas.

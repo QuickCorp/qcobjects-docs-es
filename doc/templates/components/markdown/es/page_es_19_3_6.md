@@ -1,40 +1,39 @@
-### The QCObjects Microservice Class and Package
+### SDK i18n messages
 
-cuando configuras la definicion de ruta bakend, necesitas especificar un paquete de microdervicio.Este paquete de microservicio es una definicion de QCObjects de un paquete con una clase microservicio extendida desde la clase BackendMicroservice ya definida por QCObjects.
+El motor QCObjects i18n le permite definir mensajes personalizados. Obtenga más información en este artículo en el DevBlog llamado [i18n Internationalisation for your Progressive Web Apps](https://devblog.qcobjects.org/i18n-internationalisation-for-your-progressive-web-apps-ck90h4qz301ca7vs1ue7joopu)
 
-A continuación se muestra un ejemplo de una definición de paquete de microservicio, escrita en el archivo org.qcobjects.backend.signup.js
+#### org.qcobjects.i18n_messages.i18n_messages
 
+Utlizado para llamar al motor i18n.
+
+##### Uso:
 ```javascript
-'use strict';
-const fs = require('fs');
-
-Package('cl.quickcorp.backend.signup',[
-  Class('Microservice',BackendMicroservice,{
-    body:{
-      "jsonrpc": "2.0",
-      "result": "",
-      "id": 1
-    },
-    saveToFile: function (filename,data){
-      logger.debug('Writing file: '+filename);
-      fs.writeFile(filename, data, (err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-      });
-    },
-    post:function (data){
-      let submittedDataPath = CONFIG.get('dataPath'); // this is filled out from qcobjects-server
-      let filename = submittedDataPath+'signup/signup'+Date.now().toString()+'.json';
-      console.log('DATA RECEIVED: '+data);
-      this.saveToFile(filename,data);
-    }
-  })
-]);
+  Class('i18n_messages_<custom lang>', i18n_messages,{
+		...
+	})
 ```
 
-El microservicio anterior está guardando un archivo con los datos recibidos de una solicitud posterior y respondiendo a una salida estándar jsonrpc 2.0. Lee sobre estas especificaciones  JSON RPC 2.0 [Aquí](https://www.jsonrpc.org/specification)
-
-El servidor QCObjects HTTP2 Built-In hara una llamada al metodo post() de la definicion de clase Microservice solo cuadose realiza una solicitud posterior en la ruta correcta definida en config.json que hace referencia al nombre del paquete como el punto de referencia de indexación inicial.
-
-Para permitir que QCObjects entienda y ejecute sus microservicios de la manera correcta dentro de un paquete de microservicios, una definicion de clase Microservice es requerida y tambine la definicion de clase  Microservice tiene que extender la clase BackendMicroservice que es parte de las clases built-in de QCObjects.
-
+##### Ejemplo
+```javascript
+'use strict';
+// file: js/packages/org.qcobjects.i18n_messages.es.js
+Package('org.qcobjects.i18n_messages.es', [
+  Class('i18n_messages_es', i18n_messages, {
+    messages: [
+       // ... your custom language dictionary is here
+      {
+         "en":"This is a paragraph",
+         "es":"Esto es un párrafo"
+      },
+      {
+         "en":"Welcome to my new app",
+         "es":"Bienvenido a mi nueva app"
+      }
+    ]
+  }),
+  {
+		// the next line generates an instance of the i18n engine and attaches it automatically in the package
+    _i18n_messages_es: New(i18n_messages_es)
+  }
+]);
+```

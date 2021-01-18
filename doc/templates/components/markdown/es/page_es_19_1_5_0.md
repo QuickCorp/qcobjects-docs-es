@@ -1,14 +1,9 @@
-#### [ArrayList or Array].sort
+#### Método QC_Append, append
 
-Ordena los elementos del array o lista.
+Este es un método especial que hará tu vida mas fácil cuando quieras manipular el **DOM** dinámicamente. Puedes insertar un componente incluso **Component**, a un objeto **QCObjects** o a el elemento **DOM** dentro de otro **HTMLElement**.
 
-```javascript
-let my_sorted_array = [3,3,4,0,2,1].sort()
-// my_sorted_array = [ 0, 1, 2, 3, 3, 4 ]
-```
+##### Uso:
 
 ```javascript
-let my_sorted_list = New(ArrayList,{source:[3,3,4,0,2,1]}).source.sort()
-// my_sorted_list = [ 0, 1, 2, 3, 3, 4 ]
+[element].append([object or element]);
 ```
-

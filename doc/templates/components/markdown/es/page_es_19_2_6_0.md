@@ -1,3 +1,18 @@
-#### SDK i18n messages
+#### [ArrayList or Array].sortBy
 
-El motor QCObjects i18n le permite definir mensajes personalizados. Obtenga más información en este artículo en el DevBlog llamado [i18n Internationalisation for your Progressive Web Apps](https://devblog.qcobjects.org/i18n-internationalisation-for-your-progressive-web-apps-ck90h4qz301ca7vs1ue7joopu)
+Ordena una lista de objetos por un valor de propiedad.
+
+
+```javascript
+let my_ordered_list = [
+												{"b":1,"a":2},
+												{"b":2,"a":1},
+												{"b":3,"a":3},
+											].sortBy("a")
+// it will result in
+[
+	{ b: 2, a: 1 },
+	{ b: 1, a: 2 },
+	{ b: 3, a: 3 }
+]
+```

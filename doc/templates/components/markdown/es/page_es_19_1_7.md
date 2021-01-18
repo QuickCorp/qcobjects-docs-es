@@ -1,40 +1,25 @@
-### [ArrayList or Array].matrix
+### New
 
-Genera una matriz en una dimensión.
+Crea una instancia de objeto de una definición de clase de QCObject.
 
-#### Uso
-**[].matrix (length, [value])** Donde **length** es un numero de elementos y el **value** opcional es un valor en cada elemento, puede ser cualquier valor de cualquier tipo.
-
-```javascript
-let matrix = Array.matrix(10);
-// matrix = [
-  0, 0, 0, 0, 0,
-  0, 0, 0, 0, 0
-]
-```
+#### Uso:
 
 ```javascript
-let matrix = ArrayList.matrix(10,1);
-// matrix = [
-  1, 1, 1, 1, 1,
-  1, 1, 1, 1, 1
-]
+let objectInstance = New(QCObjectsClassName, properties);
+// where properties is a single object with the property values
 ```
+NOTA: En las propiedades del objeto puedes usar un solo valor o un captador también pero, solo se ejecutaran una vez.
+
+#### Ejemplo:
 
 ```javascript
-let a = 1, b = 2;
-let c = ArrayList.matrix(10,{a,b})
-// c = [
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 },
- { a: 1, b: 2 }
-]
-```
+Class('MyCustomClass',Object);
+let objectInstance = New(MyCustomClass,{
+  prop1:1,
+  get randomNumber(){ // this getter will be executed once
+    return Math.random();
+  }
+});
 
+console.log(objectInstance.randomNumber); // it will show console.log(objectInstance.prop1); // it will show number 1
+```

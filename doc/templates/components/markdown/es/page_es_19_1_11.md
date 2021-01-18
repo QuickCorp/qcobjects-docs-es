@@ -1,8 +1,10 @@
-### Array.sum
+### GLOBAL
 
-Suma los elementos de una matriz.
+**GLOBAL** es una clase especial de QCObject para conseguir alancé global. Tiene un conjunto y consigue un método que te ayude a manejar propiedades internas Globales.
+
+#### Ejemplo:
 
 ```javascript
-let s = [1,2,3].sum()
-// s = 6
+GLOBAL.set('globalProperty1','some value in global scope');
+var globalProperty1 = GLOBAL.get('globalProperty1');
 ```

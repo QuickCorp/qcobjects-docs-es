@@ -1,16 +1,5 @@
-#### [ArrayList or Array].table
+#### Class
 
-Esto esta destinado para solo el uso de shell script. Muestra una tabla de valores en una lista.
+Esto NO es una clase de definición de ECMAScript 2015 (mira [clase ECMAScript 2015](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) for reference).
 
-```javsascript
-["a","b","c","d"].table()
-// it will show
-┌─────────┬────────┐
-│ (index) │ Values │
-├─────────┼────────┤
-│    0    │  'a'   │
-│    1    │  'b'   │
-│    2    │  'c'   │
-│    3    │  'd'   │
-└─────────┴────────┘
-```
+Clase es una función especias que te ayuda a declarar la clase de una manera mas fácil y compatible. Funciona con cross-browser, y esperamos que ECMA pueda adoptar algo similar en el futuro. Para no dejar al Javascript confuso sobre esto, [QCObjects](https://qcobjects.dev) usa "Class" no "class" (note the Camel Case).

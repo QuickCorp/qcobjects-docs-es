@@ -1,13 +1,6 @@
-#### [ArrayList or Array].matrix3d
+#### ClassFactory
 
-Crea una matriz 3D
+Usa la **ClassFactory** para tener una declaración de clase de fabrica para la clase,
+también puedes usar la clase de fabrica desde un paquete o desde la fila apilada.
 
-```javascript
-let matrix3d = ArrayList.matrix3d(3,"a");
-// it will result in a 3x3 matrix with the value "a" on every element
-[
-  [ [ 'a', 'a', 'a' ], [ 'a', 'a', 'a' ], [ 'a', 'a', 'a' ] ],
-  [ [ 'a', 'a', 'a' ], [ 'a', 'a', 'a' ], [ 'a', 'a', 'a' ] ],
-  [ [ 'a', 'a', 'a' ], [ 'a', 'a', 'a' ], [ 'a', 'a', 'a' ] ]
-]
-```
+Para recuperar la clase de fabrica de la clase fila apilada simplemente usa el nombre de la clase llamándola directamente en el código.

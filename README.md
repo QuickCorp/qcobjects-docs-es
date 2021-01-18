@@ -79,7 +79,8 @@ Para todos los que no tengan tiempo de leer esto hoy, aquí hay un pequeño vide
 	- [Usando la última versión no-minificada desde CDN jsDelivr](#usando-la-ltima-versin-no-minificada-desde-cdn-jsdelivr)
 	- [Usando CDN UNPKG](#usando-cdn-unpkg)
 	- [Usando CDNJS](#usando-cdnjs)
-- [Referencia](#referencia)
+- [Essentials](#essentials)
+	- [Referencia](#referencia)
 		- [QC_Object](#qcobject)
 		- [ComplexStorageCache](#complexstoragecache)
 		- [asyncLoad](#asyncload)
@@ -145,8 +146,8 @@ Para todos los que no tengan tiempo de leer esto hoy, aquí hay un pequeño vide
 		- [Generating a Self-Signed Certificate with QCObjects](#generating-a-self-signed-certificate-with-qcobjects)
 		- [Working with a Letsencrypt HTTPS certificate, Certbot and QCObjects](#working-with-a-letsencrypt-https-certificate-certbot-and-qcobjects)
 - [Quick Start Guide](#quick-start-guide)
-		- [Quick Start your PWA (Progressive Web App)](#quick-start-your-pwa-progressive-web-app)
-		- [Quick Start your AMP (Accelerated Mobile Page)](#quick-start-your-amp-accelerated-mobile-page)
+	- [Quick Start your PWA (Progressive Web App)](#quick-start-your-pwa-progressive-web-app)
+	- [Quick Start your AMP (Accelerated Mobile Page)](#quick-start-your-amp-accelerated-mobile-page)
 - [Start Coding](#start-coding)
 	- [Step 1: Start creating a main import file and name it like: cl.quickcorp.js. Put it into packages/js/ file directory](#step-1-start-creating-a-main-import-file-and-name-it-like-clquickcorpjs-put-it-into-packagesjs-file-directory)
 	- [Step 2: Then create some services inhereting classes into the file js/packages/cl.quickcorp.services.js :](#step-2-then-create-some-services-inhereting-classes-into-the-file-jspackagesclquickcorpservicesjs-)
@@ -543,7 +544,9 @@ No necesitas minificar QCObjects, pero si aún quieres usar el codigo minificado
 
 Otra vez cambia 2.1.420 al numero de la versión que quieras usar.
 
-# Referencia
+# Essentials
+
+## Referencia
 
 Aquí están los símbolos y conceptos esenciales de referencia [QCObjects](https://qcobjects.dev)
 
@@ -2946,13 +2949,13 @@ Para permitir que QCObjects entienda y ejecute sus microservicios de la manera c
 
 # Quick Start Guide
 
-### Quick Start your PWA (Progressive Web App)
+## Quick Start your PWA (Progressive Web App)
 
 ```shell
 > qcobjects create --pwa mynewapp
 ```
 
-### Quick Start your AMP (Accelerated Mobile Page)
+## Quick Start your AMP (Accelerated Mobile Page)
 
 ```shell
 > qcobjects create --amp mynewapp

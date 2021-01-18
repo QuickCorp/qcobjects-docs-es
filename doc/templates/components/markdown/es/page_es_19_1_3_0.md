@@ -1,9 +1,3 @@
-#### [ArrayList or Array].unique
+#### asyncLoad
 
-Filtra un objeto Array o ArrayList para obtener solo elementos únicos.
-NOTA: Solo filtra una secuencia de valor único.
-
-```javascript
-let my_unique_list = [0,1,2,1,2].unique()
-// will result in: my_unique_list = [ 0, 1, 2 ]
-```
+La función **asyncLoad** carga el código una vez en el modo asyc. Esto es útil para asegurar que el proceso inicial no replica la ejecución y no es recargado después de un código sensible.

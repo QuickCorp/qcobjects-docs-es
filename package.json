@@ -16,6 +16,6 @@
   "main": "js/init.js",
   "license": "LGPL-3.0-or-later",
   "dependencies": {
-    "qcobjects": "latest"
+    "qcobjects": "^2.2.630"
   }
 }

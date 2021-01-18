@@ -1,3 +1,3 @@
-#### [ArrayList or Array].matrix
+#### New
 
-Genera una matriz en una dimensión.
+Crea una instancia de objeto de una definición de clase de QCObject.

@@ -1,7 +1,3 @@
-#### ArrayCollection
+#### ComplexStorageCache
 
-Una definición extendida para manejo avanzado de colecciones
-
-```javascript
-let collection = New(ArrayCollection, {source:[0,1,2]});
-```
+Con **ComplexStorageCache** puedes manejar el cache de cualquier objeto y subirlo en el storage local.
