@@ -1,0 +1,112 @@
+<style>
+  @import url('./doc/css/github-style.css');
+  @import url('./doc/css/snippet.css');
+
+    /* If you use shadowed=true
+    This style will be automatically shadowed in the browser */
+    article {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(228, 228, 234, 0.5) 0px 9px 23px 0px;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      margin: 0 auto;
+      min-height: 100%;
+      height: auto;
+      border-radius: 30px;
+      display: block;
+      padding: 3%;
+      background-color: #ffffff;
+    }
+
+
+    a{
+      /* These are technically the same, but use both */
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      -ms-word-break: break-all;
+      /* This is the dangerous one in WebKit, as it breaks things wherever */
+      word-break: break-all;
+      /* Instead use this non-standard one: */
+      word-break: break-word;
+
+      /* Adds a hyphen where the word breaks, if supported (No Blink) */
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+    p:not(:first-child) {
+      margin: 1% 5%;
+      font-size: medium;
+      display: block;
+    }
+    h1, h2 {
+      margin: 2% 3%;
+    }
+    ul {
+      margin: auto 4%;
+    }
+  </style>
+
+</style>
+<article>
+    <component name="blank" tplextension="md" componentClass="MarkdownComponent" controllerClass="MarkdownController">
+      <routing path="#author" name="markdown/en/AUTHOR" ></routing>
+      <routing path="#installing" name="markdown/en/page_en_19" ></routing>
+      <routing path="#essentials" name="markdown/en/page_en_20" ></routing>
+      <routing path="#qcobjects" name="markdown/en/page_en_20_1_1" ></routing>
+      <routing path="#complexstoragecache" name="markdown/en/page_en_20_1_2" ></routing>
+      <routing path="#asyncload" name="markdown/en/page_en_20_1_3" ></routing>
+      <routing path="#class" name="markdown/en/page_en_20_1_4" ></routing>
+      <routing path="#qcappend-append-method" name="markdown/en/page_en_20_1_5" ></routing>
+      <routing path="#the-super-method" name="markdown/en/page_en_20_1_6" ></routing>
+      <routing path="#new" name="markdown/en/page_en_20_1_7" ></routing>
+      <routing path="#inheritclass" name="markdown/en/page_en_20_1_8" ></routing>
+      <routing path="#classfactory" name="markdown/en/page_en_20_1_9" ></routing>
+      <routing path="#crypt" name="markdown/en/page_en_20_1_10" ></routing>
+      <routing path="#global" name="markdown/en/page_en_20_1_11" ></routing>
+      <routing path="#config" name="markdown/en/page_en_20_1_12" ></routing>
+      <routing path="#processor" name="markdown/en/page_en_20_1_13" ></routing>
+      <routing path="#waituntil" name="markdown/en/page_en_20_1_14" ></routing>
+      <routing path="#package" name="markdown/en/page_en_20_1_15" ></routing>
+      <routing path="#import" name="markdown/en/page_en_20_1_16" ></routing>
+      <routing path="#export" name="markdown/en/page_en_20_1_17" ></routing>
+      <routing path="#cast" name="markdown/en/page_en_20_1_18" ></routing>
+      <routing path="#tag" name="markdown/en/page_en_20_1_19" ></routing>
+      <routing path="#ready" name="markdown/en/page_en_20_1_20" ></routing>
+      <routing path="#component-class" name="markdown/en/page_en_20_1_21" ></routing>
+      <routing path="#component-html-tag" name="markdown/en/page_en_20_1_22" ></routing>
+      <routing path="#controller" name="markdown/en/page_en_20_1_23" ></routing>
+      <routing path="#view" name="markdown/en/page_en_20_1_24" ></routing>
+      <routing path="#vo" name="markdown/en/page_en_20_1_25" ></routing>
+      <routing path="#service" name="markdown/en/page_en_20_1_26" ></routing>
+      <routing path="#serviceloader" name="markdown/en/page_en_20_1_27" ></routing>
+      <routing path="#jsonservice" name="markdown/en/page_en_20_1_28" ></routing>
+      <routing path="#configservice" name="markdown/en/page_en_20_1_29" ></routing>
+      <routing path="#sourcejs" name="markdown/en/page_en_20_1_30" ></routing>
+      <routing path="#sourcecss" name="markdown/en/page_en_20_1_31" ></routing>
+      <routing path="#effect" name="markdown/en/page_en_20_1_32" ></routing>
+      <routing path="#timer" name="markdown/en/page_en_20_1_33" ></routing>
+      <routing path="#list-and-math-functions" name="markdown/en/page_en_20_2" ></routing>
+      <routing path="^#sdk$" name="markdown/en/page_en_20_3" ></routing>
+      <routing path="#sdk-components" name="markdown/en/page_en_20_3_1" ></routing>
+      <routing path="#sdk-controllers" name="markdown/en/page_en_20_3_2" ></routing>
+      <routing path="#sdk-effects" name="markdown/en/page_en_20_3_3" ></routing>
+      <routing path="#sdk-misc-tools" name="markdown/en/page_en_20_3_4" ></routing>
+      <routing path="#sdk-views" name="markdown/en/page_en_20_3_5" ></routing>
+      <routing path="#sdk-i18n-messages" name="markdown/en/page_en_20_3_6" ></routing>
+      <routing path="#the-qcobjects-http2-built-in-server" name="markdown/en/page_en_20_4" ></routing>
+      <routing path="#start-serving-your-files-with-qcobjects" name="markdown/en/page_en_20_4_1" ></routing>
+      <routing path="#principals-of-an-n-tier-or-multitier-architecture" name="markdown/en/page_en_20_4_2" ></routing>
+      <routing path="#micro-services-principals" name="markdown/en/page_en_20_4_3" ></routing>
+      <routing path="#backend-settings-in-configjson" name="markdown/en/page_en_20_4_4" ></routing>
+      <routing path="#backend-routing" name="markdown/en/page_en_20_4_5" ></routing>
+      <routing path="#the-qcobjects-microservice-class-and-package" name="markdown/en/page_en_20_4_6" ></routing>
+      <routing path="#generating-a-self-signed-certificate-with-qcobjects" name="markdown/en/page_en_20_4_7" ></routing>
+      <routing path="#working-with-a-letsencrypt-https-certificate-certbot-and-qcobjects" name="markdown/en/page_en_20_4_8" ></routing>
+      <routing path="#qcobjects-cli-tool" name="markdown/en/page_en_23" ></routing>
+      <routing path="^#$" name="markdown/en/page_en_1" ></routing>
+      <routing path="^$" name="markdown/en/page_en_1" ></routing>
+    </component>
+
+</article>
