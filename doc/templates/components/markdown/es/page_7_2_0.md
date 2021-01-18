@@ -1,0 +1,3 @@
+### Carga de recursos On-Demand
+
+Con la arquitectura orientada a los componentes dinámicos, QCObjects renderiza cada recurso visual que esta dentro de un componente, solo cuando el componente se esta construyendo y cada componente esta conectado a un árbol llamado global.componentsStack ese es el que realmente esta apuntando a cada instancia de componente y sus a sus sub componentes. Cada vez que un componente es re-hecho, los recursos visuales están dinámicamente recargados bajo demanda de la manera mas eficiente, así que puedes olvidar esos horribles códigos donde necesitabas controlar el proceso de recarga de los recursos con otros frameworks.

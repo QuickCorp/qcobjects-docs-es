@@ -1,3 +1,6 @@
+
+# QCObjects
+
 ![logo](https://qcobjects.dev/qcobjects_01.png)
 
 [![GitHub license](https://img.shields.io/github/license/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects/blob/master/LICENSE.txt) [![](https://data.jsdelivr.com/v1/package/npm/qcobjects/badge)](https://www.jsdelivr.com/package/npm/qcobjects)  [![Badge for version for Visual Studio Code extension Quickcorp.QCObjects-vscode](https://vsmarketplacebadge.apphb.com/version/Quickcorp.QCObjects-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode) [![Documentation Status](https://readthedocs.org/projects/qcobjects/badge/?version=latest)](https://qcobjects.readthedocs.io/?badge=latest) [![GitHub release](https://img.shields.io/github/issues/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects/releases/) [![GitHub stars](https://img.shields.io/github/stars/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects) [![npm version](https://badge.fury.io/js/qcobjects.svg)](https://badge.fury.io/js/qcobjects) ![apm: version](https://flat.badgen.net/apm/v/qcobjects-syntax?params) ![docker pulls](https://img.shields.io/docker/pulls/quickcorp/qcobjects.svg) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
@@ -6,118 +9,110 @@
 
 # QCObjects
 ------------------------------------
-Welcome to [QCObjects](https://qcobjects.dev). An Open-source framework that empowers full-stack developers to make micro-services and micro-frontends into an N-Tier architecture.
+Bienvenido a [QCObjects](https://qcobjects.dev). Un framework Open Source que empodera a los full-stack developers para hacer micro-servicios y micro-frontends dentro de una arquitectura N-Tier.
 
-With QCObjects devlopers are also able to code front-end and back-end together using a common syntax in pure JavaScript. It is cross-browser, cross-platform and cross-frame.
+Con QCObjects los desarrolladores están habilitados para programar front-end y back-end en conjunto usando una sintaxis común in pure JavaScript. It is cross-browser, cross-platform and cross-frame.
 
-Install it, make a textfield or a navigate home functionality, all in just one step.
+[QCObjects ha sido presentado por British Herald como el marco más avanzado para el desarrollo de software moderno.](https://britishherald.com/qcobjects-the-first-world-class-tech-framework-made-in-south-america-is-meant-to-make-developers-happier-while-they-code/)
 
-[QCObjects is being featured by British Herald as today, the most advanced framework for modern software development.](https://britishherald.com/qcobjects-the-first-world-class-tech-framework-made-in-south-america-is-meant-to-make-developers-happier-while-they-code/)
+Este documento es la documentacion referencial principal!
 
-This document is the Main Reference Documentation!
+Este repositorio y archivo léame está alojado en [https://qcobjects.dev](https://qcobjects.dev)
 
-This repository and readme is hosted at [https://qcobjects.dev](https://qcobjects.dev)
+Echa un vistazo a la página oficial de [QCObjects](https://qcobjects.com) at https://qcobjects.com
 
-Check out the official page of [QCObjects](https://qcobjects.com) at https://qcobjects.com
-
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to info@quickcorp.cl.
+Este proyecto se adhiere al Pacto Colaborador[code of conduct](CODE_OF_CONDUCT.md). Al participar, se espera que respete este código. Por favor reportar algún comportamiento inaceptable a info@quickcorp.cl.
 
 **Contributors are welcome!**
 
-You can contribute to [QCObjects](https://qcobjects.dev) following the set of guidelines expressed in the file [CONTRIBUTING.md](CONTRIBUTING.md)
+Puedes contribuir a [QCObjects](https://qcobjects.dev) siguiendo el conjunto de pautas expresadas en el archivo [CONTRIBUTING.md](CONTRIBUTING.md)
 
-# The meaning of the name QCObjects (Do not forget the Q)
+# Video Explicativo de QCObjects
 
-Often, some people is confusing **QCObjects** name with **CObjects** (perhaps some day it changes, who knows...) but the Q has an important meaning: It means Quick! What the complete name QCObjects does mean is **Quick Components and Objects**, and that is why the Q, C, O letters are capitalized.
-
-# QCObjects Explainer Video
-
-For those who have no time to read all of this today, here is a small video that explains what QCObjects is and what can be done with it.
+Para todos los que no tengan tiempo de leer esto hoy, aquí hay un pequeño video que explica que es QCObjects y que puedes hacer con el.
 
 [![QCObjects Explainer Video](https://img.youtube.com/vi/D0rftABPGvQ/0.jpg)](https://www.youtube.com/watch?v=D0rftABPGvQ "QCObjects Explainer Video")
 
-_________________________
-# Table of Contents
+# Tabla de Contenidos
 
 <!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [QCObjects](#qcobjects)
-- [QCObjects Explainer Video](#qcobjects-explainer-video)
-- [Table of Contents](#table-of-contents)
-- [Principals](#principals)
-- [Main features](#main-features)
-- [Progressive Web Apps (PWA) Adopted Features](#progressive-web-apps-pwa-adopted-features)
-	- [Prevent Render-blocking resources](#prevent-render-blocking-resources)
-	- [On-Demand Resources Load](#on-demand-resources-load)
-	- [Lazy-loading of images in components (use lazy-src instead of src attribute in img tag)](#lazy-loading-of-images-in-components-use-lazy-src-instead-of-src-attribute-in-img-tag)
-- [Cross Browser Javascript Framework for MVC Patterns](#cross-browser-javascript-framework-for-mvc-patterns)
-- [Dynamic Components Architecture](#dynamic-components-architecture)
-- [ECMA-262 Specification](#ecma-262-specification)
+- [Video Explicativo de QCObjects](#video-explicativo-de-qcobjects)
+- [Tabla de Contenidos](#tabla-de-contenidos)
+- [Principios](#principios)
+- [Características principales](#caracter%C3%ADsticas-principales)
+- [Características Adoptadas de Apps Web Progresivas (PWA)](#caracter%C3%ADsticas-adoptadas-de-apps-web-progresivas-pwa)
+	- [Prevenir recursos Render-blocking](#prevenir-recursos-render-blocking)
+	- [Carga de recursos On-Demand](#carga-de-recursos-on-demand)
+	- [Lazy-loading de imágenes y componentes (usar atributo lazy-src en vez de src en tag img )](#lazy-loading-de-im%C3%A1genes-y-componentes-usar-atributo-lazy-src-en-vez-de-src-en-tag-img-)
+- [Cross Browser Javascript Framework para patrones MVC](#cross-browser-javascript-framework-para-patrones-mvc)
+- [Arquitectura de Componentes Dinámicos](#arquitectura-de-componentes-din%C3%A1micos)
+- [Especificación ECMA-262](#especificaci%C3%B3n-ecma-262)
 - [Copyright](#copyright)
 - [Demo](#demo)
 	- [PWA Live Demo](#pwa-live-demo)
-	- [Demo Integrating with Foundation](#demo-integrating-with-foundation)
-	- [Demo Integrating with Materializecss](#demo-integrating-with-materializecss)
-	- [Demo Using Raw CSS](#demo-using-raw-css)
-	- [Example of QCObjects using and manipulating canvas objects](#example-of-qcobjects-using-and-manipulating-canvas-objects)
+	- [Demo Integrada con Foundation](#demo-integrada-con-foundation)
+	- [Demo Integrada con Materializecss](#demo-integrada-con-materializecss)
+	- [Demo Usando Raw CSS](#demo-usando-raw-css)
+	- [Ejemplo de QCObjects usando y manipulando objetos canvas](#ejemplo-de-qcobjects-usando-y-manipulando-objetos-canvas)
 - [DevBlog](#devblog)
 - [Fork](#fork)
-- [Become a Sponsor](#become-a-sponsor)
-- [Check out the QCObjects SDK](#check-out-the-qcobjects-sdk)
-- [Donate](#donate)
-- [Installing](#installing)
-	- [Using QCObjects with Atom:](#using-qcobjects-with-atom)
-	- [Using QCObjects in Visual Studio Code:](#using-qcobjects-in-visual-studio-code)
-	- [Installing with NPM:](#installing-with-npm)
-	- [Installing the docker playground:](#installing-the-docker-playground)
-	- [One-Step Installation Script for Ubuntu 18.x](#one-step-installation-script-for-ubuntu-18x)
-	- [One-Step Installation Script for macOS](#one-step-installation-script-for-macos)
-	- [Install and test QCObjects on Microsoft Windows OS](#install-and-test-qcobjects-on-microsoft-windows-os)
-	- [QCObjects Multi-Cloud Installation](#qcobjects-multi-cloud-installation)
+- [Conviértete en Sponsor](#convi%C3%A9rtete-en-sponsor)
+- [Revisa el SDK de QCObjects](#revisa-el-sdk-de-qcobjects)
+- [Donar](#donar)
+- [Instalar](#instalar)
+	- [Usando QCObjects con Atom:](#usando-qcobjects-con-atom)
+	- [Usando QCObjects con Visual Studio Code:](#usando-qcobjects-con-visual-studio-code)
+	- [Instalando con NPM:](#instalando-con-npm)
+	- [Instalando el docker playground:](#instalando-el-docker-playground)
+	- [Script de instalación One-Step para Ubuntu 18.x](#script-de-instalaci%C3%B3n-one-step-para-ubuntu-18x)
+	- [Script de instalación One-Step for macOS](#script-de-instalaci%C3%B3n-one-step-for-macos)
+	- [Instalar y probar QCObjects en Sistema Operativo Microsoft Windows](#instalar-y-probar-qcobjects-en-sistema-operativo-microsoft-windows)
+	- [Instalación QCObjects Multi-Cloud](#instalaci%C3%B3n-qcobjects-multi-cloud)
 		- [DigitalOcean One-Click Droplet](#digitalocean-one-click-droplet)
 		- [AWS Amazon Machine Images (AMI)](#aws-amazon-machine-images-ami)
 		- [Amazon Web Services AWS PIB (Private Amazon Machine Image)](#amazon-web-services-aws-pib-private-amazon-machine-image)
-	- [Using the development version code in the straight way into HTML5:](#using-the-development-version-code-in-the-straight-way-into-html5)
-	- [Using the CDN minified version code from jsDelivr CDN](#using-the-cdn-minified-version-code-from-jsdelivr-cdn)
-	- [Using the latest non-minified version from jsDelivr CDN](#using-the-latest-non-minified-version-from-jsdelivr-cdn)
-	- [Using UNPKG CDN](#using-unpkg-cdn)
-	- [Using CDNJS](#using-cdnjs)
-- [Reference](#reference)
-	- [Essentials](#essentials)
-		- [QC_Object](#qcobject)
-		- [ComplexStorageCache](#complexstoragecache)
-		- [asyncLoad](#asyncload)
-		- [Class](#class)
-		- [QC_Append, append method](#qcappend-append-method)
-		- [The \_super\_ method](#the-super-method)
-		- [New](#new)
-		- [InheritClass](#inheritclass)
-		- [ClassFactory](#classfactory)
-		- [\_Crypt](#crypt)
-		- [GLOBAL](#global)
-		- [CONFIG](#config)
-		- [Processor](#processor)
-		- [waitUntil](#waituntil)
-		- [Package](#package)
-		- [Import](#import)
-		- [Export](#export)
-		- [Cast](#cast)
-		- [Tag](#tag)
-		- [Ready](#ready)
-		- [Component Class](#component-class)
-		- [Component HTML Tag](#component-html-tag)
-		- [Controller](#controller)
-		- [View](#view)
-		- [VO](#vo)
-		- [Service](#service)
-		- [serviceLoader](#serviceloader)
-		- [JSONService](#jsonservice)
-		- [ConfigService](#configservice)
-		- [SourceJS](#sourcejs)
-		- [SourceCSS](#sourcecss)
-		- [Effect](#effect)
-		- [Timer](#timer)
-	- [List and Math Functions](#list-and-math-functions)
+	- [Usando el código de la versión de desarrollo directo en HTML5](#usando-el-c%C3%B3digo-de-la-versi%C3%B3n-de-desarrollo-directo-en-html5)
+	- [Usando la versión minificada de código CDN desde jsDelivr](#usando-la-versi%C3%B3n-minificada-de-c%C3%B3digo-cdn-desde-jsdelivr)
+	- [Usando la última versión no-minificada desde CDN jsDelivr](#usando-la-%C3%BAltima-versi%C3%B3n-no-minificada-desde-cdn-jsdelivr)
+	- [Usando CDN UNPKG](#usando-cdn-unpkg)
+	- [Usando CDNJS](#usando-cdnjs)
+- [Referencia](#referencia)
+	- [QC_Object](#qc_object)
+	- [ComplexStorageCache](#complexstoragecache)
+	- [asyncLoad](#asyncload)
+	- [Class](#class)
+	- [Método QC_Append, append](#m%C3%A9todo-qc_append-append)
+	- [El método \_super\_](#el-m%C3%A9todo-%5C_super%5C_)
+	- [New](#new)
+	- [InheritClass](#inheritclass)
+	- [ClassFactory](#classfactory)
+	- [\_Crypt](#%5C_crypt)
+	- [GLOBAL](#global)
+	- [CONFIG](#config)
+	- [Processor](#processor)
+	- [waitUntil](#waituntil)
+	- [Package](#package)
+	- [Import](#import)
+	- [Export](#export)
+	- [Cast](#cast)
+	- [Tag](#tag)
+	- [Ready](#ready)
+	- [Component Class](#component-class)
+	- [Tag HTML Component](#tag-html-component)
+	- [Controller](#controller)
+	- [View](#view)
+	- [VO](#vo)
+	- [Service](#service)
+	- [serviceLoader](#serviceloader)
+	- [JSONService](#jsonservice)
+	- [ConfigService](#configservice)
+	- [SourceJS](#sourcejs)
+	- [SourceCSS](#sourcecss)
+	- [Effect](#effect)
+	- [Timer](#timer)
+	- [Funciones de lista y matemáticas](#funciones-de-lista-y-matem%C3%A1ticas)
 		- [ArrayList](#arraylist)
 		- [ArrayCollection](#arraycollection)
 		- [[ArrayList or Array].unique](#arraylist-or-arrayunique)
@@ -149,14 +144,14 @@ _________________________
 		- [Generating a Self-Signed Certificate with QCObjects](#generating-a-self-signed-certificate-with-qcobjects)
 		- [Working with a Letsencrypt HTTPS certificate, Certbot and QCObjects](#working-with-a-letsencrypt-https-certificate-certbot-and-qcobjects)
 - [Quick Start Guide](#quick-start-guide)
-		- [Quick Start your PWA (Progressive Web App)](#quick-start-your-pwa-progressive-web-app)
-		- [Quick Start your AMP (Accelerated Mobile Page)](#quick-start-your-amp-accelerated-mobile-page)
+	- [Quick Start your PWA (Progressive Web App)](#quick-start-your-pwa-progressive-web-app)
+	- [Quick Start your AMP (Accelerated Mobile Page)](#quick-start-your-amp-accelerated-mobile-page)
 - [Start Coding](#start-coding)
 	- [Step 1: Start creating a main import file and name it like: cl.quickcorp.js. Put it into packages/js/ file directory](#step-1-start-creating-a-main-import-file-and-name-it-like-clquickcorpjs-put-it-into-packagesjs-file-directory)
 	- [Step 2: Then create some services inhereting classes into the file js/packages/cl.quickcorp.services.js :](#step-2-then-create-some-services-inhereting-classes-into-the-file-jspackagesclquickcorpservicesjs-)
 	- [Step 3: Now it's time to create the components (cl.quickcorp.components.js)](#step-3-now-its-time-to-create-the-components-clquickcorpcomponentsjs)
 	- [Step 4: Once you have done the above components declaration, you will now want to code your controllers (cl.quickcorp.controller.js)](#step-4-once-you-have-done-the-above-components-declaration-you-will-now-want-to-code-your-controllers-clquickcorpcontrollerjs)
-	- [Step 5: To use into the HTML5 code you only need to do some settings between script tags:](#step-5-to-use-into-the-html5-code-you-only-need-to-do-some-settings-between-script-tags)
+	- [Step 5: To use into the HTML5 code you only need to do some settings between script tags](#step-5-to-use-into-the-html5-code-you-only-need-to-do-some-settings-between-script-tags)
 - [QCObjects CLI Tool](#qcobjects-cli-tool)
 	- [Usage](#usage)
 	- [Options](#options)
@@ -168,130 +163,122 @@ _________________________
 
 
 
-# Principals
+# Principios
 
-Here are the principals with QCObjects was made with:
+Aquí están Las directrices con lo que QCObjects fue hecho:
 
-0. You should type in JavaScript to code a JavaScript application.
-1. Everything is an object.
-2. Every object has a definition.
-3. On the front-end side, any object can be stacked into the DOM or Virtual-DOM without the need to re-declare its definition.
-4. Every object has a body.
-5. A class should be the main definition of an object.
-6. A class should be easy typed as an object itself.
-7. Your code should be easily organised into packages.
-8. Your code should be possible to easily scafold your applications into a clean architecture.
-9. A component is an entity that has an object representation, and a tag declaration. The content of a component should be possible to be filled up remotely and locally. As a component is an object, it has a body as well, and the body of the component normally is an stacked instance of a DOM element.
-10. A component can be attached to the DOM or detached from it without affecting its functionality.
-11. A service call can be extended to scafold its functionality.
-12. You should be able to import a package remotely.
-13. You should be able to scafold your code and also controlling your savings on the server side by not doing unnecessary calls to remote sources. You should not need to repeat yourself coding this kind of controls.
-14. You should be able to code your N-Tier application in a single language or syntax.
-15. You should be able to apply any template you want to a component, it doesn't matter the what syntax or language the template was written with.
-16. If an HTML tag is already represented by a DOM object instance, you should not need to duplicate this instance definition in order to render its contents.
-17. Your HTML main page should be clean. But you should be able to bind what controls the tag behaviour without affecting the HTML syntax.
-18. The order of execution of your code should be easily understandable and readable from the code, and the rendering process of every component should have and execution control in as many layers you need.
-19. A layered pattern (like MVC or MVCC) should be present for every component. It doesn't matter if you define every layer or not.
-20. The behaviour of a component should not be determined by its rendering process.
-21. It is necessary a components stack that splits the DOM into a subjacent tree of attached elements. So now it exists and it is called The QCObjects Nested Components Stack.
-22. You should be able to extend a component instance. But you should be able to control its dynamic behaviour without affecting its initial declaration.
-23. You should be able to apply simultaneous visual effects and animations in an easy way to any DOM element instance.
-24. You should be able to control the visual effects and animations either from CSS or JavaScript without affecting the performance.
-25. You should be able to control the behaviour of your code Into-the-box and out-of-the-box and survive doing it.
+0. Deberá escribir en JavaScript para codificar una aplicación JavaScript.
+1. Todo es un objeto.
+2. Cada objeto tiene una definición.
+3. En la interfaz, cualquier objeto puede ir apilado en el DOM o en el Virtual-DOM sin necesidad de redeclarar sus definiciones.
+4. Cada objeto tiene un cuerpo.
+5. La clase debería ser la definición principal de un objeto.
+6. La clase debería ser fácilmente escrita como un objeto.
+7. Tu Código debería estar fácilmente organizado en paquetes.
+8. Debería ser posible escalar sus aplicaciones a una arquitectura limpia.
+9. Un componente es una entidad que tiene un objeto como representación. El contenido de un componente debería ser posible rellenarlo remotamente como localmente. Como objeto el componente tiene cuerpo También y el cuerpo del componente es normalmente una instancia apilada del DOM element.
+10. Un componente puede ser adjunto al DOM o separado del el sin afectar a su funcionalidad.
+11. Un servicio de llamada puede ser extendido a escalar su funcionalidad.
+12. Deberías ser capaz de importar un paquete remotamente.
+13. Deberías poder escalar tu código y también controlar tus cambios en el servidor sin hacer llamadas innecesarias a fuentes remotas. No deberías necesitar codificar estos tipos de controles usted mismo.
+14. Deberías ser capaz de codificar tu aplicación N-Tier en un solo lenguaje o sintaxis.
+15. Deberías ser capaz de aplicar cualquier plantilla que quieras a un componente, no importa la sintaxis o el idioma en el que esta escrito.
+16. Si una etiqueta HTML esta ya representada por una instancia de objeto DOM, no deberías necesitar duplicar la defunción de la instancia para representar su contenido.
+17. Tu pagina principal HTML debería estar limpia, pero deberías poder enlazar lo que controla el comportamiento de la etiqueta sin afectar la sintaxis del HTML.
+18. El orden de ejecución de tu código debe ser fácil de entender y leer desde el codigo y el proceso de renderizado de cada componente debería tener y ejecutar control en cuantas capas necesites.
+19.Un patrón en capas(como el MVC o MVCC) debería estar presente para cada componente. No importa si defines cada capa o no.
+20. El comportamiento de un componente no debe estar determinado por su proceso de renderizado
+21. Es necesario que la pila de componentes se divida en el DOM hacia un árbol subyacente de elementos adjuntos.Entonces ahora existe y se llama Pila anidada de componentes de QCObject.
+22. Deberías ser capaz de extender una instancia de componente. Pero deberás ser capaz de controlar su comportamiento dinámico sin afectar a la declaración inicial.
+23. Deberías ser capaz de aplicar efectos visuales y animaciones simultaneas de una manera facil a una instancia de elemento DOM.
+24. Deberías ser capaz de controlar los efectos visuales y animaciones de CSS como JavaScript sin afectar a su desempeño.
+25.Deberías ser capaz de controlar el comportamiento de tu código Into-the-box y out-of-the-box y sobrevivir haciéndolo.
 
-# Main features
+# Características principales
 
 
-- Built-In & custom templates for Progressive Web Apps (PWA) and Accelerated Mobile Pages (AMP)
-- Revolutionary UI Effects
-- Breakthrough backend micro-services
-- The simplicity of a wonderful layout design
-- Fully usable CLI tools
-- Objects & Components driven architecture
-- Front-end and back-end together in a full-stack environment
-- Recursive routing for components
-- Built-In nested components management
-- Fully integrated MVC pattern (Model, View, Controller)
-- Dynamic Data Objects
-- Based on N-Tier Architecture concepts
+- Plantillas Built-In personalizadas para Progressive Web Apps (PWA) y Accelerated Mobile Pages (AMP)
+- Efectos UI revolucionarios.
+- Backend de micro-servicios avanzados.
+- La simplicidad de un maravilloso diseño de layouts.
+- Herramientas CLI completamente re-utilizables.
+- Arquitectura orientada a componentes y objetos
+- Front-end y back-end juntos en un entorno Full-Stack
+- Routing recursivo para componentes.
+- Administración de componentes anidados Built-In
+- Patron MCV completamente integrado (Model, View, Controller)
+- Objetos de datos dinamicos
+- Conceptos basados en la arquitectura N-Tier
 
-# Progressive Web Apps (PWA) Adopted Features
+# Características Adoptadas de Apps Web Progresivas (PWA)
 
-## Prevent Render-blocking resources
+## Prevenir recursos Render-blocking
 
-To prevent Render-blocking resources, QCObjects has implemented the [Package](#Package) factory function.
+Para prevenir los recursos Render-blocking , QCObjects ha implementado la función de fabrica [paquete](#Package)
 
-## On-Demand Resources Load
+## Carga de recursos On-Demand
 
-With a dynamic components driven architecture, QCObjects is rendering every visual resource that is inside of a component only when the component is building itself, and every component is connected to a tree called global.componentsStack that is actually pointing to every component instance and its subcomponents. Every time a component is rebuilt, visual resources are dynamically reloaded on-demand in the most efficient way, so you can forget all the nasty code that you were needing to controll the resource loading process with other frameworks.
+Con la arquitectura orientada a los componentes dinámicos, QCObjects renderiza cada recurso visual que esta dentro de un componente, solo cuando el componente se esta construyendo y cada componente esta conectado a un árbol llamado global.componentsStack ese es el que realmente esta apuntando a cada instancia de componente y sus a sus sub componentes. Cada vez que un componente es re-hecho, los recursos visuales están dinámicamente recargados bajo demanda de la manera mas eficiente, así que puedes olvidar esos horribles códigos donde necesitabas controlar el proceso de recarga de los recursos con otros frameworks.
 
-## Lazy-loading of images in components (use lazy-src instead of src attribute in img tag)
+## Lazy-loading de imágenes y componentes (usar atributo lazy-src en vez de src en tag img )
 
-Since the version 2.1.251, QCObjects provide an easy way to lazy load the images, using the latest standard for browsers.
+Desde la versión 2.1.251, QCObjects te otorga una forma fácil para el Lazy load de imágenes, usando el ultima estándar para los buscadores.
 
 ```html
 <img src="img/preloader.svg" lazy-src="img/myrealimage.png"/>
 ```
+En lo anterior, una imagen (ligera) precargada, es usada para ser cargada en la primera instancia y un atributo **lazy-src** es usado para cargar la imagen real después del proceso Lazy load. QCObjects cargara todos las **<img>** etiquetas declaradas dentro de un componente en el lazy mode si tiene un atributo lazy-src, después que un componente es rearmado o cargado. También, QCObjects usara [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) (Cuando este disponible) para determinar ya sea si el lazy-src o la imagen src son visualmente útiles para ser mostradas.
 
-In the above code, a preloader (light-weight) image is used to be loaded in the first instance, and a **lazy-src** attribute is used to set the real image to show after lazy loading process. QCObjects will load all the **<img>** declared tags inside a component in lazy mode if they have a lazy-src attribute, after the component is rebuilt or loaded. Also, QCObjects will use the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) (when available) to determine whether the lazy-src or src image is visually useful to be showed.
+El efecto del Lazy loading es altamente visible solo si la primera vez el PWA es cargado. La próxima vez, la velocidad de carga aumentara significativamente haciendo difícil para el ojo humano ver el resultado. Sin embargo esta característica hará mucho la diferencia en términos de experiencia de usuario, si existen problemas de conexión o las imágenes son muy grandes esta característica es parte de las recomendadas por os escritores de PWA por [Mozzila Developers Network](https://developer.mozilla.org/) un articulo sobre Loadig progresivo. Puedes leer el articulo [here](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading)
 
-The effect of lazy loading is only high visible on the first time the PWA is loaded. The next time, the speed of loading will be significantly increased making more difficult to the human eye to see the result. However this feature makes a lot of difference in terms of user experience when the internet connection has low speed issues or the images are extremely large. This feature is a part of the recommended features for PWAs writen by [Mozzila Developers Network](https://developer.mozilla.org/) in an article about Progressive loading. You can read that article [here](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading)
-
-If you don't want to use lazy loading for images, you can always keep the normal way of loading by not adding the **lazy-src** attribute to the **<img>** tag and using the traditional **src**.
+Si no quieres usar lazy loading para las imágenes, siempre puedes mantener la forma usual de carga no añadiendo el atributo **lazy-src**  a la etiqueta **<img>** y usando el tradicional **src**.
 
 
-# Cross Browser Javascript Framework for MVC Patterns
-----------------------------------------
+# Cross Browser Javascript Framework para patrones MVC
 
-[QCObjects](https://qcobjects.dev) is a javascript framework designed to make easier everything about the MVC patterns implementation into the pure javascript scope. You don't need to use typescript nor any transpiler to run [QCObjects](https://qcobjects.dev). It runs directly on the browser and it uses pure javascript with no extra dependencies of code. You can make your own components expressed in real native javascript objects or extend a native DOM object to use in your own way. You can also use [QCObjects](https://qcobjects.dev) in conjunction with CSS3 frameworks like [Foundation] (https://foundation.zurb.com), [Bootstrap] (https://getbootstrap.com) and mobile javascript frameworks like [PhoneGap] (https://phonegap.com) and OnsenUI (https://onsen.io)
+[QCObjects](https://qcobjects.dev)Es un framework de Javascript diseñado para hacer todo mas fácil sobre la implementación de los MVC patters en el alcance de pure Javascript. No necesitas utilizar un typescript ni ningún transpiler para que corra. [QCObjects](https://qcobjects.dev). Corre directamente en el buscador y usa pure javascrpt sin ninguna dependencia de código extra. Puedes crear tus propios componentes expresados en objetos nativos reales de Javascript o  objetos nativos DOM extendidos para usarlos a tu manera. Puedes también usar QCObjects](https://qcobjects.dev) En conjunto con CSS3 frameworks como [Foundation] (https://foundation.zurb.com), [Bootstrap] (https://getbootstrap.com) Y frameworks de mobil javascript como [PhoneGap] (https://phonegap.com) y OnsenUI (https://onsen.io)
 
 ![screenshot](https://qcobjects.dev/doc/img/components.gif)
 
-# Install it, make a textfield or a navigate home functionality, all in just one step.
-
-QCObjects in installable in your computer, it comes with a CLI Tool and commands to create your application template in one step. Navigate home without leaving the webpage and make a shadowed textfield in one step.
-
-# Dynamic Components Architecture
+# Arquitectura de Componentes Dinámicos
 
 ![qcobjects components layout](https://qcobjects.dev/doc/img/QCObjects-Components-Layout.gif)
 
 
-# ECMA-262 Specification
---------------------------
+# Especificación ECMA-262
+
 See
-[ECMAScript® 2020 Language Specification](https://tc39.github.io/ecma262/#sec-intro) for reference
+[ECMAScript® 2020 Language Specification](https://tc39.github.io/ecma262/#sec-intro) como referencia.
 
 # Copyright
------------
 
 Copyright (c) Jean Machuca and [QuickCorp](https://quickcorp.org) <info@quickcorp.cl>
 
 # Demo
---------------
 
 ## PWA Live Demo
 
-Check out a live demo of pure QCObjects based frontend Progressive Web App here:
+Mira esta demo en vivo de pure QCObjects basado en aplicación web fronted aquí:
 [PWA QCObjects](https://newapp.qcobjects.dev/)
 
-## Demo Integrating with Foundation
+## Demo Integrada con Foundation
 
-Check out a demo using Foundation components here:
-[Demo Using Foundation](https://github.com/QuickCorp/quickobjects_sample1foundation)
+A continuación, una demostración en vivo usando componentes de Foundation aquí:
+[Demo usando Foundation](https://github.com/QuickCorp/quickobjects_sample1foundation)
 
-## Demo Integrating with Materializecss
+## Demo Integrada con Materializecss
 
-Check out a demo using MaterializeCSS here:
+Revisa la demostración usando  MaterializeCSS aquí:
 [Demo Using Materializecss](https://qln.link)
 
-## Demo Using Raw CSS
+## Demo Usando Raw CSS
 
-Check out a demo using raw CSS:
+Revisa esta demo usando raw CSS aquí:
 [Demo Using Raw CSS](https://github.com/QuickCorp/qcobjects_profile_browser)
 
-## Example of QCObjects using and manipulating canvas objects
+## Ejemplo de QCObjects usando y manipulando objetos canvas
 
-The following code shows how QCObjects can manipulate canvas objects directly and inside components
+A continuación el código muestra como QCObjects puede manipular un objeto de lienzo directamente y dentro de componentes
 
 ```html
 <!DOCTYPE html>
@@ -388,57 +375,54 @@ The following code shows how QCObjects can manipulate canvas objects directly an
 ```
 
 # DevBlog
---------------
-The [Official DevBlog of QCObjects](https://devblog.qcobjects.org/) is hosted on [Hashnode](https://hashnode.com/). The DevBlog is personally written by Jean Machuca, the author of [QCObjects](https://qcobjects.com) and and he is explaining in detail how are the best practices and giving the best tips and tricks to use the most advanced features of QCObjects.
+
+el [Official DevBlog of QCObjects](https://devblog.qcobjects.org/) esta alojado en [Hashnode](https://hashnode.com/). El DevBlog esta personalmente escrito por Jean Machuca, el autor de [QCObjects](https://qcobjects.com) Y el esta explicando en detalle como son las mejores practicas y dando los mejores tips y trucos para usar las mas avanzadas características de QCObjects.
 
 # Fork
---------------
-Please fork this project or make a link to this project into your README.md file. Read the LICENSE.txt file before you use this code.
 
-# Become a Sponsor
-------------------
-If you want to become a sponsor for this wonderful project you can do it [here](https://sponsorsignup.qcobjects.dev/)
+Por favor has Fork a este projecto o crea un link a este proyecto en to archivo README.md. Lee el archivo LICENSE.txt antes de usar este código.
 
-# Check out the QCObjects SDK
-----------------------------
-You can check out the [QCObjects SDK](https://sdk.qcobjects.dev/) and follow the examples to make your own featured components
+# Conviértete en Sponsor
+
+Si quieres volverte sponsor de este maravilloso proyecto puedes hacerlo [aquí](https://sponsorsignup.qcobjects.dev/)
+
+# Revisa el SDK de QCObjects
+
+Puedes revisar[QCObjects SDK](https://sdk.qcobjects.dev/) y seguir los ejemplos para hacer tus propios componentes destacados.
 
 
-# Donate
---------------
+# Donar
 
-If you like this code please [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UUTDBUQHCS4PU&source=url)!
+Si te gustó este código por favor [DONA](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UUTDBUQHCS4PU&source=url)!
 
  [![paypal](https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UUTDBUQHCS4PU&source=url)
 
- [![Become a Patreon ](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/join/qcobjects?)
+ [![vuelvete patreon ](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/join/qcobjects?)
 
 
-# Installing
-------------
+# Instalar
 
-
-## Using QCObjects with Atom:
+## Usando QCObjects con Atom:
 
 ```shell
 > apm install qcobjects-syntax
 ```
 https://atom.io/packages/qcobjects-syntax
 
-## Using QCObjects in Visual Studio Code:
+## Usando QCObjects con Visual Studio Code:
 
 [![Badge for installs for Visual Studio Code extension Quickcorp.QCObjects-vscode](https://vsmarketplacebadge.apphb.com/version/Quickcorp.QCObjects-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode)
 
 https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode
 
-## Installing with NPM:
+## Instalando con NPM:
 
 ```shell
 > npm install qcobjects-cli -g && npm install qcobjects --save
 ```
 ![screenshot2](https://qcobjects.dev/doc/img/QCObjects-Quick-Start.gif)
 
-## Installing the docker playground:
+## Instalando el docker playground:
 
 ```shell
 docker pull -a quickcorp/qcobjects-playground && docker run -it --name qcobjects-playground --rm -it quickcorp/qcobjects-playground
@@ -446,38 +430,39 @@ docker pull -a quickcorp/qcobjects-playground && docker run -it --name qcobjects
 
 ![screenshot3](https://qcobjects.dev/doc/img/QCObjects-Docker-Playground.gif)
 
-## One-Step Installation Script for Ubuntu 18.x
+## Script de instalación One-Step para Ubuntu 18.x
 
-WARNING: Do this only in a fresh|blank|brandnew installation of Ubuntu 18.x, don't do it into an existing production environment. You will be asked for sudo grant permission.
-
+ATENCIÓN: Haz esto solo en una instalación de Ubuntu 18.x fresca/vacia/actual. No lo haga en un ambiente existente de producción.
+ Se te pedira permiso sudo grant.
 
 ```shell
 curl -L https://qcobjects.dev/install_qcobjects_ubuntu18x.sh |sh
 ```
+ATENCIÓN: No somos responsables de el daño en la infraestructura por usar una instalación automatizada de script en una network insegura. Asegúrate de que tus repos y scripts están bajo HTTPS con su certificado valido. Para mejores resultados te recomendamos descargar el script, editarlo para tus necesidades especiales y después ejecútalo en tu maquina local.
 
-WARNING: I'm not responsible for damaging your infrastructure by using an automated installation script into an unsafe network. Make sure all your repos and scripts are under HTTPS with a valid certificate. For better safe results I recommended you to download the script, edit it for your special needs and then execute it in your machine as local.
+## Script de instalación One-Step for macOS
 
-## One-Step Installation Script for macOS
-Tested on macOS Catalina 10.15.3
+Probado en macOS Catalina 10.15.3
 
 ```shell
 curl -L https://qcobjects.dev/install_qcobjects_macOS.sh | zsh
 ```
 
-## Install and test QCObjects on Microsoft Windows OS
+## Instalar y probar QCObjects en Sistema Operativo Microsoft Windows
 
-1.- Install the latest version of NodeJS for Windows from [here](https://nodejs.org/)
-2.- From cmd install qcobjects-cli using npm
+1.- Instala la ultima versión de NodeJS para Windows[Aquí](https://nodejs.org/)
+2.- Desde el cmd instala qcobjects-cli usando npm
+
 
 ```powershell
 npm i qcobjects-cli -g
 ```
-3.- Create a directory for your project
+3.- Crea un directorio de para tu proyecto
 
 ```powershell
 md mynewproject && cd mynewproject
 ```
-4.- Create a new QCObjects Progressive Web Application
+4.- Crea una nueva aplicación web progresiva de QCObjects
 
 ```powershell
 qcobjects create mynewproject --pwa
@@ -486,96 +471,92 @@ qcobjects create mynewproject --pwa
 ![screenshot](https://qcobjects.dev/doc/img/QCObjects-running-on-Windows64bit.gif)
 
 
-## QCObjects Multi-Cloud Installation
+## Instalación QCObjects Multi-Cloud
 
-QCObjects is natively supported by the most famous cloud providers. In most of them, you can install it and set everything up and running in just one step.
+QCObjects es nativamente soportado por los mas famosos proveedores de nubes. Puedes instalar la mayoría de ellos, preparar y correr todo en un solo paso.
 
 ### DigitalOcean One-Click Droplet
 
-If you want to forget apt-get and the config guide. Go straight to deploying your project using a preconfigured 1-Click App including QCObjects CLI, QCObjects-SDK and QCObjects HTTP2 Built-In Server, then spin it up on a Droplet VM or a Kubernetes cluster in 60 seconds or less.
+Si quieres olvidar apt-get y de configurar la guía, ve directo a desplegar tu proyecto usando una preconfigurada app 1-click incluyendo QCObjects CLI, QCObjects-SDK y QCObjects HTTP2 servidor Built-in. Luego giralo a Droplet VM o a Kubernetes cluster en 60 segundos o menos.
 
-[Create Your Own QCObjects DigitalOcean Droplet here](https://marketplace.digitalocean.com/apps/qcobjects)
+[Crea tu propio Droplet de QCObjects DigitalOcean Aquí](https://marketplace.digitalocean.com/apps/qcobjects)
 
 ### AWS Amazon Machine Images (AMI)
 
-An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need instances with different configurations.
+Un Amazon Machine Image (AMI) otorga información requerida para lanzar una instancia.  Tienes que especificar un AMI cuando quieras lanzar una instancia. Puedes lanzar múltiples instancias para un solo AMI cuando necesites múltiples instancias con la misma configuración. Puedes usar diferentes AMIs para lanzar instancias cuando necesites instancias con diferentes configuraciones.
 
-An AMI includes the following:
+Un AMI incluye lo siguiente:
 
-- One or more EBS snapshots, or, for instance-store-backed AMIs, a template for the root volume of the instance (for example, an operating system, an application server, and applications).
-- Launch permissions that control which AWS accounts can use the AMI to launch instances.
-- A block device mapping that specifies the volumes to attach to the instance when it's launched.
+- Uno o mas EBS snapshots, o, para instance-store-backed AMIs, una plantilla para la raíz volumen de la instancia(por ejemplo, un sistema operativo, un servidor de aplicaciones y aplicaciones).
+- Lanza permisos que controla que cuenta AWS puede usar el AMI para lanzar instancias.
+- Un bloqueo de dispositivos mapping que especifica los volúmenes adjuntos a la instancia cuando es lanzada.
 
-[Start building your QCObjects AMI here](https://aws.amazon.com/marketplace/pp/B07YZRH7VB)
+[Empieza construyendo QCObjects AMI aquí](https://aws.amazon.com/marketplace/pp/B07YZRH7VB)
 
 ### Amazon Web Services AWS PIB (Private Amazon Machine Image)
 
+Imagen privada que te permite construir un nuevo AMI instalando un software AWS Market place en una imagen que tu elijas del AMI disponibles en tu cuenta AWS, esto permite que conocer a mejores especificaciones internas para seguridad, gestiones y cumplimientos.  Como con los Marketplace AWS AMIs estándar, cada imagen privada se comprometera a subscripción por el producto instalado y tiene uso de software facturado vía AWS Marketplace.
 
-A Private Image lets you build a new AMI by installing AWS Marketplace software on an image you choose from the AMIs available to your AWS account, this allows you to better meet internal specifications for security, management and compliance. As with standard AWS Marketplace AMIs, each Private Image will comprise a subscription for the installed product and have software usage billed via AWS Marketplace.
+[Empieza creando tu QCObjects Amazon Private Image aquí](https://aws.amazon.com/marketplace/pp/B07YZRH7VB)
 
-[Start building your QCObjects Amazon Private Image here](https://aws.amazon.com/marketplace/pp/B07YZRH7VB)
-
-
-## Using the development version code in the straight way into HTML5:
+## Usando el código de la versión de desarrollo directo en HTML5
 
 ```html
 <script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
 ```
 
-## Using the CDN minified version code from jsDelivr CDN
+## Usando la versión minificada de código CDN desde jsDelivr
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/qcobjects/QCObjects.min.js"></script>
 ```
 
-## Using the latest non-minified version from jsDelivr CDN
+## Usando la última versión no-minificada desde CDN jsDelivr
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/qcobjects/QCObjects.js"></script>
 ```
 
-## Using UNPKG CDN
+## Usando CDN UNPKG
 
 ```html
 <script src="https://unpkg.com/qcobjects@latest/QCObjects.js"></script>
 ```
 
-## Using CDNJS
+## Usando CDNJS
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qcobjects/[VERSION]/QCObjects.js"></script>
 ```
 
-Where [VERSION] is the corresponding latest version using numeric notation, example: to use version 2.1.420:
+Donde [VERSIÓN] corresponde a la ultima versión usando notaciones numericas, ejemplo: to use version 2.1.420:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qcobjects/2.1.420/QCObjects.js"></script>
 ```
 
-You don't need to minify QCObjects, but if you still want to use the minified code, you can do this:
+No necesitas minificar QCObjects, pero si aún quieres usar el codigo minificado puedes hacer esto:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qcobjects/2.1.420/QCObjects.min.js"></script>
 ```
 
-Again, Change 2.1.420 to the number of the version that you want to use.
+Otra vez cambia 2.1.420 al numero de la versión que quieras usar.
 
+# Referencia
 
-# Reference
-------------
-
-## Essentials
-Here are the essentials symbols and concepts of [QCObjects](https://qcobjects.dev) Reference
+Aquí están los símbolos y conceptos esenciales de referencia [QCObjects](https://qcobjects.dev)
 
 ### QC_Object
 
-Basic Type of all elements
+Tipos básicos de todos los elementos
 
 ### ComplexStorageCache
 
-With **ComplexStorageCache** you can handle a cache for any object and save it in the local storage.
+Con **ComplexStorageCache** puedes manejar el cache de cualquier objeto y subirlo en el storage local.
 
-#### Usage:
+#### Uso:
+
 ```javascript
 var cache = new ComplexStorageCache({
                       index:object.id, // Object Index
@@ -584,7 +565,8 @@ var cache = new ComplexStorageCache({
                       });
 ```
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 var dataObject = {id:1,
                   prop1:1,
@@ -614,9 +596,9 @@ console.log(dataObjectCopyFromCache); // will show the very same object value th
 
 ### asyncLoad
 
-The **asyncLoad** function loads a code once in async mode. This is useful to asure some initial process don't replicate its execution and aren't loaded after sensitive code.
+La función **asyncLoad** carga el código una vez en el modo asyc. Esto es útil para asegurar que el proceso inicial no replica la ejecución y no es recargado después de un código sensible.
 
-#### Usage:
+#### Uso:
 ```javascript
 asyncLoad(()=>{
   // my code here
@@ -624,7 +606,7 @@ asyncLoad(()=>{
 // Where args is an array of arguments, it can be the "arguments" special object
 ```
 
-#### Example:
+#### Ejemplo:
 ```javascript
 
 let doSomething = (arg1,arg2)=>{
@@ -638,21 +620,22 @@ doSomething(1,2); // the code of doSomething will be executed once after the res
 
 ```
 
-
 ### Class
 
-This is NOT the class definition of ECMAScript 2015 (see [class ECMAScript 2015](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) for reference).
+Esto NO es una clase de definición de ECMAScript 2015 (mira [clase ECMAScript 2015](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) for reference).
 
-Class is a special function to help you to declare a class in an easier and compatible way. It works cross-browser, and I hope ECMA could adopt something like that in the future. To let javascript not to be confuse about this, [QCObjects](https://qcobjects.dev) uses "Class" not "class" (note the Camel Case).
+Clase es una función especias que te ayuda a declarar la clase de una manera mas fácil y compatible. Funciona con cross-browser, y esperamos que ECMA pueda adoptar algo similar en el futuro. Para no dejar al Javascript confuso sobre esto, [QCObjects](https://qcobjects.dev) usa "Class" no "class" (note the Camel Case).
 
-#### Usage:
+#### Uso:
 
 ```javascript
 Class('MyClassName',MyClassDefinition);
 ```
-Where **MyClassDefinition** is an object with a QCObjects  **prototype**
 
-#### Example:
+Donde **MyClassDefinition** es un objeto junto a el **prototype** de QCObjects
+
+#### Ejemplo:
+
 ```javascript
 Class('MyClassName',InheritClass,{
   propertyName1:0, // just to declare purpose
@@ -674,19 +657,20 @@ var newObject = New(MyClassName,{
 });
 console.log(newObject.classMethod1()); // this will show number 1
 console.log(newObject.classMethod2()); // this will show "some value"
-
 ```
 
 
-### QC_Append, append method
+### Método QC_Append, append
 
-This is a special method inserted to make your life easier when you want to dynamically manipulate the **DOM**. You can insert even a **Component**, a **QCObjects** Object or a **DOM** Element inside another **HTMLElement**.
+Este es un método especial que hará tu vida mas fácil cuando quieras manipular el **DOM** dinámicamente. Puedes insertar un componente incluso **Component**, a un objeto **QCObjects** o a el elemento **DOM** dentro de otro **HTMLElement**.
 
-##### Usage:
+##### Uso:
+
 ```javascript
 [element].append([object or element]);
 ```
-#### Example:
+#### Ejemplo:
+
 ```javascript
 // This will create a QCObjects class named "canvas" extending a HTMLCanvasElement with a customAttr property that has a "custom" value
 Class('canvas',HTMLCanvasElement,{
@@ -706,18 +690,20 @@ document.body.append(canvas1);
 
 
 
-### The \_super\_ method
+### El método \_super\_
 
-When you extend a QCObjects class from another one, you can use \_super\_ method to get an instance from the main class definition.
+Cuando extiendes una clase QCObject desde otra, puedes usar \_super\_ metodo para tener una instancia desde la definición de la clase central.
 
-#### Usage:
+#### Uso:
+
 ```javascript
 
 _super_('MySuperClass','MySuperMethod').call(this,params)
 // where this is the current instance and params are method parameters
 ```
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 Class('MySuperiorClass',InheritClass,{
   propertyName1:0, // just to declare purpose
@@ -748,17 +734,17 @@ console.log(newObject.classMethod2()); // this will show the number 1
 
 ### New
 
-Creates an object instance of a QCObjects class definition.
+Crea una instancia de objeto de una definición de clase de QCObject.
 
-#### Usage:
+#### Uso:
 
 ```javascript
 let objectInstance = New(QCObjectsClassName, properties);
 // where properties is a single object with the property values
 ```
-NOTE: In the properties object you can use single values or getter as well but they will be executed once.
+NOTA: En las propiedades del objeto puedes usar un solo valor o un captador también pero, solo se ejecutaran una vez.
 
-#### Example:
+#### Ejemplo:
 
 ```javascript
 Class('MyCustomClass',Object);
@@ -772,17 +758,18 @@ let objectInstance = New(MyCustomClass,{
 console.log(objectInstance.randomNumber); // it will show console.log(objectInstance.prop1); // it will show number 1
 ```
 
-
 ### InheritClass
-A single common used QCObjects class definition.
+
+Una sola definición de clase común QCObjects es utilizada.
 
 ### ClassFactory
-Use **ClassFactory** to get the Class declaration factory instance of a QCObjects Class
-You can get either a Class factory from a Package or from the Class queue stack
 
-To retreive the ClassFactory from the Class queue stack you can simply use the name of a Class as calling directly in the code.
+Usa la **ClassFactory** para tener una declaración de clase de fabrica para la clase,
+también puedes usar la clase de fabrica desde un paquete o desde la fila apilada.
 
-#### Example:
+Para recuperar la clase de fabrica de la clase fila apilada simplemente usa el nombre de la clase llamándola directamente en el código.
+
+#### Ejemplo:
 
 ```javascript
 /* When you declare MyClass using Class() it is instantly added to the Class queue stack
@@ -839,11 +826,11 @@ console.log(MyClass == ClassFactory('org.quickcorp.package2.MyClass'))
 console.log(ClassFactory('org.quickcorp.package1.MyClass') == ClassFactory('org.quickcorp.package2.MyClass'))
 ```
 
-The above examples are intentionally done to explain and show how the scope of the Class definitions in QCObjects is protected and handled and it is reflected in the use of ClassFactory.
+Los ejemplos anteriores están intencionalmente hechos para explicar y mostrar como el alcance de la definición de clase en QCObjects es protejida, llevada y reflejada en una ClassFactory.
 
-So you are gonna want to use ClassFactory when you need complete control over the scope when extending Classes
+Así que vas a querer usar la ClassFactory cuando necesites completar un control sobre el alcance cuando se extienden las Clases.
 
-**Example**
+**Ejemplo**
 
 ```javascript
 // When normally you extend a Class using the Class queue you do:
@@ -881,18 +868,19 @@ console.log(New(MyExtendedClass).sourceProp)
 ```
 
 ### \_Crypt
-With \_Crypt you can encode serializable objects by a passphrase
 
-#### Example (1):
+Con \_Crypt puedes codificar en serie objetos a passphrase
+
+#### Ejemplo (1):
 
 ```javascript
  var _string = New(_Crypt,{string:'hello world',key:'some encryption md5 key'});
  console.log(_string._encrypt());
  console.log(_string._decrypt()); // decodes encrypted string to the source
-```
- #### Example (2):
+ ```
+ #### Ejemplo (2):
 
-```javascript
+ ```javascript
  _Crypt.encrypt('hola mundo','12345678866');
  _Crypt.decrypt('nqCelFSiq6Wcpw==','12345678866');
 ```
@@ -900,9 +888,9 @@ With \_Crypt you can encode serializable objects by a passphrase
 
 ### GLOBAL
 
-**GLOBAL** is a special QCObjects class to reach the global scope. It has a set and a get method to help you to manage the internal GLOBAL properties.
+**GLOBAL** es una clase especial de QCObject para conseguir alancé global. Tiene un conjunto y consigue un método que te ayude a manejar propiedades internas Globales.
 
-#### Example:
+#### Ejemplo:
 
 ```javascript
 GLOBAL.set('globalProperty1','some value in global scope');
@@ -911,38 +899,39 @@ var globalProperty1 = GLOBAL.get('globalProperty1');
 
 ### CONFIG
 
-CONFIG is a smart class that manages the global settings of your application. You can get the properties either from a config.json or from the memory previously saved by a set() call.
+CONFIG es una clase inteligente que maneja los ajustes generales de tu aplicación. Puedes tener las propiedades ya sea desde config.json o desde la memoria previamente guardado en la llamada set().
 
-#### Usage from memory:
+#### Uso desde memoria:
 
-1.- In your initial code set the CONFIG initial values:
+1.- En su código inicial, configura los valores iniciales de CONFIG:
 ```javascript
 CONFIG.set('someSettingProperty','some initial value');
 ```
-2.- Then you can access it from anywhere in your code by using the get method:
+2.- Luego puede acceder a él desde cualquier parte de su código utilizando el método get:
 ```javascript
 var someSettingProperty = CONFIG.get('someSettingProperty');
 ```
 
-#### Usage from config.json:
+#### Uso desde config.json:
 
-1.- You need to indicate first that you are using a config.json file by setting the "useConfigService" value to true
+1.- Necesitas indicar primero que estas usando el archivo config.jso mediante el ajuste "useConfigService" el valor para la verdad.
+
 ```javascript
 CONFIG.set('useConfigService',true); // using config.json for custom settings config
 ```
-2.- Once you have set the value above QCObjects will know and look to the next CONFIG settings into the file config.json in the basePath folder of your application.
+2.-Una vez  peparaste el valor anterior QCObjects lo sabra y mirara el siguiente ajuste dentro del archivo config.json en la carpeta basePath de tu aplicación.
 
-#### Usage from an encrypted config.json:
+#### Uso desde config.json encriptado:
 
-There is also a way to use an encrypted config.json file in order to protect your settings robots that can steal unprotected data from your web application (like API keys web crawlers).
+También existe una forma de usar el archivo encriptado config.json con el fin de proteger tus ajustes, robots que pueden robar tu data no protegida desde la aplicación web (como las llaves de arrastre API)
 
-To encrypt your json file go to https://config.qcobjects.dev, put your domain and the config.json content. The tool will encrypt your json and you can copy the encrypted content to insert it in your config.json file. QCObjects will know the data is encrypted and the process to decode the data will be transparent for you.
+El archivo encriptado json va en https://config.qcobjects.dev, pon tu configuración dominantes y tu contenido config.json. La herramienta encriptará tu json y podrás copiar el contenido incriptado para insertarlo en tu archivo config.json. QCObjects sabrá si la data esta encriptada y tu proceso para decodificar la data sera mas transparente para ti.
 
-#### Dynamic CONFIG Settings
+#### Propiedades dinámicas de CONFIG
 
-Sometimes you will need to set a value from a source that isn't static, like the ENV vars or another custom source of dynamic data. To get a value using CONFIG from a dynamic source you have to use a processor. There are common processors predefined like $ENV (only available on CLI, Collab and Node) and $config (available on all environments).
+A veces necesitaras establecer el valor de la fuente que no sea estática, como el ENV vars u otras fuentes personalizadas de data dinámica. Para tener valor usando CONFIG de una fuente dinámica tienes que usar un procesador. Existen procesadores comunes predefinidos como $ENV (solo si esta disponible en CLI, Collab o Node) y $config (disponible en todos los ambientes).
 
-Processors are called as a meta value either into the config.json file or in the CONFIG Class.
+Los procesadores son llamados como una meta de valor ya sea en el config.json o en la Clase CONFIG.
 
 ```json
 // file: config.json
@@ -974,21 +963,20 @@ let api_key = CONFIG.get("api_key");
 
 ### Processor
 
-Static Class that used to set custom processors for CONFIG.
+La clase estatica que usa para establecer el procesador personalizado para CONFIG.
 
-#### Usage:
+#### Uso:
 
 ```javascript
 Processor.setProcessor(processor)
 ```
 
-Where **processor** is a named function that receives the arguments of the processor
+Donde **processor** es el nombre de la función que recibe el argumento del procesador
 
-#### Example:
+#### Ejemplo:
 
-You have an environment variable called **SERVICE_URL** that stores a url of a service. You have to use that value in your config settings in the **serviceURL** value but you also need to set the **host** and the **port** settings using the parsed value of that url. To parse the value of SERVICE_URL environment variable on-demand and fill up the corresponding settings in your config.json, Your config.json file will look like this:
-
-```json
+Tienes que usar ese valor en tus ajustes de configuración en el valor **serviceURL** pero también necesitas configurar el **host** y los ajustes de **port** usando el valor analizado de esa url. Para analizar el valor de el ambiente SERVICE_URL la variable bajo demanda y rellenarlo con los ajustes de configuración en tu config.json, tu config.json se vera algo así:
+ ```json
 // file: config.json
 {
 	"serviceURL":"$ENV(SERVICE_URL)",
@@ -997,7 +985,7 @@ You have an environment variable called **SERVICE_URL** that stores a url of a s
 }
 ```
 
-The **$SERVICE_HOST** and **$SERVICE_PORT** processors don't exist. To define them, you must use:
+El **$SERVICE_HOST** y el **$SERVICE_PORT** procesadores no existen. Para definirlos tienes que usar:
 
 ```javascript
 // execute the next code in your init.js file or before to load the CONFIG settings
@@ -1017,15 +1005,14 @@ Processor.setProcessor(SERVICE_HOST);
 Processor.setProcessor(SERVICE_PORT);
 ```
 
-Then you only need to set your environment variable SERVICE_URL in your shell
+Entonces solo necesita establecer su variable de entorno SERVICE_URL en su shell
 
-This is only for Unix/Linux systems
-
+Lo siguiente es para los sistemas operativos de Unix/Linux :
 ```shell
 export SERVICE_URL="https://example.com:443/path-to-a-resource/"
 ```
 
-and your settings will be dynamically loaded like this:
+Y su configuración se cargará dinámicamente de esta manera:
 
 ```json
 {
@@ -1035,14 +1022,16 @@ and your settings will be dynamically loaded like this:
 }
 ```
 
-And you get the corresponding values using **CONFIG.get(value)**
+Y consigue tus valores correspondientes en **CONFIG.get(value)**
 
 ### waitUntil
-waitUntil is a helper just in case you are in trouble trying to run a code before a condition is true. The code inside waitUntil will be executed once.
 
-NOTE: This is useful in some cases but an excessive use is not recommended.
+WaitUntil es un ayudante solo en caso de que estés en problemas tratando de correr el código antes de que la condición sea real. El código dentro del waitUntil sera ejecutado una vez.
 
-#### Usage:
+NOTA: Esto es útil en algunos casos pero no es recomendado para uso excesivo.
+
+#### Uso:
+
 ```javascript
 waitUntil(()=>{
   // the code that will be executed after the condition is true
@@ -1050,7 +1039,8 @@ waitUntil(()=>{
 // where condition is what I want to wait for
 ```
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 let someVar = 0;
 waitUntil(()=>{
@@ -1061,15 +1051,19 @@ waitUntil(()=>{
 
 
 ### Package
-Defines a QCObjects package and returns it.
 
-#### Usage:
+Define el paquete de QCObjects y regrésalo.
+
+#### Uso:
+
 ```javascript
 Package('packageName',[packageContent]);
 ```
-Where packageContent is an array of QCObjects Classes. If you only pass the packageName param you will get the previously declared package content.
+Donde packageContent es una gama de clases de QCObjects. Si solo pasas el packageName param conseguirás el contenido declarado anteriormente.
 
-#### Example (1):
+
+#### Ejemplo (1):
+
 ```javascript
 'use strict';
 Package('org.quickcorp.main',[
@@ -1081,51 +1075,60 @@ Package('org.quickcorp.main',[
   }),
 ]);
 ```
-#### Example (2):
+
+#### Ejemplo (2):
+
 ```javascript
 let mainPackage = Package('org.quickcorp.main'); // this will return the previously declared content of package 'org.quickcorp.main'
 // mainPackage[0] will be the Main class definition.
 // This is useful for code introspection
 ```
 
-The packages loading technique present in QCObjects is promise based and also scope oriented. You can ask if a package is loaded simply calling the Package() function passing a package name as an argument.
+La técnica de carga de paquetes presente en QCObjects esta basada en una promesa y orientada al alcance. Puedes preguntar si un paquete fue cargado simplemente llamando la función Packege() pasando el nombre del paquete a un argumento.
 
 
 ### Import
-Imports a package from another JS file
 
-#### Usage:
+Importa un paquete desde otro archivo JS.
+
+#### Uso:
+
 ```javascript
 Import (packagename,[ready],[external]);
 ```
-Where packagename is the name of the package, ready is a function that will be executed after the package is loaded, and external is a boolean value that indicates if the JS file is in the same origin or it is from another external resource.
+Donde el packagename es el nombre del paquete, listo es una función que podrá ser ejecutada después de que el paquete es cargado y el externo es un valor bolean que indica si el archivo JS esta en el mismo origen o esta desde otro recurso externo.
 
-#### Example (1):
+#### Ejemplo (1):
+
 ```javascript
 Import('org.quickcorp.main');
 ```
-The above code will try to import a JS fila named 'org.quickcorp.main.js' from the path specified in the **relativeImportPath** settings value present in your **CONFIG**. Inside the JS file you have to define a package by using Package('org.quickcorp.main',[Class1, Class2...])
+El código anterior intentara importar un archivo JS llamado 'org.quickcorp.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.quickcorp.main',[Class1, Class2...])
 
-#### Example (2):
+#### Ejemplo (2):
+
 ```javascript
 Import('org.quickcorp.main',function (){
   console.log('remote import is loaded');
 },true);
 ```
-The above code this time is trying to load the same package but using an external path defined by the **remoteImportsPath** setting present in your **CONFIG**
 
-NOTE: In both examples above you have not use or specify the ".js" extension. This it's used by default and can't be changed by security reasons.
+El código anterior esta vez esta tratando de cargar en el mismo paquete usando el camino externo mediante el **remoteImportsPath** ajustes presentes en tu **CONFIG**
+
+NOTA: En los dos ejemplos anteriores no necesitas usar o especificar la extensión ".js". Esto esta usado por defecto y no puede ser cambiado por razones de seguridad.
 
 ### Export
-Put a symbol (var or function) in the global scope.
 
-#### Usage:
+Pon un símbolo(barra o función) en el alcance global.
+
+#### Uso:
 
 ```javascript
 Export('name of symbol');
 ```
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 (()=>{
   // this is local scope
@@ -1142,17 +1145,17 @@ someFunction('this works');
 
 ### Cast
 
-Use the Cast method of any DOM element to get the properties of another type of object. This is useful to transform an object type to another giving more flexibility in your code.
+Usa el método Cast de cualquier elemento DOM para obtener las propiedades de otro tipo de objeto. Esto es útil para trasformar un tipo objeto a otro otorgándole mas flexibilidad a tu código.
 
-#### Usage:
+#### Uso:
 
 ```javascript
 let resultObject = [element or QCObjects type].Cast(objectToCastFrom);
 ```
 
-Where objectToCastFrom is an object to get the properties from and put it into the result object returned by Cast.
+Donde objectToCastFrom es un objeto para obtener propiedades desde y poner el objeto resultante regresado por el cast.
 
-#### Example:
+#### Ejemplo:
 
 ```javascript
 Class('MyOwnClass',{
@@ -1163,21 +1166,21 @@ Class('MyOwnClass',{
 let obj = document.createElement('div').Cast(MyOwnClass);
 ```
 
-The above code will create a DOM object and Cast it to MyOwnClass. Because of MyOwnClass is a QCObjects type class, obj will now have a prop1 and prop2 properties, and will now be a QCObjects object instance with a body property that is a div element.
+El código anterior creara un objeto DOM y lo emitirá a MyOwnClass. Gracias a que MyOwnClass es un tipo clase de QCObject el objeto ahora tendrá propiedades prop1 y prop2 y ahora sera una instancia de objeto QCObject con una propiedad del cuerpo que es un elemento div.
 
 ### Tag
 
-Tag is a useful function to select any DOM element using selectors. Tag will always return a list of elements, that you can map, sort, and filter as any other list.
+Etiquetar es una función útil para seleccionar cualquier elemento DOM usando selectores. Etiquetar siempre regresa a la lista de elementos que puedas mapear, ordenar y filtrar como cualquier otra lista.
 
-#### Usage:
+#### Uso:
 
 ```javascript
 var listOfElements = Tag(selector);
 ```
 
-Where selector is a DOM query selector.
+Donde el selector es un DOM selector de respuestas.
 
-#### Example:
+#### Ejemplo:
 
 ```html
 <!DOCTYPE html>
@@ -1201,132 +1204,140 @@ Where selector is a DOM query selector.
 </html>
 ```
 
-In the above code, a paragraph element was created inside a div with a css class named myselector by html, and then is  modified dynamically using the QCObjects Tag function. If you are familiar with query selector frameworks like JQuery, you will love this one.
+En el código anterior el elemento párrafo fue creado dentro de un div con una clase css llamada myselector mediante html y luego es modificada dinámicamente usando la función etiqueta de QCObject. Si estas familiarizado con un framework selector query te encantara este.
 
 ### Ready
-Assign a function to run after everything is done by QCObjects and after the window.onload event. Use it to prevent 'undefined' DOM objects error.
 
-#### Usage:
+Asigna una función para correr después de que todo esta hecho mediante QCObject y después del evento window.onload. Úsalo para prevenir un error de objeto DOM 'indefinido'.
+
+#### Uso:
+
 ```javascript
 Ready(()=>{
   // My init code here!
 });
 ```
-Note that if you define dynamic components by using a HTML "component" tag, the dynamic content load will not trigger Ready events. To catch code everytime a dynamic component is loaded, use a Controller done method instead.
+Tenga en cuenta que si define los componentes dinámicos mediante el uso de una etiqueta "componente" en HTML, el contenido dinámico no activara eventos listos. Para atrapar el código cada vez que se carga un componente dinámico usa un método decontrolado hecho en su lugar.
 
-You will use Ready implementation mostly when you want to implement QCObjects in conjunction with another framework that needs it.
+Usaras implementación lista principalmente cuando quieras implementar QCObjects en conjunto con otro framework que lo necesite.
 
 ### Component Class
-A QCObjects class type for components.
 
-#### Properties
+Un tipo clase de QCObject por componentes.
+
+#### Propiedades
 
 **[Component].domain**
-Returns a string with the domain of your application. It is automatically set by QCObjects at the load time.
+Regresa una cadena con el dominio de tu aplicación. Se establece automáticamente por QCObjects al momento de cargar.
 
 **[Component].basePath**
-Returns a string with the base path url of your application. It is automatically set by QCObjects at the load time.
+Regresa una cadena con un camino url base de tu aplicación. Se establece automáticamente por QCObjects al momento de cargar.
 
-NOTE: If you want to change the components base path, you have to use _CONFIG.set('componentsBasePath','new path relative to the domain')_ in your init code.
+NOTA: Si quieres cambiar los componentes con base en un camino, tienes que usar _CONFIG.set('componentsBasePath','new path relative to the domain')_ en tu unidad de código.
 
 **[Component].templateURI**
-Is a string representing the component template URI relative to the domain. When is set, the component will load a template and append the inner content into the body childs as a part of the DOM. To set this property, it is recommended to use the ComponentURI helper function.
+Es una cadena representando un componente plantilla URI relativo al dominio. Cuando este listo, el componente sera cargado a la plantilla y lo agregara al contenido interno dentro del cuerpo childs como parte del DOM. Para establecer esta propiedad es recomendado usar la función ayudante ComponentURI.
 
 **[Component].tplsource**
-Is a string representing the source where the template will be loaded. It can be "default" or "none". A value of "default" will tell QCObjects to load the template from the templateURI content. A value of "none" will tell QCObjects not to load a template from anywhere.
+Es la cadena representando a la fuente donde el template sera cargado. Puede ser "default" o "none". El valor "default" le dirá a QCOBject que cargue el template desde el contenido templateURI. El valor "none" le dirá a QCObject que no cargue el template desde ningún lado.
 
 **[Component].url**
-Is a string representing the entire url of the component. It is automatically set by QCObjects when the component is instantiated.
+Es una cadena representando una url completa de un componente. Es automáticamente establecido por QCObjects cuando un componente es instanciado.
 
 **[Component].name**
-Is a string representing the name of a component. The name of a component can be any alphanumeric value that identifies the component type. It will be internally used by ComponentURI to build a normalised component template URI.
+Es una cadena que representa el nombre de un componente. El nombre de un componente puede ser cualquier valor alphanumerico que identifique un tipo de componente. Sera internamente utilizado mediante ComponentURI para construir un tempalte URI normalizado.
 
 **[Component].method**
-Is a string representing a HTTP or HTTPS method. By default, every component is set to use the "GET" method. In the most of cases, you don't need to change this property.
+Es una cadena que representa a un método HTTP o HTTPS. Por defecto cada componente esta configurad para usar el método "GET". En la mayoría de los casos no necesitas cambiar esta propiedad.
 
 **[Component].data**
-Is an object representing the data of the component. When QCObjects loads a template, it will get every property of data object and bind it to a template label representing the same property inside the template content between double brakets (example: {{prop1}} in the template content will represent data.prop1 in the component instance).
-NOTE: To refresh the data bindings it is needed to rebuild the component (see the use of [Component].rebuild() method for more details ).
+Es un objeto que representa los datos del componente. Cuando QCObject carga un template este conseguirá cada propiedad de los datos y la atará al nivel de template representado por la misma propiedad dentro del contenido del template entre los brackets dobles, ejemplo:  (example: {{prop1}} in the template content will represent data.prop1 in the component instance).
+NOTA: Para refrescar los enlaces de datos para reconstruir el component (mira el uso de [Component].rebuild() para mas detalles ).
 
 **[Component].reload**
-Is a boolean value that tells QCObjects when to force reload the content of a component from the template or not. If its value is true, the template content will be replacing the current DOM childs of the component body element. If its value is false, the template content will be added after the las component body child.
+Es un valor boolean el que dice cuando qcobjects es obligado a recargar el contenido de un componente en el template o no. Si el valor es cierto, el contenido del template sera remplazado por los actuales hijos DOM del elemento cuerpo. Si este valor es falso, el contenido del template sera añadido después de los hijos del componente cuerpo.
 
 **[Component].cached**
-Is a boolean value that tells QCObjects if the component needs to be cached or not. When a component is cached, the template content loaded from templateURI will be loaded once. You can set this property either as a static property of the Component Class to set the default value for every next component object instance, or setting the individual value of the property in every component definition. In a world where the performance matters, to give more flexibility to the cache behaviour is needed more than ever.
+Es un valor booleado el que le dice a QCObject si el componente necesita ser atrapado o no. Cuando el componente es atrapado, el contenido del template es cargado desde templateURI sera cargado una sola vez. Puedes configurar esta propiedad incluso como una propiedad estática de un componente de clase para configurarlo como un valor predeterminado para cada siguiente componente instancia de objeto o configurarlo de manera individual el valor de la propiedad en cada definición de componente. En un mundo donde el desempeño cuenta, para darle mas flexibilidad al comportamiento del cache es necesitado mas que nunca.
 
 **[Component].routingWay**
-Returns a string representing the routing way. Its value can be "hash", "pathname" or "search".
-NOTE: To change the routingWay of every component it is recommended to use CONFIG.set('routingWay','value of a valid routing way') in your init code.
+Regresa una cadena representando la forma de enrutamiento. Un valor puede ser "hash", "pathname" o "search".
+NOTA: Para cambiar el routingWay de cada componente es recomendado usar CONFIG.set('routingWay','value of a valid routing way')en tu unidad de código.
 
 **[Component].validRoutingWays**
-Returns a list representing the valid routing ways.  QCObjects uses this to internally validate the routingWay which was used to build the component routings.
+Regresa a la lista que representa la forma de enrutamiento. QCObject usa esto internamente para validar el routingWay el cual usa para construir los enrutamientos de componente.
 
 **[Component].routingNodes**
-Returns a NodeList object representing the list of nodes that were loaded by the component routing builder.
+Regresa al objeto NodeList representando la lista de nodes que fueron cargados por el creador de enrutamientos.
 
 **[Component].routings**
-Returns a list with the component routings built when the component was instantiated.
+Regresa a la lista con los componentes complicados cuando el componente fue instanciado.
 
 **[Component].routingPath**
-Returns a string representing the current routing path
+Regresa una cadena que representa el camino del enrutamiento actual.
 
 **[Component].routingSelected**
-Returns an object representing the current routing of the component
+Regresa un objeto que representa el componente de enrutamiento actual.
 
 **[Component].subcomponents**
-Returns a list of components that are childs of the component instance.
+Regresa a la lista de componentes que son childs de las instancias de componentes.
 
 **[Component].body**
-Is a DOM element representing the body of the component.
-NOTE: Every time a component body is set, it will trigger the routings builder for this component.
+Es un elemento DOM que representa el cuerpo del componente
+NOTA:Cada vez que un cuerpo es configurado, sera activado el generador de rutas para este componente.
 
-#### Methods
+#### Métodos
 **[Component].set('prop',value)**
-Sets a value for a component property.
+Establece un valor para una propiedad de componente.
 
 **[Component].get('prop')**
-Returns the value of a component property
+Devuelve el valor de una propiedad componente
 
 **[Component].rebuild()**
-Rebuilds the component. It will force a call for the componentLoader with this component when it's needed.
+Reconstruye un componente. Forzará una llamada para el cargador de componentes con este componente cuando sea necesario.
 
 **[Component].Cast(ClassName or ComponentClassName)**
-Returns the cast of a component definition into another one. This is useful to dynamically merge components definitions.
+Devuelve el reparto de una definición de componente en otra. Esto es útil para combinar dinámicamente definiciones de componentes.
 
 **[Component].route()**
-Forces the component routings builder to reload the routings of the component. This will result in a rebuild call when it's needed.
+Fuerza al generador de rutas de componentes a recargar las rutas del componente. Esto resultara en una reconstrucción de llamada cuando sea necesario.
 
 **[Component].fullscreen()**
-Puts the component in fullscreen mode.
+Pone el componente en modo de pantalla completa.
 
 **[Component].closefullscreen()**
-Closes the fullscreen mode.
+Cierra el modo de pantalla completa.
 
 **[Component].css(css object)**
-Sets the css properties for the component.
+Establece las propiedades del css para el componente.
 
 **[Component].append(component or QCObjects object)**
-Appends a component as a child of the current component body
+Agrega un componente como hijo del cuerpo del componente actual
 
 **[Component].attachIn(selector)**
-Attaches a current component body to any element in the given selector.
+Adjunta un cuerpo de componente actual a cualquier elemento en el selector dado.
 
-### Component HTML Tag
-Is a HTML tag representation of a component instance. Every declaration of a `<component></component>` tag will generate a related instance of a QCObjects component. While a component tag is not an instance itself, you can even define some instance properties by setting the related tag attribute when it is available.
+### Tag HTML Component
 
-#### Available attributes
-Below is a list of the available attributes for a component tag
+Una etiqueta HTML es una representación de una instancia de componente. Cada declaración de una etiqueta `<component></component>`generara una instancia relacionada con un componente QCObjects. Mientras una etiqueta de componente no es una instancia por si misma, incluso puedes definir algunas propiedades de instancia configurando el atributo de etiqueta relacionado cuando esté disponible.
 
-##### The name Attribute
+#### Atributos disponibles
+
+A continuación se muestra una lista de los atributos disponibles para una etiqueta de componente
+
+##### El atributo name
+
 **`<component name>`**
-Sets the name of the related component instance built by QCObjects.
+Establece el nombre de la instancia de componente relacionada creada por QCObjects.
 
-###### Usage:
+###### Uso:
+
 ```html
 <component name="name_of_component"></component>
 ```
 
-###### Example:
+###### Ejemplo:
+
 ```html
 <!-- index.html -->
 <!DOCTYPE html>
@@ -1342,84 +1353,100 @@ Sets the name of the related component instance built by QCObjects.
 </html>
 ```
 
-##### The cached Attribute
+##### El atributo cached
+
 **`<component cached>`**
-Sets the cached property if the related instance of a component.
+Establece la propiedad en caché si la instancia relacionada de un componente.
 
-NOTE: Only a value of "true" can be set in order to tell QCObjects that the component template content has to be cached. Any other value will be interpreted as false.
+NOTA: Solo se puede establecer un valor de "verdadero" para indicar a QCObjects que el contenido de la plantilla del componente debe almacenarse en caché. Cualquier otro valor sera interpretado como falso.
 
-###### Usage:
+###### Uso:
+
 ```html
 <component name="name_of_component" cached="true"></component>
 ```
 
-##### The data property tag declaration
+##### La declaración de la propiedad data
  **`<component data-property1 data-property2 ...>`**
-Sets a static value of a property for the data object in the component instance.
 
-NOTE: Data property tag declaration was thought with the purpose to give some simple way to mocking a dynamic component with template assignments. Don't use it thinking it is a bidirectional way data binding. While you can get a bidirectional way behaviour accesing a data object from a component instance, it is not the same for the component tag. Data property declaration in component tags is only one way data binding because of components tree architecture.
+Configura un valor estatico de las propiedades de los datos en una instancia de componente.
 
-##### The controllerClass Attribute
+NOTA: La declaración de la etiqueta de propiedad de datos se pensó con el propósito de dar una forma simple de hacer mocking de un componente dinámico con asignaciones de Template. No lo uses pensando que es una forma bidireccional de datos. Mientras puedas tener un comportamiento de forma bidireccional accediendo a los objetos de datos desde una instancia de componente, no es lo mismo que la etiqueta de componente. La declaración de propiedad de datos en una etiqueta de componente es solo una forma de unión de datos debido a los componentes de arquitectura de árbol.
+
+##### El atributo controllerClass
+
 **`<component controllerClass>`**
-Defines a custom Controller Class for the component instance
+Define un controlador de clase personalizado desde una instancia de componente.
 
-###### Usage:
+###### Uso:
+
 ```html
 <component name="name_of_component" controllerClass="ControllerClassName"></component>
 ```
 
 
-##### The viewClass Attribute
- **`<component viewClass>`**
-Defines a custom View Class for the component instance
+##### El atributo viewClass
 
-###### Usage:
+ **`<component viewClass>`**
+Define una vista de clase personalizada para la instancia del componente
+
+###### Uso:
+
 ```html
 <component name="name_of_component" viewClass="ViewClassName"></component>
 ```
 
+##### El atributo componentClass
 
-##### The componentClass Attribute
 **`<component componentClass>`**
-Defines a custom Component Class for the component instance
+Define un componente de clase personalizado para la instancia de un componente.
 
-###### Usage:
+###### Uso:
+
 ```html
 <component name="name_of_component" componentClass="ComponentClassName"></component>
 ```
 
-##### The effecClass Attribute
-**`<component effectClass>`**
-Defines a custom Effect Class for the component instance
+##### El atributo effecClass
 
-###### Usage:
+**`<component effectClass>`**
+Define un efecto de clase personalizado para la instancia del componente
+
+###### Uso:
+
 ```html
 <component name="name_of_component" effectClass="EffectClassName"></component>
 ```
 
-##### The template-source Attribute
-**`<component template-source>`**
-Sets the tplsource property of the related instance of a component. Possible values are "none" or "default".
+##### El atributo template-source
 
-###### Usage:
+**`<component template-source>`**
+Establece el tplsource de una propiedad relacionada con una instancia de un componente Posiblemente los valores son "none" o"default".
+
+###### Uso:
+
 ```html
 <component name="name_of_component" template-source="none"></component>
 ```
 
-##### The tplextension Attribute
-**`<component tplextension>`**
-Sets the tplextension property of the related instance of a component. Possible values are any file extension. Default value is "html"
+##### El atributo tplextension
 
-###### Usage:
+**`<component tplextension>`**
+Establece la propiedad de tplextension relacionada con una instancia de un componente. Posibles valores son cualquier archivo de extensión. El valor por defecto es "html"
+
+###### Uso:
+
 ```html
 <component name="name_of_component" tplextension="tpl.html"></component>
 ```
 
 
 #### ComponentURI
-Is a helper function to let you define the templateURI for a component in a normalised way.
 
-##### Example:
+Es una función ayudante la que te deja definir el templateURI por un componente en una forma normalizada
+
+##### Ejemplo:
+
 ```javascript
 var templateURI = ComponentURI({
   'COMPONENTS_BASE_PATH':CONFIG.get('componentsBasePath'),
@@ -1433,16 +1460,19 @@ console.log(templateURI); // this will show something like "templates/components
 
 
 #### componentLoader
-Loads a component instance in a low level, and appends the component template content to the component body. In the most of cases you won't need to call componentLoader in order to load a component. This is automatically called by QCObjects when it's needed. componentLoader returns a promise that is resolved when the component load is done and rejected when the component load was failed.
 
-##### Usage:
+Carga una instancia de componente en un nivel bajo y agrega el tempalte del componente a el cuerpo del componente. En la mayoría de los casos no necesitara llamar al componentLoader con el fin de cargar un componente. Esto es automáticamente llamado por QCObjects cuando sea necesario. ComponentLoader regresa una promesa que es resuelta cuando el componente se ha cargado y rechazado cuando el componente fallo.
+
+##### Uso:
+
 ```javascript
  [Promise] componentLoader(componentInstance,load_async)
 ```
 
-Where componentInstance is a component instance created by _`New(ComponentDefinitionClass)`_
+Donde componentInstance es una instancia de componente creada por _`New(ComponentDefinitionClass)`_
 
-##### Example:
+##### Ejemplo:
+
 ```javascript
 componentLoader(componentInstance,load_async).then(
   (successStandardResponse)=>{
@@ -1457,76 +1487,84 @@ componentLoader(componentInstance,load_async).then(
 
 
 #### buildComponents
-Rebuilds every component that is a child element of the DOM element who owns the method. In the most of cases, you won't need to call buildComponents in order to build or rebuild every component in the DOM. This is automatically called by QCObjects when it's needed.
 
-##### Usage:
+Reconstruye cada componente que sea un elemento child del elemento DOM, quien posee el método. En la mayoría de los casos no necesitaras llamar a builcomponents con la intención de construir o reconstruir todos los componentes del DOM. Esto es automáticamente llamado por QCObjects cuando es necesario.
+
+
+##### Uso:
+
 ```javascript
 [element].buildComponents()
 ```
 
-##### Example:
+##### Ejemplo:
+
 ```javascript
 document.buildComponents()
 ```
 
 
 ### Controller
-A built-in QCObjects Class to define a controller
+
+Una clase QCObjects built-in para definir un contorlador.
 
 ### View
-A built-in QCObjects View to define a view
+
+Una vista QCObjects built in para definir una vista.
 
 ### VO
-A built-in QCObjects Class to define a value object
 
+Una clase QCObjects built-in para definir un valor de objeto.
 
 ### Service
-A QCObjects class type for services.
 
+Un tipo clase QCObjects para servicio.
 
-#### Properties
+#### Propiedades
 
 **[Service].domain**
-Returns a string with the domain of your application. It is automatically set by QCObjects at the load time.
+Regresa a una cadena que domina tu aplicación.Es automáticamente configurado por QCObjects a la hora de carga.
 
 **[Service].basePath**
-Returns a string with the base path url of your application. It is automatically set by QCObjects at the load time.
+Regresa a la cadena con un camino base url para tu aplicación. Es automáticamente configurado por QCObjects a la hora de carga.
 
 **[Service].url**
-Is a string representing the entire url of the service. It can be absolute or relative to the basePath when it applies. It can be also an external url.
+Una cadena representa el url completo del servicio. Puede ser absoluto o relativo para el basepath cuando es aplicado. Puede ser también un url externo.
 
-NOTE: To load a service of an external resource you need to specify the external parameter to true using serviceLoader.
+NOTA: Para cargar un servicio de un recurso externo necesitaras expecificar el parámetro al verdadero usando serviceLoader.
 
 **[Service].name**
-Is a string representing the name of a component. The name of a service can be any alphanumeric value that identifies the service instance. It isn't a unique ID but only a descriptive name.
+Una cadena representando el nombre de un componente. El nombre de un servicio puede ser de cualquier valor alphanumerico que identifique la instancia del servicio. No es una identificación única, sino solo un nombre descriptivo.
 
 **[Service].method**
-Is a string representing a HTTP or HTTPS method. Possible values are: "GET", "POST", "PUT", ... any other that is accepted by REST services calls.
+Una cadena representando a un metodo HTTP o a HTTPS. Los posibles valores son :"GET", "POST", "PUT", ... cualquier otro sera aceptado mediante servicios de llamadas REST.
 
 **[Service].data**
-Is an object representing the data of the service. When QCObjects loads a service. It receives the response and interpretes it as a  template. So once a service response is obtained, it will get every property of data object and bind it to a template label representing the same property inside the template content between double brakets (example: {{prop1}} in the template content will represent data.prop1 in the service instance).
-
+Es un objeto representando al servicio de datos. Cuando QCObjects carga el servicio recibe una respuesta y lo interpreta como un template. Así que una vez la respuesta del servicio es obtenida, Tomara cualquier propiedad de un objeto de datos y lo atara a una etiqueta template representando la misma propiedad dentro del contenido entre los brackets dobles(Ejemplo: {{prop1}}en el contenido de la plantilla se representará data.prop1 en la instancia de servicio).
 
 **[Service].cached**
-Is a boolean value that tells QCObjects if the service response needs to be cached or not. When a service is cached, the template content loaded from the service url will be loaded only once. You have to set this value to false for every Service instance you define in order to asure the service is loaded from the resource but not the storage cache.
+Es un servicio boolean el que le dice a QCObjects si la respuesta necesita ser cacheada o no. Cuando el servicio es cacheado el contenido plantilla cargara desde el servicio url que sera cargado de una vez. Necesitas configurar el valor falso para cada instancia de servicio defines para asegurar la carga del servicio desde el recurso pero, no del almacenamiento caché.
 
-#### Methods
+#### Métodos
+
 **[Service].set('prop',value)**
-Sets a value for a service property.
+Establece un valor para una propiedad de servicio.
 
 **[Service].get('prop')**
-Returns the value of a service property
-
+Devuelve el valor de una propiedad de servicio
 
 ### serviceLoader
-Loads a service instance and returns a promise that is resolved when the service has a successful response load and is rejected when it fails loading the response.
 
-#### Usage:
+Carga una instancia de servicio y regresa a la promesa que es resuelta cuando los servicios han respondido exitosamente a la carga y rechazados cuando falla la respuesta de carga.
+
+#### Uso:
+
 ```javascript
 [Promise] serviceLoader(serviceInstance)
 ```
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 Class('MyTestService',Service,{
     name:'myservice',
@@ -1557,42 +1595,44 @@ var service = serviceLoader(New(MyTestService,{
 
 
 ### JSONService
-Is a built-in definition for a JSON Service Class
 
-#### Properties
+Es la definición Buil-in para un servicio de clase JSON
+
+#### Propiedades
 
 **[JSONService].domain**
-Returns a string with the domain of your application. It is automatically set by QCObjects at the load time.
+Regresa una cadena con la que domina tu aplicación. Es automáticamente configurada por QCObjects a la hora de carga.
 
 **[JSONService].basePath**
-Returns a string with the base path url of your application. It is automatically set by QCObjects at the load time.
+Regresa una cadena con camino url base de tu aplicación. Es automáticamente configurada por QCObjects a la hora de carga.
 
 **[JSONService].url**
-Is a string representing the entire url of the service. It can be absolute or relative to the basePath when it applies. It can be also an external url.
+Una cadena completa representando a todo el servicio url. Puede ser absoluto o relativo al basePath cuando es aplicado. Puede ser tambien un url externo.
 
-NOTE: To load a service of an external resource you need to specify the external parameter to true using serviceLoader.
+NOTA: Para cargar un srvicio de un recurso interno necesitas especificar el parametro externo para verdaderamente usar el serviceLoader.
 
 **[JSONService].name**
-Is a string representing the name of a component. The name of a service can be any alphanumeric value that identifies the service instance. It isn't a unique ID but only a descriptive name.
+Es una cadena representando un componente. El nombre del servicio puede ser cualquier valor alphanumerico que identifique el servicio de instancia. No es una identificación única, sino solo un nombre descriptivo.
 
 **[JSONService].method**
-Is a string representing a HTTP or HTTPS method. Possible values are: "GET", "POST", "PUT", ... any other that is accepted by REST services calls.
+Es una cadena representando el metodo HTTP o HTTPS. Los posible valores son:"GET", "POST", "PUT", ... Cualquier otro sera aceptado mediante servicios de llamadas REST.
 
 **[JSONService].data**
-Is an object representing the data of the service. When QCObjects loads a service. It receives the response and interpretes it as a  template. So once a service response is obtained, it will get every property of data object and bind it to a template label representing the same property inside the template content between double brakets (example: {{prop1}} in the template content will represent data.prop1 in the service instance).
-
+Es un objeto representando al servicio de datos. Cuando QCObjects carga el servicio recibe una respuesta y lo interpreta como un template. Así que una vez la respuesta del servicio es obtenida, Tomara cualquier propiedad de un objeto de datos y lo atara a una etiqueta template representando la misma propiedad dentro del contenido entre los brackets dobles(Ejemplo: {{prop1}}en el contenido de la plantilla se representará data.prop1 en la instancia de servicio).
 
 **[JSONService].cached**
-Is a boolean value that tells QCObjects if the service response needs to be cached or not. When a service is cached, the template content loaded from the service url will be loaded only once. You have to set this value to false for every Service instance you define in order to asure the service is loaded from the resource but not the storage cache.
+Es un servicio boolean el que le dice a QCObjects si la respuesta necesita ser cacheada o no. Cuando el servicio es cacheado el contenido plantilla cargara desde el servicio url que sera cargado solo una vez. Necesitas configurar el valor falso para cada instancia de servicio defines para asegurar la carga del servicio desde el recurso pero, no del almacenamiento caché.
 
-#### Methods
+#### Métodos
+
 **[JSONService].set('prop',value)**
-Sets a value for a service property.
+Configura el Valor para una propiedad de servicio.
 
 **[JSONService].get('prop')**
-Returns the value of a service property
+Regresa el valor de una propiedad de servicio.
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 Class('MyTestJSONService',JSONService,{
     name:'myJSONservice',
@@ -1622,21 +1662,23 @@ var service = serviceLoader(New(MyTestJSONService,{
 ```
 
 ### ConfigService
-Is a built-in Class definition to load the CONFIG settings from a config.json file
 
-#### Example:
+Es una definicion de clase Buil-in que carga los ajustes CONFIG desde un archivo config.json
+
+#### Ejemplo:
+
 ```javascript
 // To set the config.json file relative url
 ConfigService.configFileName='config.json'; // it is done by default
 CONFIG.set('useConfigService',true); // using config.json for custom settings config
 ```
 
-
 ### SourceJS
 
-Use SourceJS as a static Class that is helping you to load external JS dependencies. This is commonly used to load libraries that are external and that not follow the QCObjects packages syntax.
+Usa SourseJS como una clase estática que esta ayudándote a cargar dependencias JS externas. Esto es comúnmente usado para cargar librerías externas y que no siga el paquete sintaxis de QCObjet.
 
-#### Example:
+#### Ejemplo:
+
 ```javascript
 Class("MyNewController",Controller,{
 	_new_:function (){
@@ -1655,7 +1697,7 @@ Class("MyNewController",Controller,{
 
 ### SourceCSS
 
-A static Class that is used to load an external CSS resource.
+Una clase estatica que es usada para cargar recursos CSS externos.
 
 ```javascript
 Class("MyNewController",Controller,{
@@ -1671,15 +1713,15 @@ Class("MyNewController",Controller,{
 
 ### Effect
 
-**Effect** is a super class to define custom effects.
+**Effect** es una super clase para definir los efectos.
 
-#### Example:
+#### Ejemplo:
 
 ```javascript
 Class('CustomFade',Effect,{
 	duration:500, // milliseconds of duration
 	apply: function (){
-		// You need the following line to apply a Fade effect in runtime
+		// Necesitas la siguiente línea para crear un efecto Fade en runtime
 		_super_('Fade','apply').apply(this,arguments);
 	}
 })
@@ -1688,31 +1730,31 @@ Class('CustomFade',Effect,{
 
 ### Timer
 
-**Timer** is a special implementation of **requestAnimationFrame** to emulate the creation of thread instances, so you can handle runtime paralell processing in a little bit more efficient way.
+**Timer** es una implementación especial de **requestAnimationFrame** para emular la creación de instancias de hilo, así puedes manejar runtime paralell processing en una manera un poquito más eficiente.
 
-NOTE: As it is currently depending in requestAnimationFrame availability it only works on modern browsers.
+NOTA: Como depende de la dispoinibilidad de requestAnimationFrame solo funciona en browsers modernos.
 
-#### Example:
+#### Ejemplo:
 
 ```javascript
 Timer.thread({
-		duration:300, // duration in milliseconds
+		duration:300, // duración en milisegundos
 		timing(timeFraction,elapsed){
-			return timeFraction; // you can change this line to return a custom math function for timing
+			return timeFraction; // puedes cambiar esta línea para devolver una función customizada para timing
 		},
 		intervalInterceptor(progress){
 			if (progress>=100){
-				// do whatever you want here
+				// haz lo que quieras aquí
 			}
 		}
 });
 ```
 
-## List and Math Functions
+## Funciones de lista y matemáticas
 
 ### ArrayList
 
-A Class definition used to manage lists
+Una definición de clase usada para manejar listas
 
 ```javascript
 let myvar = New(ArrayList,[1,2,3]);
@@ -1720,7 +1762,7 @@ let myvar = New(ArrayList,[1,2,3]);
 
 ### ArrayCollection
 
-An extended definition for advanced handling of collections
+Una definición extendida para manejo avanzado de colecciones
 
 ```javascript
 let collection = New(ArrayCollection, {source:[0,1,2]});
@@ -1728,8 +1770,8 @@ let collection = New(ArrayCollection, {source:[0,1,2]});
 
 ### [ArrayList or Array].unique
 
-Filters an Array or an ArrayList object to obtain only unique elements.
-NOTE: It only filters a single value sequence.
+Filtra un objeto Array o ArrayList para obtener solo elementos únicos.
+NOTA: Solo filtra una secuencia de valor único.
 
 ```javascript
 let my_unique_list = [0,1,2,1,2].unique()
@@ -1738,7 +1780,7 @@ let my_unique_list = [0,1,2,1,2].unique()
 
 ### [ArrayList or Array].table
 
-This is intended for shell scripts use only. It shows a table of the values in the list.
+Esto esta destinado para solo el uso de shell script. Muestra una tabla de valores en una lista.
 
 ```javsascript
 ["a","b","c","d"].table()
@@ -1755,7 +1797,7 @@ This is intended for shell scripts use only. It shows a table of the values in t
 
 ### [ArrayList or Array].sort
 
-Sorts the elements of the array or list.
+Ordena los elementos del array o lista.
 
 ```javascript
 let my_sorted_array = [3,3,4,0,2,1].sort()
@@ -1770,7 +1812,8 @@ let my_sorted_list = New(ArrayList,{source:[3,3,4,0,2,1]}).source.sort()
 
 ### [ArrayList or Array].sortBy
 
-Sorts a list of objects by a property value.
+Ordena una lista de objetos por un valor de propiedad.
+
 
 ```javascript
 let my_ordered_list = [
@@ -1788,10 +1831,10 @@ let my_ordered_list = [
 
 ### [ArrayList or Array].matrix
 
-Generates a matrix in one dimension.
+Genera una matriz en una dimensión.
 
-#### Usage
-**[].matrix (length, [value])** Where **length** is the number of elements and the optional **value** is the value of each element, it can be any value of any type.
+#### Uso
+**[].matrix (length, [value])** Donde **length** es un numero de elementos y el **value** opcional es un valor en cada elemento, puede ser cualquier valor de cualquier tipo.
 
 ```javascript
 let matrix = Array.matrix(10);
@@ -1829,7 +1872,7 @@ let c = ArrayList.matrix(10,{a,b})
 
 ### [ArrayList or Array].matrix2d
 
-Creates a 2D matrix.
+Crea una matriz 2D.
 
 ```javsascript
 let matrix2d = ArrayList.matrix2d(2,1);
@@ -1838,7 +1881,7 @@ let matrix2d = ArrayList.matrix2d(2,1);
 
 ### [ArrayList or Array].matrix3d
 
-Creates a 3D matrix.
+Crea una matriz 3D
 
 ```javascript
 let matrix3d = ArrayList.matrix3d(3,"a");
@@ -1852,12 +1895,13 @@ let matrix3d = ArrayList.matrix3d(3,"a");
 
 ### range
 
-Python like function to create a range list. You can use it in conjunction with ArrayList.matrix, ArrayList.matrix2d and ArrayList.matrix3d to generate complex matrix ranges.
-#### Usage
+A Python le gusta la función de crear una lista de rango. Puedes usarla en conjunto con ArrayList.matrix, ArrayList.matrix2d y ArrayList.matrix3d para generar rangos complejos de matriz.
 
-range(length) or range(initialIndex, finalIndex)
-range() without any params returns an empty list
-range(0) returns a list with one element with value 0
+#### Uso
+
+rango (longitud) o rango (initialIndex, finalIndex)
+range () sin ningún parámetro devuelve una lista vacía
+range (0) devuelve una lista con un elemento con valor 0
 
 
 ```javascript
@@ -1936,7 +1980,7 @@ let my3dmatrix = ArrayList.matrix3d(3,range(0,1));
 ```
 ### Array.sum
 
-Sums the elements of an array.
+Suma los elementos de una matriz.
 
 ```javascript
 let s = [1,2,3].sum()
@@ -1945,7 +1989,7 @@ let s = [1,2,3].sum()
 
 ### Array.avg
 
-Computes the average value of the elements in the Array
+Calcula el valor promedio de los elementos en el Array
 
 ```javascript
 let average = [10,5].avg()
@@ -1954,7 +1998,7 @@ let average = [10,5].avg()
 
 ### Array.min
 
-Returns the min value from the elements of an Array.
+Devuelve el valor mínimo de los elementos de un Array.
 
 ```javascript
 let minValue = [1,2,3].min()
@@ -1964,7 +2008,7 @@ let minValue = [1,2,3].min()
 
 ### Array.max
 
-Returns the max value from the elements of an Array
+Devuelve el valor máximo de los elementos de unArray
 
 ```javascript
 let maxValue = [1,2,3].max()
@@ -1977,9 +2021,10 @@ let maxValue = [1,2,3].max()
 
 #### org.quickcorp.components.ShadowedComponent
 
-**ShadowedComponent** Class is a custom component class designed to allow you to create a component using the Shadow DOM of browsers. Read more about Shadowed Components on [this article on Hackernoon] (https://www.hackernoon.com/shadowed-components-and-qcobjects-kd703yld).
+La Clase **ShadowedComponent** es un componente personalizado diseñado para permitirte crear un componente usando el Shadow DOM de un buscador. Lee mas sobre los componentes Shadow en [Este articulo en Hackernoon]
+ (https://www.hackernoon.com/shadowed-components-and-qcobjects-kd703yld).
 
-##### Usage:
+##### Uso:
 
 ```html
 <component componentClass="ShadowedComponent"></component>
@@ -1987,15 +2032,15 @@ let maxValue = [1,2,3].max()
 
 #### org.quickcorp.components.FormField
 
-**FormField** is a Class for **QCObjects** custom components that allows you to inject a Form Field generic behavior to your components. It has a reverse data-binding feature to detect the values of the DOM fields inside your form and assign them to the data values of your component. By this way, you don't loose performance making an old-fashioned two-way data binding based on observables. To implement this advanced behavior. You only need to do the following:
+**FormField** es una clase par los componentes personalizados**QCObjects** que te permiten que le permite inyectar un comportamiento genérico de campo de formulario a sus componentes. Tiene una característica inversa data-binding para detectar valores de los campos DOM dentro de tu formulario y asignarlos a los valores de datos de tu componente. De esta forma no perderás el desempeño creando un data binig bidireccional a la antigua basado en observables. Para implementar este comportamiento avanzado, necesitas hacer lo siguiente:
 
-1.- Assign a **data-field** attribute to the DOM tag inside the component body, with the corresponding field name in your data object.
+1.- Asigna un atributo **data-field** a la etiqueta DOM dentro del cuerpo del componente con el nombre del campo correspondiente en tu objeto de datos.
 
-2.- To your **component tag**, assign **FormField** in the **componentClass** attribute.
+2.- A tu **component tag**, asígnale **FormField** en el atributo **componentClass**.
 
-3.- To recover the data of the form inside your component, just use the componentInstance.data object. Every property of the componentInstance.data object will be linked by the binding events with the value properties on every DOM object of the form that has a data-field assigned.
+3.- Para recuperar los datos del formulario dentro de tu componente solo tienen que usar el componentInstance.data .  Cada propiedad del objeto componentInstance.data sera unido por los eventos bindig con ls propiedades del valor en cada objeto DOM del formulario que ha sido asignado al data-field.
 
-##### Usage:
+##### Uso:
 
 ```html
 <!-- Where you place the component -->
@@ -2011,34 +2056,32 @@ let maxValue = [1,2,3].max()
 <input data-field="name" type="text" placeholder="Enter Your Name" name="name" required>
 ```
 
-**data-field="name"** will be matched with **this.data.name** inside the component class and will be updated everytime a data binding event is triggered. The same will happen to **data-field="email"** and so on.
+**data-field="name"** será emparejado con  **this.data.name** dentro de la clase de componente y se actualizará cada vez que se active un evento de enlace de datos. Lo mismo pasa con **data-field="email"** y así.
 
 ##### FormField.executeBindings():
 
-The method **executeBindings** of FormField component will find the **data-field** attribute values and match them with the corresponding **data** fields in the component instance.
+ El método **executeBindings** del componente FormField donde encontraras los valores de atributo **data-field** y emparejaras con ellos los correspondientes archivos **data** en una instancia de componente.
 
 ##### Data Binding Event Change:
 
-Inside of the body of your component, when it is a **FormField** component, every time the DOM dispatches a "change" event, it will trigger the executeBindings method of your component.
+Dentro del cuerpo de su componente, cuando es un componente **FormField** cada vez que el DOM envía un evento de "cambio", activará el método executeBindings de su componente.
 
 ##### Data Binding Event Blur:
 
-Inside of the body of your component, when it is a **FormField** component, every time the DOM dispatches a "Blur" event, it will trigger the executeBindings method of your component.
+Dentro del cuerpo de su componente, cuando es un componente **FormField** cada vez que el DOM envía un evento "Blur", activará el método executeBindings de su componente.
 
 ##### Data Binding Event Focus:
 
-Inside of the body of your component, when it is a **FormField** component, every time the DOM dispatches a "Focus" event, it will trigger the executeBindings method of your component.
-
+Dentro del cuerpo de su componente, cuando es un componente**FormField** cada vez que el DOM envía un evento "Focus", activará el método executeBindings de su componente.
 ##### Data Binding Event Keydown:
 
-Inside of the body of your component, when it is a **FormField** component, every time the DOM dispatches a "Keydown" event, it will trigger the executeBindings method of your component.
-
+Dentro del cuerpo de su componente, cuando es un componente **FormField** cada vez que el DOM envía un evento "Keydown", activará el método executeBindings de su componente.
 
 #### org.quickcorp.components.ButtonField
 
-**ButtonField** is a sub-definition of **FormField**, that is commonly used for almost the same purpose of FormField. The main difference between ButtonField and FormField is that ButtonField has a **```<button>```** DOM element as the body of the component by default. And FormField hasn't a pre-defined body.
+**ButtonField** es una subdefinición de **FormField** que es comunmete usando para casi el mismo proposito del FormField.La principal diferencia entre ButtonField y FormField es que ButtonField tiene un elemento DOM ** `` `<button>` `` ** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
-##### Usage:
+##### Uso:
 
 ```html
 <component name="name_of_component" componentClass="ButtonField"></component>
@@ -2046,9 +2089,9 @@ Inside of the body of your component, when it is a **FormField** component, ever
 
 #### org.quickcorp.components.InputField
 
-**InputField** is a sub-definition of **FormField**, that is commonly used for almost the same purpose of FormField. The main difference between InputField and FormField is that InputField has a **<input>** DOM element as the body of the component by default. And FormField hasn't a pre-defined body.
+**InputField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField y FormField es que InputField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
-##### Usage:
+##### Uso:
 
 ```html
 <component name="name_of_component" componentClass="InputField"></component>
@@ -2057,9 +2100,9 @@ Inside of the body of your component, when it is a **FormField** component, ever
 
 #### org.quickcorp.components.TextField
 
-**ButtonField** is a sub-definition of **FormField**, that is commonly used for almost the same purpose of FormField. The main difference between InputField and FormField is that ButtonField has a **```<textarea>```** DOM element as the body of the component by default. And FormField hasn't a pre-defined body.
+**ButtonField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField, ButtonField y FormField es que ButtonField tiene un elemento DOM **```<textarea>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
-##### Usage:
+##### Uso:
 
 ```html
 <component name="name_of_component" componentClass="TextField"></component>
@@ -2068,9 +2111,9 @@ Inside of the body of your component, when it is a **FormField** component, ever
 
 #### org.quickcorp.components.EmailField
 
-**EmailField** is a sub-definition of **FormField**, that is commonly used for almost the same purpose of FormField. The main difference between ButtonField and FormField is that ButtonField has a **```<input>```** DOM element as the body of the component by default. And FormField hasn't a pre-defined body.
+**EmailField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre ButtonField y FormField es que ButtonField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
-##### Usage:
+##### Uso:
 
 ```html
 <component name="name_of_component" componentClass="EmailField"></component>
@@ -2078,15 +2121,15 @@ Inside of the body of your component, when it is a **FormField** component, ever
 
 #### org.quickcorp.components.GridComponent
 
-GridComponent has a predefined name assigned to the value "grid", so be aware of it when you use this component class. Also, GridComponent is intended to be used in conjunction with GridController to expand its behavior to a CSS Grid.
+GridComponent tiene un nombre predefinido asignado al valor "grid", así que tenlo en cuenta cuando uses esta clase de componente. Tambien  GridComponent está diseñado para usarse junto con GridController para expandir su comportamiento a una cuadrícula CSS.
 
-##### Usage:
+##### Uso:
 
 ```html
 <component componentClass="GridComponent" ...></component>
 ```
 
-##### Example:
+##### Ejemplo:
 
 ```html
 <component rows="2" cols="2" componentClass="GridComponent" controllerClass="GridController">
@@ -2098,9 +2141,9 @@ GridComponent has a predefined name assigned to the value "grid", so be aware of
 </controller>
 ```
 
-The above example will draw a css grid of two columns and two rows and place the subcomponents into it.
+El ejemplo anterior dibujará una cuadrícula css de dos columnas y dos filas y colocará los subcomponentes en ella.
 
-Don't forget this file:
+No olvides este archivo:
 ```html
 <!-- file: grid.tpl.html, you can use the grid template either to draw the grid itself or to draw a loading information -->
 <p>Loading grid...</p>
@@ -2112,18 +2155,18 @@ Don't forget this file:
 
 #### org.quickcorp.components.SwaggerUIComponent
 
-It is used to inject a swagger-ui DOM needed to the Swagger UI API. Learn more in this article of QCObjects DevBlog called [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
+Se usa para inyectar un DOM swagger-ui necesario para la Swagger UI API. Obtenga más información en este artículo de QCObjects DevBlog llamado [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
 
-##### Usage:
+##### Uso:
 ```html
 <component componentClass="SwaggerUIComponent" controllerClass="SwaggerUIController" ></component>
 ```
 
 #### org.quickcorp.components.splashscreen.VideoSplashScreenComponent
 
-A powerful component definition to allow you create an awesome Video Splash Screen for your progressive web app.
+Una potente definición de componente que le permite crear una impresionante pantalla de bienvenida de video para su aplicación web progresiva.
 
-##### Example:
+##### Ejemplo:
 ```html
 <!-- Add the splash screen component tag as the first component in your HTML document -->
 <component componentClass="VideoSplashScreenComponent"
@@ -2142,26 +2185,27 @@ A powerful component definition to allow you create an awesome Video Splash Scre
 
 #### org.quickcorp.controllers.GridController
 
-**GridController** is intended to be used in conjunction with **GridComponent** to allow you to create a CSS grid to place subcomponents. More info in [org.quickcorp.components.GridComponent](#org.quickcorp.components.GridComponent)
+**GridController** está destinado a ser utilizado junto con **GridComponent** para permitir crear una cuadricula CSS para colocar los subcompnentes. Más información [org.quickcorp.components.GridComponent](#org.quickcorp.components.GridComponent)
 
 #### org.quickcorp.controllers.DataGridController
 
-**DataGridController** will take the data of your component and map a set of subcomponents to fill it up.
-This is commonly used to render a dynamic list of components. It used a **subcomponentClass** attribute value in the **component** tag to determine what component definition to use to build and render every sub-component. The data on every sub-component will be filled up with the value of the element mapped to the sub-component.
+**DataGridController** tomará los datos de su componente y asignará un conjunto de subcomponentes para completarlo.
+Esto se usa comúnmente para renderizar una lista dinámica de componentes. Es usando un valor de atributo **subcomponentClass** en la etiqueta **component** para determinar que definición de componente usar para construir y renderizar cada subcomponente. Los datos en cada subcomponente seran completados con el valor de un elemento mapeado a un subcomponente.
 
-##### Usage:
+
+##### Uso:
 
 ```html
 <component name="name_of_component" controllerClass="DataGridController" subcomponentClass="SubComponentClass">
 </component>
 ```
 
-##### Example:
+##### Ejemplo:
 
-Suppose you have to render a list of profiles. Every profile has a profile picture, a name and an email.
-You want to use a card to represent every profile in the list.
+Supón que tienes que representar una lista de perfiles. Cada perfil tiene una foto de perfil, un nombre y un correo electrónico.
+Deseas usar una tarjeta(card) para representar cada perfil de la lista.
 
-So you define a CardComponent to render the picture, the name and email of an element in the list.
+Así que defines un CardComponent para renderizar la foto, el nombre y el email en un elemento en la lista.
 
 ```javascript
 Class("CardComponent",Component,{
@@ -2181,7 +2225,7 @@ Class("CardComponent",Component,{
 <p>{{email}}</p>
 ```
 
-Then, you have to place a component to generate the list of cards.
+Luego, debes colocar un componente para generar la lista de tarjetas(cards).
 
 ```html
 <component name="loading_list" componentClass="MyListComponent" controllerClass="DataGridController"
@@ -2194,7 +2238,7 @@ subcomponentClass="CardComponent">
 <p>Loading list...</p>
 ```
 
-Last, you have to define MyListComponent to assign the dynamic data of the list.
+Por último, debes  definir MyListComponent para asignar los datos dinámicos de la lista.
 
 ```javascript
 Class("MyListComponent",Component,{
@@ -2218,51 +2262,51 @@ Class("MyListComponent",Component,{
 })
 ```
 
-The resulting component will be a list of **CardComponent** with the data of every profile mapped into them by **DataGridController**.
+El componente resultante sera una lista de **CardComponent** con los datos de cada perfil dentro de ellos mediante **DataGridController**.
 
 #### org.quickcorp.controllers.ModalController
 
 #### org.quickcorp.controllers.FormValidations
 
-**FormValidations** is used to handle default validations for the **FormController**
+**FormValidations** se utiliza para manejar validaciones predeterminadas para **FormController**
 
-#### Usage:
+#### Uso:
 
 ```html
 FormValidations.getDefault(validationName)
 ```
 
-Where **validationName** is the name of the validation present in the **validations** property of the **FormController**
+Donde **validationName** es el nombre de la validación presente en la propiedad **validations** del **FormController**
 
 #### org.quickcorp.controllers.FormController
 
-The FormController definition is intended to help you to handle dynamic forms. By using the normalised syntax of the FormController definition, you don't have to code the complexity of the logic of a submit form, as it is atomised here in three steps.
+La definición FormController esta destinado a ayudarte a manejar formas dinámicas. Mediante el uso de la sintaxis normalizada de la definición FormController, no tienes que codificar la complejidad de la lógica de un formulario de envío, ya que se atomiza aquí en tres pasos.
 
-- Assign a serviceClass
-- Define the formSettings
-- Asign or code the field validations
+- Asigna una serviceClass
+- define los formSettings
+- Asignar código qr las validaciones de campo
 
 ##### [FormController].serviceClass
 
-It is the string name of the Class definition. FormController will load this class using the ClassFactory helper function, so the name can be a complete package name plus definition.
+Es el nombre de cadena de la definición de clase. FormController cargará esta clase usando la función auxiliar ClassFactory, por lo que el nombre puede ser un nombre completo del paquete más una definición.
 
 ##### [FormController].formSettings
 
-It is an object with the special properties of the form. The default settings are: backRouting:'#', loadingRouting:'#loading', nextRouting:'#signupsuccessful'. These settings are meant to handle the flow behavior of the form.
+Es un objeto con las propiedades especiales del formulario. La configuración predeterminada es: backRouting:'#', loadingRouting:'#loading', nextRouting:'#signupsuccessful'. Estas configuraciones están destinadas a manejar el comportamiento de flujo del formulario.
 
-**loadingRouting** is the name of the routing that will be triggered while the **serviceClass** is beign called until the service loader returns a response.
+**loadingRouting** es el nombre de la ruta que se activará mientras **serviceClass** comience a llamar hasta ue el servicio de recarga regrese la respuesta.
 
-**backRouting** is the name of the routing that will be triggered if the call for the **serviceClass** fails.
+**backRouting** es el nombre del enrutamiento que se activará si falla la llamada a **serviceClass**.
 
-**nextRouting** is the name of the routing that will be triggered when the call for the **serviceClass** finishes OK.
+**nextRouting** es el nombre del enrutamiento que se activará cuando la llamada para **serviceClass** finalice bien.
 
 ##### [FormController].validations
 
-It is an object with the helper functions that you want to define to validate every form field. When you define a validation function for a field, FormController will ask if the execution of that function returns true before to submit the form.
+Es un objeto con las funciones de ayuda que quieres para definir validando cada campo de formulario. Cuando defines una función de validación para un campo, FormController te preguntara si la ejecución de esa función regresa verdadera antes de enviar el formulario.
 
-To define validations for the fields of the form, you just need to add them as a part of the validations property.
+Para definir validaciones para los campos del formulario, solo necesitas agregarlas como parte de la propiedad de validaciones.
 
-##### Usage:
+##### Uso:
 
 ```javascript
 	// Let's say you have a form field called "name"
@@ -2275,7 +2319,7 @@ To define validations for the fields of the form, you just need to add them as a
 	}
 ```
 
-You can also use **FormValidations.getDefault** for simplicity.
+Tambien puede usar **FormValidations.getDefault** por simplicidad.
 
 ```javascript
 	// Let's say you have a form field called "name"
@@ -2290,20 +2334,20 @@ You can also use **FormValidations.getDefault** for simplicity.
 
 ##### [FormController].formSaveTouchHandler
 
-This method is internally used by FormController to call the serviceClass as a submit action.
-It will be binded to any click or touch event of any element inside the form that has a CSS ".submit" class assigned.
+Este metodo esta internamente usado mediante FormController para llamar al  serviceClass como una acción de envío.
+Se vinculará a cualquier evento de clic o toque de cualquier elemento dentro del formulario que tenga asignada una clase CSS ".submit".
 
-Example:
+Ejemplo:
 
 ```html
 <button class="submit"><p>Send</p></button>
 ```
 
-When the click or touch event of the above button is triggered, FormController will call the service defined in **serviceClass**, this action will be done by **formSaveTouchHandler**. If you like to change this behavior just override this method in your custom controller.
+Cuando el clic o el toque del anterior botón se active, FormController llamara al servicio definido en **serviceClass**, esta acción se hará por **formSaveTouchHandler**. Si desea cambiar este comportamiento, simplemente anule este método en su controlador personalizado.
 
 ##### A complete example of FormController
 
-Below is a complete example of a definition for a Signup Form using FormController.
+A continuación se muestra un ejemplo completo de una definición para un Formulario de registro utilizando FormController.
 
 ```javascript
 // First, define a service class that will be called on submit.
@@ -2413,9 +2457,9 @@ Class('SignupFormController',Controller,{
 
 #### org.quickcorp.controllers.SwaggerUIController
 
-It is used to inject a swagger-ui DOM needed to the Swagger UI API. Learn more in this article of QCObjects DevBlog called [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
+Es usado para inyectar un swagger-ui DOM necesario para el Swagger UI API. Aprende mas en este articulo de QCObjects DevBlog llamado [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
 
-##### Usage:
+##### Uso:
 ```html
 <component componentClass="SwaggerUIComponent" controllerClass="SwaggerUIController" ></component>
 ```
@@ -2423,20 +2467,19 @@ It is used to inject a swagger-ui DOM needed to the Swagger UI API. Learn more i
 
 ### SDK Effects
 
-QCObjects has an **Effect** definition to handle and produce new effects and transitions for the components.
-Below are some custom effect definitions that will help you to build amazing visual features to your components. To improve the performance, effects are changing CSS internally to apply the effect in a smart way. And all the effects engine is based on the **requestAnimationFrame** definition, read more [here](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames)
+QCObjects tiene una definicion  **Effect**  para manejar y producir nuevos efectos y transiciones para los componentes. A continuación hay algunas definiciones de efectos personalizadas que te ayudaran a construir sorprendentes características visuales para tus componentes. Para mejorar el rendimiento, los efectos están cambiando CSS internamente para aplicar el efecto de manera inteligente. Y todo el motor de efectos se basa en la definición **requestAnimationFrame**, lee mas sobre esto [aquí](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames)
 
 #### org.quickcorp.tools.effects.Move
 
-Moves a DOM object from one position to another.
+Mueve el objeto DOM de una posicion a otra.
 
-##### Usage:
+##### Uso:
 
 ```javascript
 Move.apply(element, xfrom, yfrom, xto, yto)
 ```
 
-##### Example:
+##### Ejemplo:
 
 ```javascript
 // The next line will move all the images from (0,0) to (10,10)
@@ -2445,15 +2488,15 @@ Tag('img').map(img => Move.apply(img,0,0,10,10))
 
 #### org.quickcorp.tools.effects.MoveXInFromRight
 
-Moves an element from the right side in X axis to the original position of the object.
+Mueve un elemento desde el lado derecho en el eje X a la posición original del objeto.
 
-##### Usage:
+##### Uso:
 
 ```javascript
 MoveXInFromRight.apply(element)
 ```
 
-##### Example:
+##### Ejemplo:
 
 ```javascript
 // the next line will move every canvas on the document from right side to its original position
@@ -2462,15 +2505,15 @@ Tag('canvas').map(canvas => MoveXInFromRight.apply(canvas));
 
 #### org.quickcorp.tools.effects.MoveXInFromLeft
 
-Moves an element from the left side in X axis to the original position of the object.
+Mueve un elemento desde el lado izquierdo en el eje X a la posición original del objeto.
 
-##### Usage:
+##### Uso:
 
 ```javascript
 MoveXInFromLeft.apply(element)
 ```
 
-##### Example:
+##### Ejemplo:
 
 ```javascript
 // the next line will move every canvas on the document from left side to its original position
@@ -2479,14 +2522,14 @@ Tag('canvas').map(canvas => MoveXInFromLeft.apply(canvas));
 
 #### org.quickcorp.tools.effects.MoveYInFromBottom
 
-Moves an object of the DOM from bottom to its original position using Y axis.
+Mueve un objeto del DOM desde abajo a su posición original usando el eje Y.
 
-##### Usage:
+##### Uso:
 ```javascript
 MoveYInFromBottom.apply(element)
 ```
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will move the body of every component named "comp1" from bottom to its original position
 Tag('component[name=comp1]').map(componentBody => MoveYInFromBottom.apply(componentBody));
@@ -2494,14 +2537,14 @@ Tag('component[name=comp1]').map(componentBody => MoveYInFromBottom.apply(compon
 
 #### org.quickcorp.tools.effects.MoveYInFromTop
 
-Moves an object of the DOM from top to its original position using Y axis.
+Mueve un objeto del DOM de arriba a su posición original usando el eje Y.
 
-##### Usage:
+##### Uso:
 ```javascript
 MoveYInFromTop.apply(element)
 ```
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will move the body of every component named "comp1" from top to its original position
 Tag('component[name=comp1]').map(componentBody => MoveYInFromTop.apply(componentBody));
@@ -2509,16 +2552,16 @@ Tag('component[name=comp1]').map(componentBody => MoveYInFromTop.apply(component
 
 #### org.quickcorp.tools.effects.RotateX
 
-Rotates an object in X axis.
+Rota un objeto en el eje X.
 
-##### Usage:
+##### Uso:
 ```javascript
 RotateX.apply(element, angleFrom, angleTo)
 ```
 
-**angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
+**angleFrom** y **angleTo** representan un valor de ángulo expresado en grados, comenzando desde 0 (cero) a 360.
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will rotate in X axis the div called #id from 180 degrees to 240 degrees
 Tag('div#id').map(div => RotateX.apply(div, 180, 240));
@@ -2527,16 +2570,16 @@ Tag('div#id').map(div => RotateX.apply(div, 180, 240));
 
 #### org.quickcorp.tools.effects.RotateY
 
-Rotates an object in Y axis.
+Rota un objeto en el eje Y.
 
-##### Usage:
+##### Uso:
 ```javascript
 RotateY.apply(element, angleFrom, angleTo)
 ```
 
-**angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
+**angleFrom** y **angleTo** representan un valor de ángulo expresado en grados, comenzando desde 0 (cero) a 360.
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will rotate in Y axis the div called #id from 0 degrees to 270 degrees
 Tag('div#id').map(div => RotateY.apply(div, 0, 270));
@@ -2544,16 +2587,16 @@ Tag('div#id').map(div => RotateY.apply(div, 0, 270));
 
 #### org.quickcorp.tools.effects.RotateZ
 
-Rotates an object in Z axis.
+Rota un objeto en el eje Z.
 
-##### Usage:
+##### Uso:
 ```javascript
 RotateZ.apply(element, angleFrom, angleTo)
 ```
 
-**angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
+**angleFrom** y **angleTo** representan un valor de ángulo expresado en grados, comenzando desde 0 (cero) a 360.
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will rotate in Z axis the div called #id from 0 degrees to 60 degrees
 Tag('div#id').map(div => RotateZ.apply(div, 0, 60));
@@ -2563,16 +2606,16 @@ Tag('div#id').map(div => RotateZ.apply(div, 0, 60));
 
 #### org.quickcorp.tools.effects.Rotate
 
-Rotates an object in X, Y, Z axes. All axes will rotate in paralell at the same time producing a 3d visual effect perception.
+Rota un objeto en los ejes X, Y, Z. Todos los ejes rotarán en paralelo al mismo tiempo produciendo una percepción de efectos visuales en 3D.
 
-##### Usage:
+##### Uso:
 ```javascript
 Rotate.apply(element, angleFrom, angleTo)
 ```
 
-**angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
+**angleFrom** y **angleTo** representan un valor de ángulo expresado en grados, comenzando desde 0 (cero) a 360.
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will rotate in X, Y and Z axes the div called #id form 0 to 270 degrees
 Tag('div#id').map(div => Rotate.apply(div, 0, 270));
@@ -2580,15 +2623,15 @@ Tag('div#id').map(div => Rotate.apply(div, 0, 270));
 
 #### org.quickcorp.tools.effects.Fade
 
-Produces a fade effect by lowering the opacity of the element.
+Produce un efecto de desvanecimiento al reducir la opacidad del elemento.
 
-##### Usage:
+##### Uso:
 
 ```javascript
 Fade.apply(element, alphaFrom, alphaTo)
 ```
 
-**alphaFrom** and **alphaTo** are numbers between 0 (zero) and 1.
+**alphaFrom** y **alphaTo** son numeros entre 0 (cero) y 1.
 
 ```javascript
 // the following line will fade a <b class="header"> element from 0.5 (mid visibility) to 1 (full visibility)
@@ -2597,16 +2640,16 @@ Tag('b.header').map(header=>Fade.apply(header, 0.5, 1))
 
 #### org.quickcorp.tools.effects.Radius
 
-Rounds the corner of an element
+Redondea la esquina de un elemento.
 
-##### Usage:
+##### Uso:
 ```javascript
 Radius.apply(element, radiusFrom, radiusTo)
 ```
 
-**radiusFrom** and **radiusTo** are numeric values.
+**radiusFrom** y **radiusTo** son valores numéricos.
 
-##### Example:
+##### Ejemplo:
 ```javascript
 // the next line will round the corners of every image in the document
 Tag('img').map(element => Radius.apply(element, 0, 100))
@@ -2614,15 +2657,15 @@ Tag('img').map(element => Radius.apply(element, 0, 100))
 
 #### org.quickcorp.tools.effects.Resize
 
-##### Usage:
+##### Uso:
 ```javascript
 Resize.apply(element, scaleFrom, scaleTo)
 ```
 
-**scaleFrom** and **scaleTo** are numeric values.
-A value of 1 is regular size, a value of 2 is double size, a value between 0 and 1 is a small scale.
+**scaleFrom** y **scaleTo** son valores numericos
+Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 0 y 1 es una escala pequeña.
 
-##### Example:
+##### Ejemplo:
 
 ```javascript
 // the next line will make a zoom-out effect on every image in the document
@@ -2637,34 +2680,34 @@ Tag('img').map(element => Resize.apply(element, 2,1))
 
 #### org.quickcorp.tools.effects.WipeLeft
 
-Makes a Wipe effect from Left side to the origin of the element.
+Hace un efecto de limpieza desde el lado izquierdo al origen del elemento.
 
-##### Usage:
+##### Uso:
 ```javascript
 WipeLeft.apply(element, scaleFrom, scaleTo)
 ```
 
-**scaleFrom** and **scaleTo** are numeric values.
-A value of 1 is regular size, a value of 2 is double size, a value between 0 and 1 is a small scale.
+**scaleFrom** y **scaleTo** son valores numericos.
+Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 0 y 1 es una escala pequeña.
 
-##### Example
+##### Ejemplo
 
 ```javascript
 Tag('img').map(element => WipeLeft.apply(element,0,1))
 ```
 
 #### org.quickcorp.tools.effects.WipeRight
-Makes a Wipe effect from right side to the origin of the element.
+Hace un efecto de limpieza desde el lado derecho hasta el origen del elemento.
 
-##### Usage:
+##### Uso:
 ```javascript
 WipeRight.apply(element, scaleFrom, scaleTo)
 ```
 
-**scaleFrom** and **scaleTo** are numeric values.
-A value of 1 is regular size, a value of 2 is double size, a value between 0 and 1 is a small scale.
+**scaleFrom** y **scaleTo** son valores numericos
+Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 0 y 1 es una escala pequeña.
 
-##### Example
+##### Ejemplo
 
 ```javascript
 Tag('img').map(element => WipeRight.apply(element,0,1))
@@ -2673,17 +2716,16 @@ Tag('img').map(element => WipeRight.apply(element,0,1))
 
 #### org.quickcorp.tools.effects.WipeUp
 
-Makes a Wipe effect from down to up the origin of the element.
+Realiza un efecto de limpieza de abajo hacia arriba en el origen del elemento.
 
-##### Usage:
+##### Uso:
 ```javascript
 WipeUp.apply(element, scaleFrom, scaleTo)
 ```
 
-**scaleFrom** and **scaleTo** are numeric values.
-A value of 1 is regular size, a value of 2 is double size, a value between 0 and 1 is a small scale.
-
-##### Example
+**scaleFrom** y **scaleTo** son valores numericos.
+Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 0 y 1 es una escala pequeña.
+##### Ejemplo
 
 ```javascript
 Tag('img').map(element => WipeUp.apply(element,0,1))
@@ -2691,17 +2733,17 @@ Tag('img').map(element => WipeUp.apply(element,0,1))
 
 #### org.quickcorp.tools.effects.WipeDown
 
-Makes a Wipe effect from up to down the origin of the element.
+Realiza un efecto de limpieza de arriba a abajo en el origen del elemento.
 
-##### Usage:
+##### Uso:
 ```javascript
 WipeDown.apply(element, scaleFrom, scaleTo)
 ```
 
-**scaleFrom** and **scaleTo** are numeric values.
-A value of 1 is regular size, a value of 2 is double size, a value between 0 and 1 is a small scale.
+**scaleFrom** y **scaleTo** son valores numéricos.
+Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 0 y 1 es una escala pequeña.
 
-##### Example
+##### Ejemplo
 
 ```javascript
 Tag('img').map(element => WipeDown.apply(element,0,1))
@@ -2716,28 +2758,28 @@ Tag('img').map(element => WipeDown.apply(element,0,1))
 
 ### SDK Views
 
-Below are a set of pre-defined views for common use.
+A continuación hay un conjunto de vistas predefinidas para uso común.
 
 #### org.quickcorp.views.GridView
 
-A generic GridView definition for use with grids.
+Una definion generica GridView para usar con cuadriculas.
 
 ### SDK i18n messages
 
-The QCObjects i18n engine allows you to define custom messages . Learn more in this article in the DevBlog called [i18n Internationalisation for your Progressive Web Apps](https://devblog.qcobjects.org/i18n-internationalisation-for-your-progressive-web-apps-ck90h4qz301ca7vs1ue7joopu)
+El motor QCObjects i18n le permite definir mensajes personalizados. Obtenga más información en este artículo en el DevBlog llamado [i18n Internationalisation for your Progressive Web Apps](https://devblog.qcobjects.org/i18n-internationalisation-for-your-progressive-web-apps-ck90h4qz301ca7vs1ue7joopu)
 
 #### org.quickcorp.i18n_messages.i18n_messages
 
-Used to call the i18n engine.
+Utlizado para llamar al motor i18n.
 
-##### Usage:
+##### Uso:
 ```javascript
   Class('i18n_messages_<custom lang>', i18n_messages,{
 		...
 	})
 ```
 
-##### Example
+##### Ejemplo
 ```javascript
 'use strict';
 // file: js/packages/org.quickcorp.i18n_messages.es.js
@@ -2764,53 +2806,51 @@ Package('org.quickcorp.i18n_messages.es', [
 
 ## The QCObjects HTTP2 Built-In Server
 
-The QCObjects HTTP2 Built-In Server will help you to test your application
-in a local environment before to deploy to a production environment.
-For production environment it is recommended to use QCObjects HTTP2 Built-In Server under Ubuntu 18.x or newer and NodeJS 12.x or newer.
+El servidor HTTP2 Built-In de QCObjects te ayudara a probar tu aplicacion en un entorno local antes de implementarlo en un entorno de producción.
+Para el entorno de producción, se recomienda utilizar el servidor QCObjects HTTP2 Built-In en Ubuntu 18.x o el mas nuevo y NodeJS 12.x o mas actual.
 
 ### Start serving your files with QCObjects
 
-To start using the QCObjects HTTP2 Built-In Server, you just go to your project path and execute the following command line in your bash shell:
+Para comenzar a utilizar el servior de QCObjects HTTP2 Built-In,solo necesitas ir a la ruta del proyecto y ejecutar la ssiguiente liniea de comandos en tu bash shell:
 
 ```shell
 > qcobjects launch mynewapp
 ```
 
-or
+o
 
 ```
 > qcobjects-server
 ```
 
-It will start serving the files inside the folder you are present, unsing a built-in HTTP2 Server with the default configuration settings.
-
+Comenzara a servir los archivos dentro de la carpeta donde estas, usando el servidor built-in HTTP2 Server cin la configuracion predeterminada.
 
 ### Principals of an N-Tier or Multitier architecture
 
-QCObjects was designed to work into a professional environment. There are many ways and paradigms to use when you define your software architecture. One recommended is using a Multitier or N-Tier architecture.
+QCObjects fue diseñado para trabajar en un entorno profesional. Hay muchas formas y paradigmas para usar cuando define su arquitectura de software. Se recomienda  es usar una arquitectura Multitier o N-Tier.
 
-The benefits of a Multitier or N-Tier architecture are scalability and reliability of the systems that are demanding higger impact and performance. To go deep into this concepts would unnecessary enlarge this reference document but you can read more about this concepts in the following external links (only for reference and study):
+Los beneficios de la arquitectura  Multitier o N-Tier son la escalabilidad y confiabilidad de los sistemas que exigen un mayor impacto y rendimiento. Para profundizar en estos conceptos sería innecesario ampliar este documento de referencia, pero puede leer más sobre estos conceptos en los siguientes enlaces externos(solo para referencia y estudio):
 
-- [Miltitier Architecture](https://en.m.wikipedia.org/wiki/Multitier_architecture)
-- [3 Tier Architecture](https://www.tonymarston.net/php-mysql/3-tier-architecture.html)
-- [Milti Tier Application](https://www.techopedia.com/definition/23599/multi-tier-application)
-- [N Tier Architecture System Concepts and Tips](https://www.guru99.com/n-tier-architecture-system-concepts-tips.html)
+- [Arquitectura Miltitier ](https://en.m.wikipedia.org/wiki/Multitier_architecture)
+- [Arquitectura 3 Tier ](https://www.tonymarston.net/php-mysql/3-tier-architecture.html)
+- [Aplicacion Milti Tier ](https://www.techopedia.com/definition/23599/multi-tier-application)
+- [Conceptos del sistema de arquitectura N Tier y Tips](https://www.guru99.com/n-tier-architecture-system-concepts-tips.html)
 
 
 ### Micro-services Principals
 
-The main goal of a microservice is that you can compact a fragment of backend functionality in a piece of code that can be called remotely from another backend or frontend terminal. Basically you can split a high level backend service into a multiple small micro-services that can complete the task. There are thousands of good examples of this kind of pattern adoption. You can read more about this concept in the following external links (only for reference and study):
+El objetivo principal de un microservicio es que puede compactar un fragmento de funcionalidad de back-end en un código que se puede llamar de forma remota desde otro terminal de back-end o frontend. Básicamente, puedes dividir un servicio de back-end de alto nivel en múltiples microservicios pequeños que pueden completar la tarea. Hay miles de buenos ejemplos de este tipo de adopción de patrones. Puede leer más sobre este concepto en los siguientes enlaces externos (solo para referencia y estudio):
 
 - [Microservice Patterns](https://microservices.io)
 - [Microservices on Wikipedia](https://en.wikipedia.org/wiki/Microservices)
 
-With QCObjects you can code your microservices in a way more fancy, clean and quick.
+Con QCObjects puedes codificar sus microservicios de una manera más elegante, limpia y rápida.
 
 ### Backend settings in config.json
 
-You can also use config.json in the backend side to make some tunning and custom settings for backend, specially useful for making the microservice routes.
+También puedes usar config.json en el lado del backend para hacer algunos ajustes y configuraciones personalizadas para el backend, especialmente útil para hacer las rutas de microservicio.
 
-Below is an example of a customised config.json file including the backend settings:
+A continuación se muestra un ejemplo de un archivo config.json personalizado que incluye la configuración del back-end:
 
 ```json
 {
@@ -2836,8 +2876,8 @@ Below is an example of a customised config.json file including the backend setti
 
 ### Backend routing
 
-Inside your config.json file you can set the backend routes for your microservices.
-For every microservice route, a path and a microservice package string is required.
+Dentro de su archivo config.json puede establecer las rutas de back-end para sus microservicios.
+Para cada ruta de microservicio, se requiere una ruta y una cadena de paquete de microservicio.
 
 ```json
 {
@@ -2852,14 +2892,14 @@ For every microservice route, a path and a microservice package string is requir
 }
 ```
 
-When you set up the backend routes, the QCObjects HTTP2 Built-In Server will know how to handle the calls for every path defined. For every other path that is undefined by the backend routes settings, the server will handle the call with the default behavior, that is using a static file as response if it exists.
-With that in mind you can use QCObjects either to manage and serve static files or dynamically served files when you need it.
+Cuando configuras las rutas de back-end, el servidor  QCObjects HTTP2 Built-In  sabra como manejar las llaadas de cada ruta definida. Para cada otra ruta que este indefinida mediante los ajustes del Back-end, el servidor se manejara para llamar al comportamiento por defecto que está usando un archivo estático como respuesta si existe.
+ Con eso en mente puedes usar QCObjects tanto para administar y servir archivos estaticos o servicios servidos dinamicamente cuando lo necesites.
 
 ### The QCObjects Microservice Class and Package
 
-When you set up a backend route definition, you need to specify a microservice package. This microservice package is a QCObjects definition of a package with a Microservice class extended from a BackendMicroservice class already defined by QCObjects.
+cuando configuras la definicion de ruta bakend, necesitas especificar un paquete de microdervicio.Este paquete de microservicio es una definicion de QCObjects de un paquete con una clase microservicio extendida desde la clase BackendMicroservice ya definida por QCObjects.
 
-Below is an example of a microservice package definition, writen in the file org.quickcorp.backend.signup.js
+A continuación se muestra un ejemplo de una definición de paquete de microservicio, escrita en el archivo org.quickcorp.backend.signup.js
 
 ```javascript
 'use strict';
@@ -2887,14 +2927,13 @@ Package('cl.quickcorp.backend.signup',[
     }
   })
 ]);
-
 ```
 
-The above microservice is saving a file with the data received from a post request, and answering a jsonrpc 2.0 standard output. Read more about JSON RPC 2.0 Specification [here](https://www.jsonrpc.org/specification)
+El microservicio anterior está guardando un archivo con los datos recibidos de una solicitud posterior y respondiendo a una salida estándar jsonrpc 2.0. Lee sobre estas especificaciones  JSON RPC 2.0 [Aquí](https://www.jsonrpc.org/specification)
 
-QCObjects HTTP2 Built-In Server will make a call to the post() method of the Microservice class definition only when a post request is made to the right path defined into the config.json referencing the name of the package as the initial indexing point of reference.
+El servidor QCObjects HTTP2 Built-In hara una llamada al metodo post() de la definicion de clase Microservice solo cuadose realiza una solicitud posterior en la ruta correcta definida en config.json que hace referencia al nombre del paquete como el punto de referencia de indexación inicial.
 
-In order to allow QCObjects understand and execute your microservies in the right way, inside a microservice package, a Microservice class definition is required, and also the Microservice class definition must to extend the BackendMicroservice class that is a part of QCObjects built-in classes.
+Para permitir que QCObjects entienda y ejecute sus microservicios de la manera correcta dentro de un paquete de microservicios, una definicion de clase Microservice es requerida y tambine la definicion de clase  Microservice tiene que extender la clase BackendMicroservice que es parte de las clases built-in de QCObjects.
 
 
 ### Generating a Self-Signed Certificate with QCObjects
@@ -3079,32 +3118,27 @@ Package('cl.quickcorp.controller',[
 		component: null,
 		done:function (){
 			var controller = this;
-
-
-
 			logger.debug('MyAccountController Element Initialized');
 			this.component.body.setAttribute('loaded',true);
-
 		},
 		_new_:function (o){
 			//TODO: Implement
 			this.component = o.component;
-
 		}
 	}),
 ]);
 ```
 
-## Step 5: To use into the HTML5 code you only need to do some settings between script tags:
+## Step 5: To use into the HTML5 code you only need to do some settings between script tags
 
 ```html
 <script>
 CONFIG.set('relativeImportPath','js/packages/');
 CONFIG.set('componentsBasePath','templates/components/');
 CONFIG.set('delayForReady',1); // delay to wait before executing the first ready event, it includes imports
-CONFIG.set('preserveComponentBodyTag',false); // don't use <componentBody></componentBody> tag
+CONFIG.set('preserveComponentBodyTag',false); // don't use ```<componentBody></componentBody>``` tag
 
-Import('cl.quickcorp'); # this will import your main file: cl.quickcorp.js into js/packages/ file path
+Import('cl.quickcorp'); // this will import your main file: cl.quickcorp.js into js/packages/ file path
 </script>
 ```
 
@@ -3121,10 +3155,10 @@ Import('cl.quickcorp'); # this will import your main file: cl.quickcorp.js into 
 
 ## Commands
 
-   **create** [options] ```<appname>```   Creates an app with ```<appname>```
-   **publish** [options] ```<appname>```  Publishes an app with ```<appname>```
-   **generate-sw** ```<appname>```        Generates the service worker  ```<appname>```
-   **launch** ```<appname>```             Launches the application
+   **create** [options] ```<appname>``` Crea una aplicación con ```<appname>```
+   **publish** [options] ```<appname>```  Publica una aplicación con ```<appname>```
+   **generate-sw** ```<appname>```        Genera el trabajador de servicio  ```<appname>```
+   **launch** ```<appname>```             Inicia la aplicación.
 
 ## Use:
    $ qcobjects-cli [command] --help

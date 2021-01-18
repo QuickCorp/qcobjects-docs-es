@@ -1,0 +1,66 @@
+### JSONService
+
+Es la definición Buil-in para un servicio de clase JSON
+
+#### Propiedades
+
+**[JSONService].domain**
+Regresa una cadena con la que domina tu aplicación. Es automáticamente configurada por QCObjects a la hora de carga.
+
+**[JSONService].basePath**
+Regresa una cadena con camino url base de tu aplicación. Es automáticamente configurada por QCObjects a la hora de carga.
+
+**[JSONService].url**
+Una cadena completa representando a todo el servicio url. Puede ser absoluto o relativo al basePath cuando es aplicado. Puede ser tambien un url externo.
+
+NOTA: Para cargar un srvicio de un recurso interno necesitas especificar el parametro externo para verdaderamente usar el serviceLoader.
+
+**[JSONService].name**
+Es una cadena representando un componente. El nombre del servicio puede ser cualquier valor alphanumerico que identifique el servicio de instancia. No es una identificación única, sino solo un nombre descriptivo.
+
+**[JSONService].method**
+Es una cadena representando el metodo HTTP o HTTPS. Los posible valores son:"GET", "POST", "PUT", ... Cualquier otro sera aceptado mediante servicios de llamadas REST.
+
+**[JSONService].data**
+Es un objeto representando al servicio de datos. Cuando QCObjects carga el servicio recibe una respuesta y lo interpreta como un template. Así que una vez la respuesta del servicio es obtenida, Tomara cualquier propiedad de un objeto de datos y lo atara a una etiqueta template representando la misma propiedad dentro del contenido entre los brackets dobles(Ejemplo: {{prop1}}en el contenido de la plantilla se representará data.prop1 en la instancia de servicio).
+
+**[JSONService].cached**
+Es un servicio boolean el que le dice a QCObjects si la respuesta necesita ser cacheada o no. Cuando el servicio es cacheado el contenido plantilla cargara desde el servicio url que sera cargado solo una vez. Necesitas configurar el valor falso para cada instancia de servicio defines para asegurar la carga del servicio desde el recurso pero, no del almacenamiento caché.
+
+#### Métodos
+
+**[JSONService].set('prop',value)**
+Configura el Valor para una propiedad de servicio.
+
+**[JSONService].get('prop')**
+Regresa el valor de una propiedad de servicio.
+
+#### Ejemplo:
+
+```javascript
+Class('MyTestJSONService',JSONService,{
+    name:'myJSONservice',
+    external:true,
+    cached:false,
+    method:'GET',
+    withCredentials:false,
+    url:'https://api.github.com/orgs/QuickCorp/repos',
+    _new_:function (){
+      // service instantiated
+      delete this.headers.charset; // do not send the charset header
+    },
+    done:function (result){
+      _super_('JSONService','done').call(this,result);
+    }
+});
+var service = serviceLoader(New(MyTestJSONService,{
+  data:{param1:1}
+})).then(
+  (successfulResponse)=>{
+    // This will show the service response as a JSON object
+    console.log(successfulResponse.service.JSONresponse);
+  },
+  (failedResponse)=>{
+
+  });
+```
