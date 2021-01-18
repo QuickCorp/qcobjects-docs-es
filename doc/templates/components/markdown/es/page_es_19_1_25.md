@@ -1,0 +1,3 @@
+### VO
+
+Una clase QCObjects built-in para definir un valor de objeto.

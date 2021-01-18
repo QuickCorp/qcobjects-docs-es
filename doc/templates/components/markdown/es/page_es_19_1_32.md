@@ -1,0 +1,16 @@
+### Effect
+
+**Effect** es una super clase para definir los efectos.
+
+#### Ejemplo:
+
+```javascript
+Class('CustomFade',Effect,{
+	duration:500, // milliseconds of duration
+	apply: function (){
+		// Necesitas la siguiente línea para crear un efecto Fade en runtime
+		_super_('Fade','apply').apply(this,arguments);
+	}
+})
+```
+

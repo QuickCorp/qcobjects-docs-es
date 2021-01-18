@@ -1,0 +1,8 @@
+### Array.sum
+
+Suma los elementos de una matriz.
+
+```javascript
+let s = [1,2,3].sum()
+// s = 6
+```

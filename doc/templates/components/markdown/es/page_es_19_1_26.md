@@ -1,0 +1,36 @@
+### Service
+
+Un tipo clase QCObjects para servicio.
+
+#### Propiedades
+
+**[Service].domain**
+Regresa a una cadena que domina tu aplicación.Es automáticamente configurado por QCObjects a la hora de carga.
+
+**[Service].basePath**
+Regresa a la cadena con un camino base url para tu aplicación. Es automáticamente configurado por QCObjects a la hora de carga.
+
+**[Service].url**
+Una cadena representa el url completo del servicio. Puede ser absoluto o relativo para el basepath cuando es aplicado. Puede ser también un url externo.
+
+NOTA: Para cargar un servicio de un recurso externo necesitaras expecificar el parámetro al verdadero usando serviceLoader.
+
+**[Service].name**
+Una cadena representando el nombre de un componente. El nombre de un servicio puede ser de cualquier valor alphanumerico que identifique la instancia del servicio. No es una identificación única, sino solo un nombre descriptivo.
+
+**[Service].method**
+Una cadena representando a un metodo HTTP o a HTTPS. Los posibles valores son :"GET", "POST", "PUT", ... cualquier otro sera aceptado mediante servicios de llamadas REST.
+
+**[Service].data**
+Es un objeto representando al servicio de datos. Cuando QCObjects carga el servicio recibe una respuesta y lo interpreta como un template. Así que una vez la respuesta del servicio es obtenida, Tomara cualquier propiedad de un objeto de datos y lo atara a una etiqueta template representando la misma propiedad dentro del contenido entre los brackets dobles(Ejemplo: {{prop1}}en el contenido de la plantilla se representará data.prop1 en la instancia de servicio).
+
+**[Service].cached**
+Es un servicio boolean el que le dice a QCObjects si la respuesta necesita ser cacheada o no. Cuando el servicio es cacheado el contenido plantilla cargara desde el servicio url que sera cargado de una vez. Necesitas configurar el valor falso para cada instancia de servicio defines para asegurar la carga del servicio desde el recurso pero, no del almacenamiento caché.
+
+#### Métodos
+
+**[Service].set('prop',value)**
+Establece un valor para una propiedad de servicio.
+
+**[Service].get('prop')**
+Devuelve el valor de una propiedad de servicio

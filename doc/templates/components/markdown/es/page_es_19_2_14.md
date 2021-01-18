@@ -1,0 +1,8 @@
+### Array.max
+
+Devuelve el valor máximo de los elementos de unArray
+
+```javascript
+let maxValue = [1,2,3].max()
+// maxValue = 3
+```

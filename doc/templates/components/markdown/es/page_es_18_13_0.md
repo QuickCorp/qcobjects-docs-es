@@ -1,0 +1,19 @@
+### Usando CDNJS
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qcobjects/[VERSION]/QCObjects.js"></script>
+```
+
+Donde [VERSIÓN] corresponde a la ultima versión usando notaciones numericas, ejemplo: to use version 2.1.420:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qcobjects/2.1.420/QCObjects.js"></script>
+```
+
+No necesitas minificar QCObjects, pero si aún quieres usar el codigo minificado puedes hacer esto:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qcobjects/2.1.420/QCObjects.min.js"></script>
+```
+
+Otra vez cambia 2.1.420 al numero de la versión que quieras usar.

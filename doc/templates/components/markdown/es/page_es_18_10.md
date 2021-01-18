@@ -1,0 +1,5 @@
+## Usando la versión minificada de código CDN desde jsDelivr
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/qcobjects/QCObjects.min.js"></script>
+```
