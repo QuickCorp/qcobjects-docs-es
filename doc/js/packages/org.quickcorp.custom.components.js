@@ -3,7 +3,7 @@ Package("org.quickcorp.custom.components",[
   Class('SideMarkdownComponent',Component,{
   dependencies:[],
   body:document.createElement('div'),
-  templateURI:'doc/templates/components/markdown/en/page_en_4.md',
+  templateURI:'doc/templates/components/markdown/es/page_es_4.md',
   cached:false,
   controller:null,
   view:null,
