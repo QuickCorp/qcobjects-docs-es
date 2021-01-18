@@ -1,4 +1,4 @@
-#### QCObjects
+#### QCObjects Framework
 
 ![logo](https://qcobjects.dev/qcobjects_01.png)
 
