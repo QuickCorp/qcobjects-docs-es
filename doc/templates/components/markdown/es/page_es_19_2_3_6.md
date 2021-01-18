@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.RotateX
+#### org.qcobjects.tools.effects.RotateX
 
 Rota un objeto en el eje X.
 

@@ -14,7 +14,7 @@ Donde packageContent es una gama de clases de QCObjects. Si solo pasas el packag
 
 ```javascript
 'use strict';
-Package('org.quickcorp.main',[
+Package('org.qcobjects.main',[
   Class('Main',InheritClass,{
     propertyName1:'propertyValue1',
   }),
@@ -27,7 +27,7 @@ Package('org.quickcorp.main',[
 #### Ejemplo (2):
 
 ```javascript
-let mainPackage = Package('org.quickcorp.main'); // this will return the previously declared content of package 'org.quickcorp.main'
+let mainPackage = Package('org.qcobjects.main'); // this will return the previously declared content of package 'org.qcobjects.main'
 // mainPackage[0] will be the Main class definition.
 // This is useful for code introspection
 ```

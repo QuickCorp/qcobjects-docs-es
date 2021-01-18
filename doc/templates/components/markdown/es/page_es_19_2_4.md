@@ -1,5 +1,5 @@
 ### SDK Misc Tools
 
-#### org.quickcorp.tools.canvas.CanvasTool
+#### org.qcobjects.tools.canvas.CanvasTool
 
-#### org.quickcorp.tools.layouts.BasicLayout
+#### org.qcobjects.tools.layouts.BasicLayout

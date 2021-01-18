@@ -1,1 +1,1 @@
-#### org.quickcorp.tools.canvas.CanvasTool
+#### org.qcobjects.tools.canvas.CanvasTool

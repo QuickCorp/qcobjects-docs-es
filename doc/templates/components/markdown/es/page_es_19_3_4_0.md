@@ -18,7 +18,7 @@ A continuación se muestra un ejemplo de un archivo config.json personalizado qu
     "routes":[
       {
         "path":"/createaccount",
-        "microservice":"org.quickcorp.backend.signup",
+        "microservice":"org.qcobjects.backend.signup",
         "responseHeaders":{}
       }
     ]

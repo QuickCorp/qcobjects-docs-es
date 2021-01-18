@@ -1,1 +1,1 @@
-#### org.quickcorp.components.ModalComponent
+#### org.qcobjects.components.ModalComponent

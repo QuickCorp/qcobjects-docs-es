@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.Rotate
+#### org.qcobjects.tools.effects.Rotate
 
 Rota un objeto en los ejes X, Y, Z. Todos los ejes rotarán en paralelo al mismo tiempo produciendo una percepción de efectos visuales en 3D.
 

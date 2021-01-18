@@ -2,7 +2,7 @@
 
 El motor QCObjects i18n le permite definir mensajes personalizados. Obtenga más información en este artículo en el DevBlog llamado [i18n Internationalisation for your Progressive Web Apps](https://devblog.qcobjects.org/i18n-internationalisation-for-your-progressive-web-apps-ck90h4qz301ca7vs1ue7joopu)
 
-#### org.quickcorp.i18n_messages.i18n_messages
+#### org.qcobjects.i18n_messages.i18n_messages
 
 Utlizado para llamar al motor i18n.
 
@@ -16,8 +16,8 @@ Utlizado para llamar al motor i18n.
 ##### Ejemplo
 ```javascript
 'use strict';
-// file: js/packages/org.quickcorp.i18n_messages.es.js
-Package('org.quickcorp.i18n_messages.es', [
+// file: js/packages/org.qcobjects.i18n_messages.es.js
+Package('org.qcobjects.i18n_messages.es', [
   Class('i18n_messages_es', i18n_messages, {
     messages: [
        // ... your custom language dictionary is here

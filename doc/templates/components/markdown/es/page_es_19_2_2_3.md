@@ -1,1 +1,1 @@
-#### org.quickcorp.controllers.ModalController
+#### org.qcobjects.controllers.ModalController

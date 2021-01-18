@@ -1,4 +1,4 @@
-#### org.quickcorp.controllers.FormController
+#### org.qcobjects.controllers.FormController
 
 La definición FormController esta destinado a ayudarte a manejar formas dinámicas. Mediante el uso de la sintaxis normalizada de la definición FormController, no tienes que codificar la complejidad de la lógica de un formulario de envío, ya que se atomiza aquí en tres pasos.
 

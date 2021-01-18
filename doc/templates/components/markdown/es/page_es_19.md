@@ -239,14 +239,14 @@ console.log(MyClass == ClassFactory('MyClass')) // it will show true
 ```javascript
 /* On the other hand, ClassFactory() will be so useful when you define a Class into a Package
 */
-Package('org.quickcorp.package1',[
+Package('org.qcobjects.package1',[
 	Class('MyClass',{
 		a:1
 	})
 ])
 console.log(MyClass == ClassFactory('MyClass')) // it will still show true
 // The following line will show true as well
-console.log(MyClass == ClassFactory('org.quickcorp.package1.MyClass'))
+console.log(MyClass == ClassFactory('org.qcobjects.package1.MyClass'))
 ```
 
 ```javascript
@@ -254,12 +254,12 @@ console.log(MyClass == ClassFactory('org.quickcorp.package1.MyClass'))
 * same name MyClass into different packages but with different property default values
 * and even properties
 */
-Package('org.quickcorp.package1',[
+Package('org.qcobjects.package1',[
 	Class('MyClass',{
 		a:1
 	})
 ])
-Package('org.quickcorp.package2',[
+Package('org.qcobjects.package2',[
 	Class('MyClass',{
 		a:2,
 		b:1
@@ -269,16 +269,16 @@ Package('org.quickcorp.package2',[
 // so the reference MyClass in the code will point to that one
 console.log(MyClass == ClassFactory('MyClass')) // it will still show true
 
-// In this case as the MyClass defined in the org.quickcorp.package1 will not be the same
-// as the one in the org.quickcorp.package2, but the MyClass in the package2 is the last one
+// In this case as the MyClass defined in the org.qcobjects.package1 will not be the same
+// as the one in the org.qcobjects.package2, but the MyClass in the package2 is the last one
 // The following line will show false
-console.log(MyClass == ClassFactory('org.quickcorp.package1.MyClass'))
+console.log(MyClass == ClassFactory('org.qcobjects.package1.MyClass'))
 
 // The following line will show true
-console.log(MyClass == ClassFactory('org.quickcorp.package2.MyClass'))
+console.log(MyClass == ClassFactory('org.qcobjects.package2.MyClass'))
 
 // The following line will show false
-console.log(ClassFactory('org.quickcorp.package1.MyClass') == ClassFactory('org.quickcorp.package2.MyClass'))
+console.log(ClassFactory('org.qcobjects.package1.MyClass') == ClassFactory('org.qcobjects.package2.MyClass'))
 ```
 
 Los ejemplos anteriores están intencionalmente hechos para explicar y mostrar como el alcance de la definición de clase en QCObjects es protejida, llevada y reflejada en una ClassFactory.
@@ -300,18 +300,18 @@ Class('MyExtendedClass',MyInheritClass,{
 /* But to protect the scope from misleading by reference, you can asure that MyInheritClass
 is the one you want to extend by declaring it into a package and then extend it
 */
-Package('org.quickcorp.mypackage1',[
+Package('org.qcobjects.mypackage1',[
 	Class('MyInheritClass',{
 		sourceProp:1
 	}),
 ])
 
 // The following code is a definition of MyExtendedClass into a different package
-// org.quickcorp.package2
+// org.qcobjects.package2
 // extending MyInheritClass using ClassFactory to retreive the Class from the source package
-// org.quickcorp.mypackage1
-Package('org.quickcorp.mypackage2',[
-	Class('MyExtendedClass',ClassFactory('org.quickcorp.mypackage1.MyInheritClass'),{
+// org.qcobjects.mypackage1
+Package('org.qcobjects.mypackage2',[
+	Class('MyExtendedClass',ClassFactory('org.qcobjects.mypackage1.MyInheritClass'),{
 		extendedProp1: 'value of prop',
 		extendedProp2: 2
 	})
@@ -521,7 +521,7 @@ Donde packageContent es una gama de clases de QCObjects. Si solo pasas el packag
 
 ```javascript
 'use strict';
-Package('org.quickcorp.main',[
+Package('org.qcobjects.main',[
   Class('Main',InheritClass,{
     propertyName1:'propertyValue1',
   }),
@@ -534,7 +534,7 @@ Package('org.quickcorp.main',[
 #### Ejemplo (2):
 
 ```javascript
-let mainPackage = Package('org.quickcorp.main'); // this will return the previously declared content of package 'org.quickcorp.main'
+let mainPackage = Package('org.qcobjects.main'); // this will return the previously declared content of package 'org.qcobjects.main'
 // mainPackage[0] will be the Main class definition.
 // This is useful for code introspection
 ```
@@ -556,14 +556,14 @@ Donde el packagename es el nombre del paquete, listo es una función que podrá 
 #### Ejemplo (1):
 
 ```javascript
-Import('org.quickcorp.main');
+Import('org.qcobjects.main');
 ```
-El código anterior intentara importar un archivo JS llamado 'org.quickcorp.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.quickcorp.main',[Class1, Class2...])
+El código anterior intentara importar un archivo JS llamado 'org.qcobjects.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.qcobjects.main',[Class1, Class2...])
 
 #### Ejemplo (2):
 
 ```javascript
-Import('org.quickcorp.main',function (){
+Import('org.qcobjects.main',function (){
   console.log('remote import is loaded');
 },true);
 ```
@@ -1474,7 +1474,7 @@ let maxValue = [1,2,3].max()
 
 ### SDK Components
 
-#### org.quickcorp.components.ShadowedComponent
+#### org.qcobjects.components.ShadowedComponent
 
 La Clase **ShadowedComponent** es un componente personalizado diseñado para permitirte crear un componente usando el Shadow DOM de un buscador. Lee mas sobre los componentes Shadow en [Este articulo en Hackernoon]
  (https://www.hackernoon.com/shadowed-components-and-qcobjects-kd703yld).
@@ -1485,7 +1485,7 @@ La Clase **ShadowedComponent** es un componente personalizado diseñado para per
 <component componentClass="ShadowedComponent"></component>
 ```
 
-#### org.quickcorp.components.FormField
+#### org.qcobjects.components.FormField
 
 **FormField** es una clase par los componentes personalizados**QCObjects** que te permiten que le permite inyectar un comportamiento genérico de campo de formulario a sus componentes. Tiene una característica inversa data-binding para detectar valores de los campos DOM dentro de tu formulario y asignarlos a los valores de datos de tu componente. De esta forma no perderás el desempeño creando un data binig bidireccional a la antigua basado en observables. Para implementar este comportamiento avanzado, necesitas hacer lo siguiente:
 
@@ -1532,7 +1532,7 @@ Dentro del cuerpo de su componente, cuando es un componente**FormField** cada ve
 
 Dentro del cuerpo de su componente, cuando es un componente **FormField** cada vez que el DOM envía un evento "Keydown", activará el método executeBindings de su componente.
 
-#### org.quickcorp.components.ButtonField
+#### org.qcobjects.components.ButtonField
 
 **ButtonField** es una subdefinición de **FormField** que es comunmete usando para casi el mismo proposito del FormField.La principal diferencia entre ButtonField y FormField es que ButtonField tiene un elemento DOM ** `` `<button>` `` ** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -1542,7 +1542,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 <component name="name_of_component" componentClass="ButtonField"></component>
 ```
 
-#### org.quickcorp.components.InputField
+#### org.qcobjects.components.InputField
 
 **InputField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField y FormField es que InputField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -1553,7 +1553,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 ```
 
 
-#### org.quickcorp.components.TextField
+#### org.qcobjects.components.TextField
 
 **ButtonField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField, ButtonField y FormField es que ButtonField tiene un elemento DOM **```<textarea>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -1564,7 +1564,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 ```
 
 
-#### org.quickcorp.components.EmailField
+#### org.qcobjects.components.EmailField
 
 **EmailField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre ButtonField y FormField es que ButtonField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -1574,7 +1574,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 <component name="name_of_component" componentClass="EmailField"></component>
 ```
 
-#### org.quickcorp.components.GridComponent
+#### org.qcobjects.components.GridComponent
 
 GridComponent tiene un nombre predefinido asignado al valor "grid", así que tenlo en cuenta cuando uses esta clase de componente. Tambien  GridComponent está diseñado para usarse junto con GridController para expandir su comportamiento a una cuadrícula CSS.
 
@@ -1604,11 +1604,11 @@ No olvides este archivo:
 <p>Loading grid...</p>
 ```
 
-#### org.quickcorp.components.ModalEnclosureComponent
+#### org.qcobjects.components.ModalEnclosureComponent
 
-#### org.quickcorp.components.ModalComponent
+#### org.qcobjects.components.ModalComponent
 
-#### org.quickcorp.components.SwaggerUIComponent
+#### org.qcobjects.components.SwaggerUIComponent
 
 Se usa para inyectar un DOM swagger-ui necesario para la Swagger UI API. Obtenga más información en este artículo de QCObjects DevBlog llamado [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
 
@@ -1617,7 +1617,7 @@ Se usa para inyectar un DOM swagger-ui necesario para la Swagger UI API. Obtenga
 <component componentClass="SwaggerUIComponent" controllerClass="SwaggerUIController" ></component>
 ```
 
-#### org.quickcorp.components.splashscreen.VideoSplashScreenComponent
+#### org.qcobjects.components.splashscreen.VideoSplashScreenComponent
 
 Una potente definición de componente que le permite crear una impresionante pantalla de bienvenida de video para su aplicación web progresiva.
 
@@ -1638,11 +1638,11 @@ Una potente definición de componente que le permite crear una impresionante pan
 
 ### SDK Controllers
 
-#### org.quickcorp.controllers.GridController
+#### org.qcobjects.controllers.GridController
 
-**GridController** está destinado a ser utilizado junto con **GridComponent** para permitir crear una cuadricula CSS para colocar los subcompnentes. Más información [org.quickcorp.components.GridComponent](#org.quickcorp.components.GridComponent)
+**GridController** está destinado a ser utilizado junto con **GridComponent** para permitir crear una cuadricula CSS para colocar los subcompnentes. Más información [org.qcobjects.components.GridComponent](#org.qcobjects.components.GridComponent)
 
-#### org.quickcorp.controllers.DataGridController
+#### org.qcobjects.controllers.DataGridController
 
 **DataGridController** tomará los datos de su componente y asignará un conjunto de subcomponentes para completarlo.
 Esto se usa comúnmente para renderizar una lista dinámica de componentes. Es usando un valor de atributo **subcomponentClass** en la etiqueta **component** para determinar que definición de componente usar para construir y renderizar cada subcomponente. Los datos en cada subcomponente seran completados con el valor de un elemento mapeado a un subcomponente.
@@ -1719,9 +1719,9 @@ Class("MyListComponent",Component,{
 
 El componente resultante sera una lista de **CardComponent** con los datos de cada perfil dentro de ellos mediante **DataGridController**.
 
-#### org.quickcorp.controllers.ModalController
+#### org.qcobjects.controllers.ModalController
 
-#### org.quickcorp.controllers.FormValidations
+#### org.qcobjects.controllers.FormValidations
 
 **FormValidations** se utiliza para manejar validaciones predeterminadas para **FormController**
 
@@ -1733,7 +1733,7 @@ FormValidations.getDefault(validationName)
 
 Donde **validationName** es el nombre de la validación presente en la propiedad **validations** del **FormController**
 
-#### org.quickcorp.controllers.FormController
+#### org.qcobjects.controllers.FormController
 
 La definición FormController esta destinado a ayudarte a manejar formas dinámicas. Mediante el uso de la sintaxis normalizada de la definición FormController, no tienes que codificar la complejidad de la lógica de un formulario de envío, ya que se atomiza aquí en tres pasos.
 
@@ -1910,7 +1910,7 @@ Class('SignupFormController',Controller,{
 </component>
 ```
 
-#### org.quickcorp.controllers.SwaggerUIController
+#### org.qcobjects.controllers.SwaggerUIController
 
 Es usado para inyectar un swagger-ui DOM necesario para el Swagger UI API. Aprende mas en este articulo de QCObjects DevBlog llamado [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
 
@@ -1924,7 +1924,7 @@ Es usado para inyectar un swagger-ui DOM necesario para el Swagger UI API. Apren
 
 QCObjects tiene una definicion  **Effect**  para manejar y producir nuevos efectos y transiciones para los componentes. A continuación hay algunas definiciones de efectos personalizadas que te ayudaran a construir sorprendentes características visuales para tus componentes. Para mejorar el rendimiento, los efectos están cambiando CSS internamente para aplicar el efecto de manera inteligente. Y todo el motor de efectos se basa en la definición **requestAnimationFrame**, lee mas sobre esto [aquí](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames)
 
-#### org.quickcorp.tools.effects.Move
+#### org.qcobjects.tools.effects.Move
 
 Mueve el objeto DOM de una posicion a otra.
 
@@ -1941,7 +1941,7 @@ Move.apply(element, xfrom, yfrom, xto, yto)
 Tag('img').map(img => Move.apply(img,0,0,10,10))
 ```
 
-#### org.quickcorp.tools.effects.MoveXInFromRight
+#### org.qcobjects.tools.effects.MoveXInFromRight
 
 Mueve un elemento desde el lado derecho en el eje X a la posición original del objeto.
 
@@ -1958,7 +1958,7 @@ MoveXInFromRight.apply(element)
 Tag('canvas').map(canvas => MoveXInFromRight.apply(canvas));
 ```
 
-#### org.quickcorp.tools.effects.MoveXInFromLeft
+#### org.qcobjects.tools.effects.MoveXInFromLeft
 
 Mueve un elemento desde el lado izquierdo en el eje X a la posición original del objeto.
 
@@ -1975,7 +1975,7 @@ MoveXInFromLeft.apply(element)
 Tag('canvas').map(canvas => MoveXInFromLeft.apply(canvas));
 ```
 
-#### org.quickcorp.tools.effects.MoveYInFromBottom
+#### org.qcobjects.tools.effects.MoveYInFromBottom
 
 Mueve un objeto del DOM desde abajo a su posición original usando el eje Y.
 
@@ -1990,7 +1990,7 @@ MoveYInFromBottom.apply(element)
 Tag('component[name=comp1]').map(componentBody => MoveYInFromBottom.apply(componentBody));
 ```
 
-#### org.quickcorp.tools.effects.MoveYInFromTop
+#### org.qcobjects.tools.effects.MoveYInFromTop
 
 Mueve un objeto del DOM de arriba a su posición original usando el eje Y.
 
@@ -2005,7 +2005,7 @@ MoveYInFromTop.apply(element)
 Tag('component[name=comp1]').map(componentBody => MoveYInFromTop.apply(componentBody));
 ```
 
-#### org.quickcorp.tools.effects.RotateX
+#### org.qcobjects.tools.effects.RotateX
 
 Rota un objeto en el eje X.
 
@@ -2023,7 +2023,7 @@ Tag('div#id').map(div => RotateX.apply(div, 180, 240));
 ```
 
 
-#### org.quickcorp.tools.effects.RotateY
+#### org.qcobjects.tools.effects.RotateY
 
 Rota un objeto en el eje Y.
 
@@ -2040,7 +2040,7 @@ RotateY.apply(element, angleFrom, angleTo)
 Tag('div#id').map(div => RotateY.apply(div, 0, 270));
 ```
 
-#### org.quickcorp.tools.effects.RotateZ
+#### org.qcobjects.tools.effects.RotateZ
 
 Rota un objeto en el eje Z.
 
@@ -2059,7 +2059,7 @@ Tag('div#id').map(div => RotateZ.apply(div, 0, 60));
 
 
 
-#### org.quickcorp.tools.effects.Rotate
+#### org.qcobjects.tools.effects.Rotate
 
 Rota un objeto en los ejes X, Y, Z. Todos los ejes rotarán en paralelo al mismo tiempo produciendo una percepción de efectos visuales en 3D.
 
@@ -2076,7 +2076,7 @@ Rotate.apply(element, angleFrom, angleTo)
 Tag('div#id').map(div => Rotate.apply(div, 0, 270));
 ```
 
-#### org.quickcorp.tools.effects.Fade
+#### org.qcobjects.tools.effects.Fade
 
 Produce un efecto de desvanecimiento al reducir la opacidad del elemento.
 
@@ -2093,7 +2093,7 @@ Fade.apply(element, alphaFrom, alphaTo)
 Tag('b.header').map(header=>Fade.apply(header, 0.5, 1))
 ```
 
-#### org.quickcorp.tools.effects.Radius
+#### org.qcobjects.tools.effects.Radius
 
 Redondea la esquina de un elemento.
 
@@ -2110,7 +2110,7 @@ Radius.apply(element, radiusFrom, radiusTo)
 Tag('img').map(element => Radius.apply(element, 0, 100))
 ```
 
-#### org.quickcorp.tools.effects.Resize
+#### org.qcobjects.tools.effects.Resize
 
 ##### Uso:
 ```javascript
@@ -2133,7 +2133,7 @@ Tag('img').map(element => Resize.apply(element, 0,1))
 Tag('img').map(element => Resize.apply(element, 2,1))
 ```
 
-#### org.quickcorp.tools.effects.WipeLeft
+#### org.qcobjects.tools.effects.WipeLeft
 
 Hace un efecto de limpieza desde el lado izquierdo al origen del elemento.
 
@@ -2151,7 +2151,7 @@ Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 
 Tag('img').map(element => WipeLeft.apply(element,0,1))
 ```
 
-#### org.quickcorp.tools.effects.WipeRight
+#### org.qcobjects.tools.effects.WipeRight
 Hace un efecto de limpieza desde el lado derecho hasta el origen del elemento.
 
 ##### Uso:
@@ -2169,7 +2169,7 @@ Tag('img').map(element => WipeRight.apply(element,0,1))
 ```
 
 
-#### org.quickcorp.tools.effects.WipeUp
+#### org.qcobjects.tools.effects.WipeUp
 
 Realiza un efecto de limpieza de abajo hacia arriba en el origen del elemento.
 
@@ -2186,7 +2186,7 @@ Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 
 Tag('img').map(element => WipeUp.apply(element,0,1))
 ```
 
-#### org.quickcorp.tools.effects.WipeDown
+#### org.qcobjects.tools.effects.WipeDown
 
 Realiza un efecto de limpieza de arriba a abajo en el origen del elemento.
 
@@ -2207,15 +2207,15 @@ Tag('img').map(element => WipeDown.apply(element,0,1))
 
 ### SDK Misc Tools
 
-#### org.quickcorp.tools.canvas.CanvasTool
+#### org.qcobjects.tools.canvas.CanvasTool
 
-#### org.quickcorp.tools.layouts.BasicLayout
+#### org.qcobjects.tools.layouts.BasicLayout
 
 ### SDK Views
 
 A continuación hay un conjunto de vistas predefinidas para uso común.
 
-#### org.quickcorp.views.GridView
+#### org.qcobjects.views.GridView
 
 Una definion generica GridView para usar con cuadriculas.
 
@@ -2223,7 +2223,7 @@ Una definion generica GridView para usar con cuadriculas.
 
 El motor QCObjects i18n le permite definir mensajes personalizados. Obtenga más información en este artículo en el DevBlog llamado [i18n Internationalisation for your Progressive Web Apps](https://devblog.qcobjects.org/i18n-internationalisation-for-your-progressive-web-apps-ck90h4qz301ca7vs1ue7joopu)
 
-#### org.quickcorp.i18n_messages.i18n_messages
+#### org.qcobjects.i18n_messages.i18n_messages
 
 Utlizado para llamar al motor i18n.
 
@@ -2237,8 +2237,8 @@ Utlizado para llamar al motor i18n.
 ##### Ejemplo
 ```javascript
 'use strict';
-// file: js/packages/org.quickcorp.i18n_messages.es.js
-Package('org.quickcorp.i18n_messages.es', [
+// file: js/packages/org.qcobjects.i18n_messages.es.js
+Package('org.qcobjects.i18n_messages.es', [
   Class('i18n_messages_es', i18n_messages, {
     messages: [
        // ... your custom language dictionary is here
@@ -2321,7 +2321,7 @@ A continuación se muestra un ejemplo de un archivo config.json personalizado qu
     "routes":[
       {
         "path":"/createaccount",
-        "microservice":"org.quickcorp.backend.signup",
+        "microservice":"org.qcobjects.backend.signup",
         "responseHeaders":{}
       }
     ]
@@ -2340,7 +2340,7 @@ Para cada ruta de microservicio, se requiere una ruta y una cadena de paquete de
     "routes":[
       {
         "path":"/createaccount",
-        "microservice":"org.quickcorp.backend.signup"
+        "microservice":"org.qcobjects.backend.signup"
       }
     ]
   }
@@ -2354,7 +2354,7 @@ Cuando configuras las rutas de back-end, el servidor  QCObjects HTTP2 Built-In  
 
 cuando configuras la definicion de ruta bakend, necesitas especificar un paquete de microdervicio.Este paquete de microservicio es una definicion de QCObjects de un paquete con una clase microservicio extendida desde la clase BackendMicroservice ya definida por QCObjects.
 
-A continuación se muestra un ejemplo de una definición de paquete de microservicio, escrita en el archivo org.quickcorp.backend.signup.js
+A continuación se muestra un ejemplo de una definición de paquete de microservicio, escrita en el archivo org.qcobjects.backend.signup.js
 
 ```javascript
 'use strict';

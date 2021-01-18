@@ -1,6 +1,6 @@
 ### SDK Components
 
-#### org.quickcorp.components.ShadowedComponent
+#### org.qcobjects.components.ShadowedComponent
 
 La Clase **ShadowedComponent** es un componente personalizado diseñado para permitirte crear un componente usando el Shadow DOM de un buscador. Lee mas sobre los componentes Shadow en [Este articulo en Hackernoon]
  (https://www.hackernoon.com/shadowed-components-and-qcobjects-kd703yld).
@@ -11,7 +11,7 @@ La Clase **ShadowedComponent** es un componente personalizado diseñado para per
 <component componentClass="ShadowedComponent"></component>
 ```
 
-#### org.quickcorp.components.FormField
+#### org.qcobjects.components.FormField
 
 **FormField** es una clase par los componentes personalizados**QCObjects** que te permiten que le permite inyectar un comportamiento genérico de campo de formulario a sus componentes. Tiene una característica inversa data-binding para detectar valores de los campos DOM dentro de tu formulario y asignarlos a los valores de datos de tu componente. De esta forma no perderás el desempeño creando un data binig bidireccional a la antigua basado en observables. Para implementar este comportamiento avanzado, necesitas hacer lo siguiente:
 
@@ -58,7 +58,7 @@ Dentro del cuerpo de su componente, cuando es un componente**FormField** cada ve
 
 Dentro del cuerpo de su componente, cuando es un componente **FormField** cada vez que el DOM envía un evento "Keydown", activará el método executeBindings de su componente.
 
-#### org.quickcorp.components.ButtonField
+#### org.qcobjects.components.ButtonField
 
 **ButtonField** es una subdefinición de **FormField** que es comunmete usando para casi el mismo proposito del FormField.La principal diferencia entre ButtonField y FormField es que ButtonField tiene un elemento DOM ** `` `<button>` `` ** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -68,7 +68,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 <component name="name_of_component" componentClass="ButtonField"></component>
 ```
 
-#### org.quickcorp.components.InputField
+#### org.qcobjects.components.InputField
 
 **InputField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField y FormField es que InputField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -79,7 +79,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 ```
 
 
-#### org.quickcorp.components.TextField
+#### org.qcobjects.components.TextField
 
 **ButtonField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField, ButtonField y FormField es que ButtonField tiene un elemento DOM **```<textarea>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -90,7 +90,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 ```
 
 
-#### org.quickcorp.components.EmailField
+#### org.qcobjects.components.EmailField
 
 **EmailField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre ButtonField y FormField es que ButtonField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
@@ -100,7 +100,7 @@ Dentro del cuerpo de su componente, cuando es un componente **FormField** cada v
 <component name="name_of_component" componentClass="EmailField"></component>
 ```
 
-#### org.quickcorp.components.GridComponent
+#### org.qcobjects.components.GridComponent
 
 GridComponent tiene un nombre predefinido asignado al valor "grid", así que tenlo en cuenta cuando uses esta clase de componente. Tambien  GridComponent está diseñado para usarse junto con GridController para expandir su comportamiento a una cuadrícula CSS.
 
@@ -130,11 +130,11 @@ No olvides este archivo:
 <p>Loading grid...</p>
 ```
 
-#### org.quickcorp.components.ModalEnclosureComponent
+#### org.qcobjects.components.ModalEnclosureComponent
 
-#### org.quickcorp.components.ModalComponent
+#### org.qcobjects.components.ModalComponent
 
-#### org.quickcorp.components.SwaggerUIComponent
+#### org.qcobjects.components.SwaggerUIComponent
 
 Se usa para inyectar un DOM swagger-ui necesario para la Swagger UI API. Obtenga más información en este artículo de QCObjects DevBlog llamado [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
 
@@ -143,7 +143,7 @@ Se usa para inyectar un DOM swagger-ui necesario para la Swagger UI API. Obtenga
 <component componentClass="SwaggerUIComponent" controllerClass="SwaggerUIController" ></component>
 ```
 
-#### org.quickcorp.components.splashscreen.VideoSplashScreenComponent
+#### org.qcobjects.components.splashscreen.VideoSplashScreenComponent
 
 Una potente definición de componente que le permite crear una impresionante pantalla de bienvenida de video para su aplicación web progresiva.
 

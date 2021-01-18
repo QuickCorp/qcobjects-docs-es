@@ -1,10 +1,10 @@
 ### SDK Controllers
 
-#### org.quickcorp.controllers.GridController
+#### org.qcobjects.controllers.GridController
 
-**GridController** está destinado a ser utilizado junto con **GridComponent** para permitir crear una cuadricula CSS para colocar los subcompnentes. Más información [org.quickcorp.components.GridComponent](#org.quickcorp.components.GridComponent)
+**GridController** está destinado a ser utilizado junto con **GridComponent** para permitir crear una cuadricula CSS para colocar los subcompnentes. Más información [org.qcobjects.components.GridComponent](#org.qcobjects.components.GridComponent)
 
-#### org.quickcorp.controllers.DataGridController
+#### org.qcobjects.controllers.DataGridController
 
 **DataGridController** tomará los datos de su componente y asignará un conjunto de subcomponentes para completarlo.
 Esto se usa comúnmente para renderizar una lista dinámica de componentes. Es usando un valor de atributo **subcomponentClass** en la etiqueta **component** para determinar que definición de componente usar para construir y renderizar cada subcomponente. Los datos en cada subcomponente seran completados con el valor de un elemento mapeado a un subcomponente.
@@ -81,9 +81,9 @@ Class("MyListComponent",Component,{
 
 El componente resultante sera una lista de **CardComponent** con los datos de cada perfil dentro de ellos mediante **DataGridController**.
 
-#### org.quickcorp.controllers.ModalController
+#### org.qcobjects.controllers.ModalController
 
-#### org.quickcorp.controllers.FormValidations
+#### org.qcobjects.controllers.FormValidations
 
 **FormValidations** se utiliza para manejar validaciones predeterminadas para **FormController**
 
@@ -95,7 +95,7 @@ FormValidations.getDefault(validationName)
 
 Donde **validationName** es el nombre de la validación presente en la propiedad **validations** del **FormController**
 
-#### org.quickcorp.controllers.FormController
+#### org.qcobjects.controllers.FormController
 
 La definición FormController esta destinado a ayudarte a manejar formas dinámicas. Mediante el uso de la sintaxis normalizada de la definición FormController, no tienes que codificar la complejidad de la lógica de un formulario de envío, ya que se atomiza aquí en tres pasos.
 
@@ -272,7 +272,7 @@ Class('SignupFormController',Controller,{
 </component>
 ```
 
-#### org.quickcorp.controllers.SwaggerUIController
+#### org.qcobjects.controllers.SwaggerUIController
 
 Es usado para inyectar un swagger-ui DOM necesario para el Swagger UI API. Aprende mas en este articulo de QCObjects DevBlog llamado [Working with Swagger UI as a QCObjects Component](https://devblog.qcobjects.org/working-with-swagger-ui-as-a-qcobjects-component-ck6xzoqkg05indfs1i4rxq72e)
 

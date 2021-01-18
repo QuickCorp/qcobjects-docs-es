@@ -12,14 +12,14 @@ Donde el packagename es el nombre del paquete, listo es una función que podrá 
 #### Ejemplo (1):
 
 ```javascript
-Import('org.quickcorp.main');
+Import('org.qcobjects.main');
 ```
-El código anterior intentara importar un archivo JS llamado 'org.quickcorp.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.quickcorp.main',[Class1, Class2...])
+El código anterior intentara importar un archivo JS llamado 'org.qcobjects.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.qcobjects.main',[Class1, Class2...])
 
 #### Ejemplo (2):
 
 ```javascript
-Import('org.quickcorp.main',function (){
+Import('org.qcobjects.main',function (){
   console.log('remote import is loaded');
 },true);
 ```

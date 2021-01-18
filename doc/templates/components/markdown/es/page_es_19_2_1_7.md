@@ -1,4 +1,4 @@
-#### org.quickcorp.components.GridComponent
+#### org.qcobjects.components.GridComponent
 
 GridComponent tiene un nombre predefinido asignado al valor "grid", así que tenlo en cuenta cuando uses esta clase de componente. Tambien  GridComponent está diseñado para usarse junto con GridController para expandir su comportamiento a una cuadrícula CSS.
 

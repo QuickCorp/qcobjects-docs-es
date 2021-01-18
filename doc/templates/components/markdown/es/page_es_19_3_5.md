@@ -9,7 +9,7 @@ Para cada ruta de microservicio, se requiere una ruta y una cadena de paquete de
     "routes":[
       {
         "path":"/createaccount",
-        "microservice":"org.quickcorp.backend.signup"
+        "microservice":"org.qcobjects.backend.signup"
       }
     ]
   }

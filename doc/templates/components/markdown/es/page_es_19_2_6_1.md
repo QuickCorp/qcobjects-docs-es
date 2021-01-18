@@ -1,4 +1,4 @@
-#### org.quickcorp.i18n_messages.i18n_messages
+#### org.qcobjects.i18n_messages.i18n_messages
 
 Utlizado para llamar al motor i18n.
 
@@ -12,8 +12,8 @@ Utlizado para llamar al motor i18n.
 ##### Ejemplo
 ```javascript
 'use strict';
-// file: js/packages/org.quickcorp.i18n_messages.es.js
-Package('org.quickcorp.i18n_messages.es', [
+// file: js/packages/org.qcobjects.i18n_messages.es.js
+Package('org.qcobjects.i18n_messages.es', [
   Class('i18n_messages_es', i18n_messages, {
     messages: [
        // ... your custom language dictionary is here

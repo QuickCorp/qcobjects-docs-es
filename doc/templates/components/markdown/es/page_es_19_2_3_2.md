@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.MoveXInFromRight
+#### org.qcobjects.tools.effects.MoveXInFromRight
 
 Mueve un elemento desde el lado derecho en el eje X a la posición original del objeto.
 

@@ -2,7 +2,7 @@
 
 QCObjects tiene una definicion  **Effect**  para manejar y producir nuevos efectos y transiciones para los componentes. A continuación hay algunas definiciones de efectos personalizadas que te ayudaran a construir sorprendentes características visuales para tus componentes. Para mejorar el rendimiento, los efectos están cambiando CSS internamente para aplicar el efecto de manera inteligente. Y todo el motor de efectos se basa en la definición **requestAnimationFrame**, lee mas sobre esto [aquí](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames)
 
-#### org.quickcorp.tools.effects.Move
+#### org.qcobjects.tools.effects.Move
 
 Mueve el objeto DOM de una posicion a otra.
 
@@ -19,7 +19,7 @@ Move.apply(element, xfrom, yfrom, xto, yto)
 Tag('img').map(img => Move.apply(img,0,0,10,10))
 ```
 
-#### org.quickcorp.tools.effects.MoveXInFromRight
+#### org.qcobjects.tools.effects.MoveXInFromRight
 
 Mueve un elemento desde el lado derecho en el eje X a la posición original del objeto.
 
@@ -36,7 +36,7 @@ MoveXInFromRight.apply(element)
 Tag('canvas').map(canvas => MoveXInFromRight.apply(canvas));
 ```
 
-#### org.quickcorp.tools.effects.MoveXInFromLeft
+#### org.qcobjects.tools.effects.MoveXInFromLeft
 
 Mueve un elemento desde el lado izquierdo en el eje X a la posición original del objeto.
 
@@ -53,7 +53,7 @@ MoveXInFromLeft.apply(element)
 Tag('canvas').map(canvas => MoveXInFromLeft.apply(canvas));
 ```
 
-#### org.quickcorp.tools.effects.MoveYInFromBottom
+#### org.qcobjects.tools.effects.MoveYInFromBottom
 
 Mueve un objeto del DOM desde abajo a su posición original usando el eje Y.
 
@@ -68,7 +68,7 @@ MoveYInFromBottom.apply(element)
 Tag('component[name=comp1]').map(componentBody => MoveYInFromBottom.apply(componentBody));
 ```
 
-#### org.quickcorp.tools.effects.MoveYInFromTop
+#### org.qcobjects.tools.effects.MoveYInFromTop
 
 Mueve un objeto del DOM de arriba a su posición original usando el eje Y.
 
@@ -83,7 +83,7 @@ MoveYInFromTop.apply(element)
 Tag('component[name=comp1]').map(componentBody => MoveYInFromTop.apply(componentBody));
 ```
 
-#### org.quickcorp.tools.effects.RotateX
+#### org.qcobjects.tools.effects.RotateX
 
 Rota un objeto en el eje X.
 
@@ -101,7 +101,7 @@ Tag('div#id').map(div => RotateX.apply(div, 180, 240));
 ```
 
 
-#### org.quickcorp.tools.effects.RotateY
+#### org.qcobjects.tools.effects.RotateY
 
 Rota un objeto en el eje Y.
 
@@ -118,7 +118,7 @@ RotateY.apply(element, angleFrom, angleTo)
 Tag('div#id').map(div => RotateY.apply(div, 0, 270));
 ```
 
-#### org.quickcorp.tools.effects.RotateZ
+#### org.qcobjects.tools.effects.RotateZ
 
 Rota un objeto en el eje Z.
 
@@ -137,7 +137,7 @@ Tag('div#id').map(div => RotateZ.apply(div, 0, 60));
 
 
 
-#### org.quickcorp.tools.effects.Rotate
+#### org.qcobjects.tools.effects.Rotate
 
 Rota un objeto en los ejes X, Y, Z. Todos los ejes rotarán en paralelo al mismo tiempo produciendo una percepción de efectos visuales en 3D.
 
@@ -154,7 +154,7 @@ Rotate.apply(element, angleFrom, angleTo)
 Tag('div#id').map(div => Rotate.apply(div, 0, 270));
 ```
 
-#### org.quickcorp.tools.effects.Fade
+#### org.qcobjects.tools.effects.Fade
 
 Produce un efecto de desvanecimiento al reducir la opacidad del elemento.
 
@@ -171,7 +171,7 @@ Fade.apply(element, alphaFrom, alphaTo)
 Tag('b.header').map(header=>Fade.apply(header, 0.5, 1))
 ```
 
-#### org.quickcorp.tools.effects.Radius
+#### org.qcobjects.tools.effects.Radius
 
 Redondea la esquina de un elemento.
 
@@ -188,7 +188,7 @@ Radius.apply(element, radiusFrom, radiusTo)
 Tag('img').map(element => Radius.apply(element, 0, 100))
 ```
 
-#### org.quickcorp.tools.effects.Resize
+#### org.qcobjects.tools.effects.Resize
 
 ##### Uso:
 ```javascript
@@ -211,7 +211,7 @@ Tag('img').map(element => Resize.apply(element, 0,1))
 Tag('img').map(element => Resize.apply(element, 2,1))
 ```
 
-#### org.quickcorp.tools.effects.WipeLeft
+#### org.qcobjects.tools.effects.WipeLeft
 
 Hace un efecto de limpieza desde el lado izquierdo al origen del elemento.
 
@@ -229,7 +229,7 @@ Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 
 Tag('img').map(element => WipeLeft.apply(element,0,1))
 ```
 
-#### org.quickcorp.tools.effects.WipeRight
+#### org.qcobjects.tools.effects.WipeRight
 Hace un efecto de limpieza desde el lado derecho hasta el origen del elemento.
 
 ##### Uso:
@@ -247,7 +247,7 @@ Tag('img').map(element => WipeRight.apply(element,0,1))
 ```
 
 
-#### org.quickcorp.tools.effects.WipeUp
+#### org.qcobjects.tools.effects.WipeUp
 
 Realiza un efecto de limpieza de abajo hacia arriba en el origen del elemento.
 
@@ -264,7 +264,7 @@ Un valor de 1 es tamaño normal, un valor de 2 es tamaño doble, un valor entre 
 Tag('img').map(element => WipeUp.apply(element,0,1))
 ```
 
-#### org.quickcorp.tools.effects.WipeDown
+#### org.qcobjects.tools.effects.WipeDown
 
 Realiza un efecto de limpieza de arriba a abajo en el origen del elemento.
 

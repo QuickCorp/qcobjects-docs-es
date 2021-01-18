@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.RotateY
+#### org.qcobjects.tools.effects.RotateY
 
 Rota un objeto en el eje Y.
 

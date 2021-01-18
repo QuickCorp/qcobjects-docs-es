@@ -239,14 +239,14 @@ console.log(MyClass == ClassFactory('MyClass')) // it will show true
 ```javascript
 /* On the other hand, ClassFactory() will be so useful when you define a Class into a Package
 */
-Package('org.quickcorp.package1',[
+Package('org.qcobjects.package1',[
 	Class('MyClass',{
 		a:1
 	})
 ])
 console.log(MyClass == ClassFactory('MyClass')) // it will still show true
 // The following line will show true as well
-console.log(MyClass == ClassFactory('org.quickcorp.package1.MyClass'))
+console.log(MyClass == ClassFactory('org.qcobjects.package1.MyClass'))
 ```
 
 ```javascript
@@ -254,12 +254,12 @@ console.log(MyClass == ClassFactory('org.quickcorp.package1.MyClass'))
 * same name MyClass into different packages but with different property default values
 * and even properties
 */
-Package('org.quickcorp.package1',[
+Package('org.qcobjects.package1',[
 	Class('MyClass',{
 		a:1
 	})
 ])
-Package('org.quickcorp.package2',[
+Package('org.qcobjects.package2',[
 	Class('MyClass',{
 		a:2,
 		b:1
@@ -269,16 +269,16 @@ Package('org.quickcorp.package2',[
 // so the reference MyClass in the code will point to that one
 console.log(MyClass == ClassFactory('MyClass')) // it will still show true
 
-// In this case as the MyClass defined in the org.quickcorp.package1 will not be the same
-// as the one in the org.quickcorp.package2, but the MyClass in the package2 is the last one
+// In this case as the MyClass defined in the org.qcobjects.package1 will not be the same
+// as the one in the org.qcobjects.package2, but the MyClass in the package2 is the last one
 // The following line will show false
-console.log(MyClass == ClassFactory('org.quickcorp.package1.MyClass'))
+console.log(MyClass == ClassFactory('org.qcobjects.package1.MyClass'))
 
 // The following line will show true
-console.log(MyClass == ClassFactory('org.quickcorp.package2.MyClass'))
+console.log(MyClass == ClassFactory('org.qcobjects.package2.MyClass'))
 
 // The following line will show false
-console.log(ClassFactory('org.quickcorp.package1.MyClass') == ClassFactory('org.quickcorp.package2.MyClass'))
+console.log(ClassFactory('org.qcobjects.package1.MyClass') == ClassFactory('org.qcobjects.package2.MyClass'))
 ```
 
 Los ejemplos anteriores están intencionalmente hechos para explicar y mostrar como el alcance de la definición de clase en QCObjects es protejida, llevada y reflejada en una ClassFactory.
@@ -300,18 +300,18 @@ Class('MyExtendedClass',MyInheritClass,{
 /* But to protect the scope from misleading by reference, you can asure that MyInheritClass
 is the one you want to extend by declaring it into a package and then extend it
 */
-Package('org.quickcorp.mypackage1',[
+Package('org.qcobjects.mypackage1',[
 	Class('MyInheritClass',{
 		sourceProp:1
 	}),
 ])
 
 // The following code is a definition of MyExtendedClass into a different package
-// org.quickcorp.package2
+// org.qcobjects.package2
 // extending MyInheritClass using ClassFactory to retreive the Class from the source package
-// org.quickcorp.mypackage1
-Package('org.quickcorp.mypackage2',[
-	Class('MyExtendedClass',ClassFactory('org.quickcorp.mypackage1.MyInheritClass'),{
+// org.qcobjects.mypackage1
+Package('org.qcobjects.mypackage2',[
+	Class('MyExtendedClass',ClassFactory('org.qcobjects.mypackage1.MyInheritClass'),{
 		extendedProp1: 'value of prop',
 		extendedProp2: 2
 	})
@@ -521,7 +521,7 @@ Donde packageContent es una gama de clases de QCObjects. Si solo pasas el packag
 
 ```javascript
 'use strict';
-Package('org.quickcorp.main',[
+Package('org.qcobjects.main',[
   Class('Main',InheritClass,{
     propertyName1:'propertyValue1',
   }),
@@ -534,7 +534,7 @@ Package('org.quickcorp.main',[
 #### Ejemplo (2):
 
 ```javascript
-let mainPackage = Package('org.quickcorp.main'); // this will return the previously declared content of package 'org.quickcorp.main'
+let mainPackage = Package('org.qcobjects.main'); // this will return the previously declared content of package 'org.qcobjects.main'
 // mainPackage[0] will be the Main class definition.
 // This is useful for code introspection
 ```
@@ -556,14 +556,14 @@ Donde el packagename es el nombre del paquete, listo es una función que podrá 
 #### Ejemplo (1):
 
 ```javascript
-Import('org.quickcorp.main');
+Import('org.qcobjects.main');
 ```
-El código anterior intentara importar un archivo JS llamado 'org.quickcorp.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.quickcorp.main',[Class1, Class2...])
+El código anterior intentara importar un archivo JS llamado 'org.qcobjects.main.js' desde un camino especifico en el valor de ajuste  **relativeImportPath** presente en tu **CONFIG**. Dentro del archivo tienes que definir el paquete mediante el uso del paquete ('org.qcobjects.main',[Class1, Class2...])
 
 #### Ejemplo (2):
 
 ```javascript
-Import('org.quickcorp.main',function (){
+Import('org.qcobjects.main',function (){
   console.log('remote import is loaded');
 },true);
 ```

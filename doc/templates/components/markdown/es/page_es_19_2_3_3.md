@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.MoveXInFromLeft
+#### org.qcobjects.tools.effects.MoveXInFromLeft
 
 Mueve un elemento desde el lado izquierdo en el eje X a la posición original del objeto.
 

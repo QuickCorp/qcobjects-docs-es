@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.MoveYInFromBottom
+#### org.qcobjects.tools.effects.MoveYInFromBottom
 
 Mueve un objeto del DOM desde abajo a su posición original usando el eje Y.
 

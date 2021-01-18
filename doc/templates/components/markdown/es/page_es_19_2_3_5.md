@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.MoveYInFromTop
+#### org.qcobjects.tools.effects.MoveYInFromTop
 
 Mueve un objeto del DOM de arriba a su posición original usando el eje Y.
 

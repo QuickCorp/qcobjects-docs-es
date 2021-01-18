@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.RotateZ
+#### org.qcobjects.tools.effects.RotateZ
 
 Rota un objeto en el eje Z.
 

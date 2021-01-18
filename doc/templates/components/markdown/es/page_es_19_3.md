@@ -60,7 +60,7 @@ A continuación se muestra un ejemplo de un archivo config.json personalizado qu
     "routes":[
       {
         "path":"/createaccount",
-        "microservice":"org.quickcorp.backend.signup",
+        "microservice":"org.qcobjects.backend.signup",
         "responseHeaders":{}
       }
     ]
@@ -79,7 +79,7 @@ Para cada ruta de microservicio, se requiere una ruta y una cadena de paquete de
     "routes":[
       {
         "path":"/createaccount",
-        "microservice":"org.quickcorp.backend.signup"
+        "microservice":"org.qcobjects.backend.signup"
       }
     ]
   }
@@ -93,7 +93,7 @@ Cuando configuras las rutas de back-end, el servidor  QCObjects HTTP2 Built-In  
 
 cuando configuras la definicion de ruta bakend, necesitas especificar un paquete de microdervicio.Este paquete de microservicio es una definicion de QCObjects de un paquete con una clase microservicio extendida desde la clase BackendMicroservice ya definida por QCObjects.
 
-A continuación se muestra un ejemplo de una definición de paquete de microservicio, escrita en el archivo org.quickcorp.backend.signup.js
+A continuación se muestra un ejemplo de una definición de paquete de microservicio, escrita en el archivo org.qcobjects.backend.signup.js
 
 ```javascript
 'use strict';

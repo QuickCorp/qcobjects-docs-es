@@ -1,4 +1,4 @@
-#### org.quickcorp.controllers.DataGridController
+#### org.qcobjects.controllers.DataGridController
 
 **DataGridController** tomará los datos de su componente y asignará un conjunto de subcomponentes para completarlo.
 Esto se usa comúnmente para renderizar una lista dinámica de componentes. Es usando un valor de atributo **subcomponentClass** en la etiqueta **component** para determinar que definición de componente usar para construir y renderizar cada subcomponente. Los datos en cada subcomponente seran completados con el valor de un elemento mapeado a un subcomponente.

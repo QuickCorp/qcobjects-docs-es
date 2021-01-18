@@ -1,4 +1,4 @@
-#### org.quickcorp.tools.effects.Move
+#### org.qcobjects.tools.effects.Move
 
 Mueve el objeto DOM de una posicion a otra.
 

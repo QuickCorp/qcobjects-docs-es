@@ -1,4 +1,4 @@
-#### org.quickcorp.components.InputField
+#### org.qcobjects.components.InputField
 
 **InputField** es una subdefinición de **FormField**, que es comunmete usando para casi el mismo proposito del FormField. La principal diferencia entre InputField y FormField es que InputField tiene un elemento DOM **```<input>```** como el cuerpo del componente por defecto. Y FormField no tiene un cuerpo predefinido.
 
