@@ -1,9 +1,9 @@
 {
-  "name": "qcobjects-docs",
+  "name": "qcobjects-docs-es",
   "version": "2.2.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QuickCorp/QCObjects-DOC.git"
+    "url": "https://github.com/QuickCorp/qcobjects-docs-es.git"
   },
   "scripts": {
     "test": "jasmine",
